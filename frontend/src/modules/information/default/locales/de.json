@@ -1,0 +1,19 @@
+{
+  "description": {
+    "title": "Mission Control",
+    "description": "Zeige Information über das Thema"
+  },
+  "moderatorContent": {
+    "add": "Info hinzufügen",
+    "settingsTitle": "Mission Control Einstellungen"
+  },
+  "publicScreen": {
+    "noIdeas": "Kein Inhalt hinzugefügt."
+  },
+  "analytics": {
+    "highscore": {
+      "points": "Punkte",
+      "stars": "Sterne"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+"frames": {
+	"bug": {
+		"frame": {"x":673, "y":762, "w":448, "h":564},
+		"spriteSourceSize": {"x":0,"y":0,"w":448,"h":564},
+		"sourceSize": {"w":448,"h":564}
+	},
+	"dragonfly": {
+		"frame": {"x":0, "y":0, "w":840, "h":583},
+		"spriteSourceSize": {"x":0,"y":0,"w":840,"h":583},
+		"sourceSize": {"w":840,"h":583}
+	},
+	"ladybug": {
+		"frame": {"x":841, "y":0, "w":325, "h":360},
+		"spriteSourceSize": {"x":0,"y":0,"w":325,"h":360},
+		"sourceSize": {"w":325,"h":360}
+	},
+	"turtle": {
+		"frame": {"x":0, "y":762, "w":672, "h":615},
+		"spriteSourceSize": {"x":0,"y":0,"w":672,"h":615},
+		"sourceSize": {"w":672,"h":615}
+	},
+	"earthworm": {
+		"frame": {"x":0, "y":584, "w":824, "h":177},
+		"spriteSourceSize": {"x":0,"y":0,"w":824,"h":177},
+		"sourceSize": {"w":824,"h":177}
+	}
+
+},
+"meta": {
+	"image": "red_herring.png",
+	"size": {"w": 1167, "h": 1378},
+	"scale": "1"
+}
+}

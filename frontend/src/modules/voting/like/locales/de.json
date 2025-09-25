@@ -1,0 +1,29 @@
+{
+  "description": {
+    "title": "Like",
+    "description": "Like die Posts der anderen Teilnehmer"
+  },
+  "participant": {
+    "thanksModerated": "Deine Wahl wurde gespeichert.",
+    "thanksIndividual": "Deine Wahl wurde gespeichert.",
+    "submit": "Speichern",
+    "waiting": "Bitte warten. Moderator selektiert Ideen.",
+    "imageKeywords": "Bildbeschreibung",
+    "saveQuestion": "Soll die Auswahl gespeichert werden?",
+    "yes": "ja",
+    "no": "nein",
+    "back": "abschließen",
+    "likes": "Likes zu vergeben"
+  },
+  "moderator": {
+    "header": "Selektiere Beiträge die in die Abstimmung inkludiert werden.",
+    "includeAll": "Inkludiere alle Beiträge."
+  },
+  "analytics": {
+    "highscore": {
+      "ratingSum": "Summe Bewertungen",
+      "averageRating": "Ø Bewertungen",
+      "bestIdeaAverageRating": "Ø Berwertung der besten Idee"
+    }
+  }
+}

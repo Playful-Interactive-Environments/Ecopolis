@@ -1,0 +1,164 @@
+{
+  "description": {
+    "title": "Shop It",
+    "description": "Ein Kartenspiel, das sich mit Konsum beschäftigt."
+  },
+  "moderatorConfig": {
+    "replayable": "mehrfach spielbar",
+    "showTutorial": "Tutorial zeigen",
+    "showTutorialDisabled": "deaktiviert",
+    "showTutorialOnce": "einmalig",
+    "showTutorialAlways": "immer"
+  },
+  "statistic": {
+    "rating": "Wie viele Sterne haben die Nutzer mit ihren Punkten erreicht?",
+    "pointsSpent": "Wie viele Punkte wurden ausgegeben?",
+    "co2": "Wie viel CO² wurde ausgestoßen? (kg)",
+    "electricity": "Wie viel Energie wurde benötigt? (kwh)",
+    "lifetime": "Was war die aufgerechnete Lebenszeit der gekauften Objekte? (years)",
+    "water": "Wie viel Wasser wurde verbraucht? (l)",
+    "money": "Wie viel Geld wurde ausgegeben? (€)",
+    "winReason": "Wegen welchem Grund haben die Nutzer gewonnen?",
+    "cardsPlayed": "Wie viele Karten wurden in einer Runde gespielt?"
+  },
+  "participant": {
+    "skip": "überspringen",
+    "continueButton": "Weiter",
+    "tutorial": {
+      "menu": "Tutorial",
+      "rules1": "Jeder Spieler hat 3 Karten und muss 3 Kategorien füllen. Um einen Punkt in einer Kategorie zu erlangen, muss der Spieler eine Runde in dieser Kategorie gewinnen. Der Spieler der als erstes alle Kategorien gefüllt hat, gewinnt!",
+      "rules2": "Aber Achtung! Die Punkte die du ausgeben darfst sind begrenzt. Wie viele Punkte schon ausgegeben wurden siehst du am roten Balken.",
+      "pointCalc": "Wenn beide Spieler eine Karte der selben Kategorie spielen, werden die Punkte beider Karten dem Limit zugeschrieben. Wenn dein Gegner aber keine Karte dieser Kategorie hat, hast du Glück, denn dann wird dir nur der Wert deiner eigenen Karte zugeschrieben.",
+      "tutGame": "Lernen wir aber davor noch etwas über die Eigenschaften der Karten. Klicke auf die grauen Boxen und weise ihnen die richtige Eigenschaft zu. Falls du dich vertan hast, kannst du einfach nochmal darauf klicken um deine Auswahl zu löschen."
+    },
+    "joinState": {
+      "singleplayer": "Einzelspieler",
+      "singleplayerDesc": "Spiele gegen einen künstlichen Gegner und mache dich mit den Karten vertraut!",
+      "singleplayerLabel": "Spiele alleine",
+      "singleplayerButton": "Los geht's!",
+      "multiplayer": "Multiplayer",
+      "multiplayerDesc": "Spiele gegen einen Freund und finde heraus, wer seine Emissionen besser im Gleichgewicht halten kann! Lege ein Spiel an, oder nimm an einem Teil.",
+      "multiplayerLabelHost": "Spiel anlegen",
+      "multiplayerButtonHost": "Spiel anlegen!",
+      "multiplayerLabelJoin": "Spiel beitreten",
+      "multiplayerButtonJoin": "beitreten!"
+    },
+    "cards": {
+      "kg": "kg",
+      "kwh": "kwh",
+      "years": "Jahre",
+      "l": "l",
+      "price": "€",
+      "conditions": {
+        "brandNew": "brandneu",
+        "2ndHand": "gebraucht",
+        "supraRegional": "überregional",
+        "regional": "regional"
+      }
+    },
+    "waiting": {
+      "yourTurn": "Warte auf deinen Zug...",
+      "opponent": "Warte auf den Gegner...",
+      "joinID":  "Beitritts ID: "
+    },
+    "playerLeft": {
+      "left": "Spieler verlassen.",
+      "leftText": "Leider hat dein Gegner das Spiel aufgegeben."
+    },
+    "cardPlayButton": "spielen!",
+    "returnToMenu": "Zurück zum Menü.",
+    "lost": "Du hast verloren.",
+    "lostCategories": "Dein Gegner hat alle Kategorien vor dir gesammelt.",
+    "lostPoints": "Deine Emissionen überstiegen das Maximum.",
+    "win": "Du hast gewonnen!",
+    "winCategories": "Du hast alle Kategorien vor deinem Gegner gesammelt! Gut gemacht!",
+    "winPoints": "Dein Gegner hat seine maximalen Emissionen überschreitet.",
+    "endCards": "Dies sind die teuersten Karten jeder Ressource, die du gespielt hast:",
+    "endCardTexts": {
+      "CO²": "Es mag Sie überraschen zu erfahren, dass die Modeindustrie etwa 10 Prozent der jährlichen globalen Kohlendioxidemissionen produziert. Ein T-Shirt entspricht durchschnittlich 7 kg CO2-Äquivalent.",
+      "electricity": "Die Herstellung eines T-Shirts umfasst verschiedene Prozesse wie Stricken & Weben, Nassbehandlung oder Konfektionierung. Diese Prozesse erfordern etwa 10 kWh Energie.",
+      "lifetime": "Die Haltbarkeit eines T-Shirts kann oft sowohl von der Qualität des T-Shirts als auch von der Anzahl der Male, die es gewaschen wurde, beeinflusst werden. Einige T-Shirts halten 6 Monate, andere 2-5 Jahre oder länger.",
+      "water": "Bei der Produktion von Baumwolle werden etwa 2.700 Liter Wasser benötigt, um nur ein T-Shirt herzustellen, was ausreicht, um eine Person 900 Tage lang mit Wasser zu versorgen.",
+      "money": "Im Durchschnitt kann ein einfaches, schlichtes T-Shirt zwischen 5€ und 30€ kosten, während Designer- oder Marken-T-Shirts zwischen 30€ und 100€ oder mehr kosten können.",
+      "clothing": "c",
+      "electronics": "e",
+      "food": "f"
+    },
+    "clothingEndCardTexts": {
+      "header": "Ist dir bewusst, dass die Modeindustrie in etwa 10 Prozent der jährlichen globalen Kohlendioxidemissionen produziert?",
+      "tips": {
+        "1": "Profis kaufen Kleidung von guter Qualität, die langlebig ist!",
+        "2": "Profis shoppen Secondhand bzw. gebrauchte Kleidung!",
+        "3": "Profis kaufen Kleidungsstücke minimalistisch – also nur jene Teile, die sie wirklich unbedingt brauchen!"
+      },
+      "shop-it-tip": "Achte auf die Beschriftungen auf den Karten – gebrauchte Kleidung weist meist bei allen Eigenschaften (CO2, Energie, Lebenszeit, Wasser, Geld) vorteilhaftere Ergebnisse als brandneue Textilien auf.",
+      "description": "Schuld an der hohen Kohlendioxidemission der Modeindustrie ist zum Beispiel die Herstellung und Produktion von Kleidungsstücken. Diese erfordert eine Vielzahl von Prozessen (Anbau von z. B. Baumwolle, Fasern, Herstellung von Stoffen, Färben und Bedrucken von Textilien, …), welche energie- und wasserintensiv sind und zu einem hohen CO2-Austausch führen. Darüber hinaus legt unsere Kleidung häufig einen langen Transportweg zurück bis diese bei uns im Kleiderschrank landet. \nNoch verheerend ist, dass wir unsere Kleidungsstücke zum Teil nicht lange tragen und stattdessen schnell wieder durch neue Stücke ersetzen. Das schadet nicht nur der Umwelt, sondern auch unserem Geldbeutel, denn häufig neue Textilien zu kaufen, ist teuer."
+    },
+    "electronicsEndCardTexts": {
+      "header": "Hast du gewusst, dass im Jahr 2023 weltweit über 60 Millionen Tonnen Elektromüll von uns Menschen produziert wurden?",
+      "tips": {
+        "1": "Profis lassen defekte Elektronikgeräte reparieren, anstatt diese zu entsorgen!\nIst eine Reparatur nicht mehr möglich, dann wird der Elektromüll ins Altstoffsammelzentrum (ASZ) gebracht, damit die wertvollen Stoffe für neue Geräte verwendet werden (Recycling)!",
+        "2": "Profis benötigen nicht viele verschiedene und auch nicht immer die neusten Elektronikgeräte!",
+        "3": "Profis kaufen „refurbed“ (= überarbeitete/überholte) Geräte zu einem günstigeren Preis!"
+      },
+      "shop-it-tip": "Achte auf die Beschriftungen auf den Karten – gebrauchte Elektronikgeräte weisen meist bei allen Eigenschaften (CO2, Energie, Lebenszeit, Wasser, Geld) vorteilhaftere Ergebnisse als brandneue elektronische Geräte auf.",
+      "description": "Die riesige Menge an Elektromüll im letzten Jahr ist nicht sonderlich verwunderlich, wenn man bedenkt, dass seit Jahren der Konsum von Elektrogeräten, wie Smartphones, Laptops, Tablets, Fernsehern usw. drastisch gestiegen ist. Laufend werden neue, noch bessere Geräte entwickelt und zunehmend alles digitalisiert, wodurch man ohne Elektronikgeräte nur noch schwer auskommt. Noch dazu kommt, dass die elektronischen Geräte zunehmend kurzlebiger werden, also nach nur kurzer Zeit der Nutzung kaputt gehen. Eine Reparatur zahlt sich aber häufig nicht aus, da diese teilweise fast so teuer ist wie der Kauf eines neuen Gerätes.Die Herstellung von Elektronikgeräten benötigt vielerlei natürliche Ressourcen unserer Erde und produziert gleichzeitig auch hohe CO2-Emissionen z. B. durch das Verbrennen fossiler Brennstoffe. All das nur, damit die Geräte nach kurzer Zeit wieder in der Mülltonne landen. Diese Tatsachen sind natürlich alles andere als klimafreundlich."
+    },
+    "foodEndCardTexts": {
+      "header": "Hast du gewusst, dass nicht nur dein Körper darauf reagiert, welche Lebensmittel du zu dir nimmst, sondern dass du auch unser Klima damit beeinflusst?",
+      "tips": {
+        "1": "Profis kaufen regionale & saisonale Produkte!",
+        "2": "Profis ernähren sich hauptsächlich von pflanzlichen Lebensmitteln!",
+        "3": "Profis achten darauf, keine Lebensmittel zu verschwenden!"
+      },
+      "shop-it-tip": "Achte auf die Beschriftungen auf den Karten – regionale Lebensmittel sind meist besser für deine CO2-Bilanz als überregionale Lebensmittel.",
+      "description": "Je regionaler & saisonaler die Produkte sind, die wir verzehren, desto weniger Transportwege müssen in Anspruch genommen werden und desto weniger CO2-Emissionen werden produziert. Wenn wir Lebensmittel konsumieren, die nicht-saisonal sind, weisen diese häufig neben einem langen Transportweg auch einen hohen Energiebedarf auf, um die Produkte außerhalb ihrer natürlichen Wachstumszeit produzieren zu können. \nDarüber hinaus ist es klimafreundlich, tierische Produkte (wie z. B. Fleisch, Fisch, Milchprodukte usw.) nur mit Bedacht zu konsumieren, da die Tierhaltung einen hohen Beitrag zu den Treibhausgasemissionen leistet. \nWeiters sollte man bedenken, dass jedes Produkt, das produziert wird, Ressourcen verbraucht und unsere Erde mit CO2-Emissionen belastet Da wäre es doch schade, wenn es dann schlussendlich im Müll landen würde."
+    },
+    "cardProperties": {
+      "CO²": "CO²",
+      "electricity": "Energie",
+      "lifetime": "Lebenszeit",
+      "water": "Wasser",
+      "money": "Geld"
+    },
+    "cardCategories": {
+      "clothing": "Kleidung",
+      "electronics": "Elektronik",
+      "food": "Lebensmittel"
+    },
+    "highscore": {
+      "header": "Highscore",
+      "co2": "CO²",
+      "pointsSpent": "ausgegebene Punkte",
+      "electricity": "Energie",
+      "lifetime": "Lebensdauer",
+      "water": "Wasser",
+      "money": "Geld"
+    }
+  },
+  "publicScreen": {
+    "tutorial": "Tutorial",
+    "highscore": "Highscore"
+  },
+  "analytics": {
+    "highscore": {
+      "header": "Highscore",
+      "co2": "CO²",
+      "pointsSpent": "ausgegebene Punkte",
+      "electricity": "Energie",
+      "lifetime": "Lebensdauer",
+      "water": "Wasser",
+      "money": "Geld",
+      "stars": "Sterne",
+      "points": "Punkte",
+      "cardsPlayed": "Karten gespielt",
+      "units": {
+        "co2": "kg",
+        "electricity": "kwh",
+        "lifetime": "Jahre",
+        "water": "l",
+        "money": "€"
+      }
+    }
+  }
+}

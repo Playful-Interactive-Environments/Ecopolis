@@ -1,0 +1,12 @@
+{
+  "description": {
+    "title": "Survey",
+    "description": "check the state of knowledge "
+  },
+  "analytics": {
+    "highscore": {
+      "points": "Points",
+      "stars": "Stars"
+    }
+  }
+}

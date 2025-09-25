@@ -1,0 +1,101 @@
+{
+    "name": "pie-lab/gab-api",
+    "description": "Definition of the GAB REST API.",
+    "type": "library",
+    "keywords": [
+        "gab",
+        "rest",
+        "api",
+        "brainstorming"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrea Aschauer",
+            "email": "andrea.aschauer@fh-hagenberg.at",
+            "role": "Developer"
+        },
+        {
+            "name": "Wolfgang Hochleitner",
+            "email": "wolfgang.hochleitner@fh-hagenberg.at",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "pie@fh-hagenberg.at",
+        "issues": "https://github.com/Playful-Interactive-Environments/GAB/issues",
+        "source": "https://github.com/Playful-Interactive-Environments/GAB/tree/main/api"
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "ext-sodium": "*",
+        "cakephp/chronos": "^2.3",
+        "cakephp/database": "^4.4",
+        "cakephp/validation": "^4.4",
+        "casbin/casbin": "^3.21",
+        "fig/http-message-util": "^1.1",
+        "lcobucci/jwt": "^4.3",
+        "lulco/phoenix": "^2.3",
+        "monolog/monolog": "^2.8",
+        "nyholm/psr7": "^1.5",
+        "nyholm/psr7-server": "^1.0",
+        "php-di/php-di": "^7.0",
+        "phpoffice/phpspreadsheet": "^1.26",
+        "selective/array-reader": "^2.0",
+        "selective/basepath": "^2.1",
+        "selective/validation": "^2.0",
+        "slim/php-view": "^3.2",
+        "slim/slim": "^4.11",
+        "symfony/console": "^5",
+        "symfony/event-dispatcher": "^7.0",
+        "symfony/mailer": "^7.0",
+        "symfony/polyfill-uuid": "^1.27",
+        "zircote/swagger-php": "^4.6"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.13",
+        "overtrue/phplint": "^4.5",
+        "phpstan/phpstan": "^1.9",
+        "phpunit/phpunit": "^9.5",
+        "selective/test-traits": "^3.0",
+        "squizlabs/php_codesniffer": "^3.7",
+        "symfony/filesystem": "^6.0",
+        "symfony/finder": "^6.0"
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@lint",
+            "@cs:check",
+            "@sniffer:check",
+            "@phpstan",
+            "@test:coverage"
+        ],
+        "cs:check": "php-cs-fixer fix --dry-run --format=txt --verbose --diff --config=.cs.php",
+        "cs:fix": "php-cs-fixer fix --config=.cs.php",
+        "lint": "phplint ./ --exclude=vendor --no-interaction --no-cache",
+        "schema:dump": "php bin/console.php schema-dump",
+        "phpstan": "phpstan analyse -c phpstan.neon --no-progress --ansi",
+        "phoenix": "phoenix",
+        "sniffer:check": "phpcs --standard=phpcs.xml",
+        "sniffer:fix": "phpcbf --standard=phpcs.xml",
+        "test": "phpunit --configuration phpunit.xml",
+        "test:coverage": "phpunit --configuration phpunit.xml --coverage-clover build/logs/clover.xml --coverage-html build/coverage",
+        "test:scrutinizer": "phpunit --configuration phpunit.xml --do-not-cache-result --colors=always --coverage-clover build/logs/clover.xml --coverage-html build/coverage"
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "description": {
+    "title": "Map it",
+    "description": "verankere deine Ideen auf der Karte"
+  },
+  "participant": {
+  },
+  "moderatorConfig": {
+    "mapSection": "Kartenausschnitt"
+  },
+  "moderatorContent": {
+    "settingsTitle": "Ideeneinstellungen",
+    "displayAll": "Alle Anzeigen"
+  },
+  "publicScreen": {
+    "noIdeas": "Noch keine Ideen - Bleib dran."
+  }
+}

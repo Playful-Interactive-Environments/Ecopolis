@@ -1,0 +1,21 @@
+{
+  "description": {
+    "title": "Chat Storm",
+    "description": "for fast, low-threshold brainstorming"
+  },
+  "participant": {
+    "newIdeaInfo": "submit new idea",
+    "addKeywords": "Thank you for your idea. Please add some keywords to this idea.",
+    "addDescription": "Thank you for your idea. Please add a description to this idea."
+  },
+  "moderatorConfig": {
+    "showAll": "show ideas of the other participants"
+  },
+  "analytics": {
+    "highscore": {
+      "ideas": "Ideas",
+      "points": "Points",
+      "ideaCount": "Idea Count"
+    }
+  }
+}

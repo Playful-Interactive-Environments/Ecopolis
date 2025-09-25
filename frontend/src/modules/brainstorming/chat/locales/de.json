@@ -1,0 +1,21 @@
+{
+  "description": {
+    "title": "Chat Storm",
+    "description": "Für die schnelle, niederschwellige Ideenfindung"
+  },
+  "participant": {
+    "newIdeaInfo": "Neue Idee einreichen",
+    "addKeywords": "Vielen Dank für die Idee. Bitte gib ein paar Schlüsselwörter an.",
+    "addDescription": "Vielen Dank für die Idee. Bitte gib eine Beschreibung an."
+  },
+  "moderatorConfig": {
+    "showAll": "Zeige Ideen der anderen Teilnehmer"
+  },
+  "analytics": {
+    "highscore": {
+      "ideas": "Ideen",
+      "points": "Punkte",
+      "ideaCount": "Ideen Anzahl"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "icon": "heart",
+  "iconPrefix": "fas",
+  "type": "main",
+  "input": "yes",
+  "syncPublicParticipant": false,
+  "finishManuel": false
+}

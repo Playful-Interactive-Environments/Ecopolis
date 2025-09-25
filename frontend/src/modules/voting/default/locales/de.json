@@ -1,0 +1,28 @@
+{
+  "description": {
+    "title": "Rate",
+    "description": "Bewerte alle Ideen"
+  },
+  "publicScreen": {
+    "noIdeas": "Noch keine Ideen - Bleib dran.",
+    "chartDataLabel": "Ergebnis"
+  },
+  "participant": {
+    "thanks": "Danke für deine Bewertung",
+    "waiting": "Bleib dran: Ideen werden bald zur Bewertung freigegeben",
+    "back": "abschließen"
+  },
+  "moderatorContent": {
+  },
+  "moderatorConfig": {
+    "maxRate": "max. Bewertung",
+    "maxRateExample": "3"
+  },
+  "analytics": {
+    "highscore": {
+      "ratingSum": "Summe Bewertungen",
+      "averageRating": "Ø Bewertungen",
+      "bestIdeaAverageRating": "Ø Berwertung der besten Idee"
+    }
+  }
+}

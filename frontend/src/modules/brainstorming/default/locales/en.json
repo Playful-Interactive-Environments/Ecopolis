@@ -1,0 +1,34 @@
+{
+  "description": {
+    "title": "Idea Launch",
+    "description": "Default form to collect new ideas. Short description, long text, image and link can be entered. The short description is required, the other fields are optional."
+  },
+  "publicScreen": {
+    "noIdeas": "No ideas yet - stay tuned."
+  },
+  "participant": {
+    "keywordInfo": "Please provide some keywords",
+    "descriptionInfo": "Type your idea here ...",
+    "submit": "Submit idea",
+    "startGame": "No ideas? Get inspired!",
+    "linkInfo": "part image url from web",
+    "remainingCharacters":  "remaining characters ",
+    "ideas": "your ideas",
+    "loading": "loading, please wait"
+  },
+  "moderatorContent": {
+    "sortOrder": "order by",
+    "order": "drag to change the order",
+    "timestamp": "Chronological order of ideas",
+    "alphabetical": "alphabetical order of ideas",
+    "displayAll": "display all",
+    "add": "add content"
+  },
+  "analytics": {
+    "highscore": {
+      "ideas": "Ideas",
+      "points": "Points",
+      "ideaCount": "Idea Count"
+    }
+  }
+}

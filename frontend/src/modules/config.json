@@ -1,0 +1,316 @@
+{ 
+   "brainstorming": {  
+       "visualisation_master": {  
+           "publicScreen": "output/PublicScreen",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "image",  "type": "addOn",  "input": "no",  "syncPublicParticipant": false,  
+           "path": "common/visualisation_master"  
+       },  
+       "chat": {  
+           "participant": "output/Participant",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "comment-alt",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "finishManuel": true,  
+           "path": "brainstorming/chat"  
+       },  
+       "default": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "locales": "de,en,",  
+             "icon": "rocket",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "finishManuel": true,  
+           "path": "brainstorming/default"  
+       },  
+       "game": {  
+           "participant": "output/Participant",  
+           "locales": "de,en,",  
+             "icon": "bowling-ball",  "type": "addOn",  "input": "optional",  "syncPublicParticipant": false,  
+           "path": "brainstorming/game"  
+       },  
+       "map": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "map-location-dot",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "finishManuel": true,  
+           "path": "brainstorming/map"  
+       },  
+       "missionmap": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "moduleStatistic": "output/ModuleStatistic",  
+           "locales": "de,en,",  
+             "icon": "scale-unbalanced",  "type": "main",  "input": "optional",  "inputFilterTypes": "[\"task\"]",  "inputFilterCategories": "[\"brainstorming\"]",  "inputFilterModules": "[\"missionmap\"]",  "maxInputs": 1,  "syncPublicParticipant": false,  "finishManuel": true,  
+           "path": "brainstorming/missionmap"  
+       },  
+       "settings": {  
+           "parameter": "TaskParameter",  
+           "path": "brainstorming/settings"  
+       }  
+   },  
+   "categorisation": {  
+       "visualisation_master": {  
+           "publicScreen": "output/PublicScreen",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "image",  "type": "addOn",  "input": "no",  "syncPublicParticipant": false,  
+           "path": "common/visualisation_master"  
+       },  
+       "default": {  
+           "publicScreen": "output/PublicScreen",  
+           "moderatorContent": "output/ModeratorContent",  
+           "locales": "de,en,",  
+             "icon": "object-group",  "type": "main",  "input": "yes",  "syncPublicParticipant": false,  "finishManuel": true,  
+           "path": "categorisation/default"  
+       },  
+       "settings": {  
+           "parameter": "TaskParameter",  
+           "locales": "de,en,",  
+           "path": "categorisation/settings"  
+       }  
+   },  
+   "common": {  
+       "default": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "locales": "de,en,",  
+             "icon": "gamepad",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "usable": false,  "finishManuel": true,  
+           "path": "common/default"  
+       },  
+       "visualisation_master": {  
+           "publicScreen": "output/PublicScreen",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "image",  "type": "addOn",  "input": "no",  "syncPublicParticipant": false,  
+           "path": "common/visualisation_master"  
+       },  
+       "settings": {  
+           "parameter": "TaskParameter",  
+           "path": "common/settings"  
+       }  
+   },  
+   "information": {  
+       "visualisation_master": {  
+           "publicScreen": "output/PublicScreen",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "image",  "type": "addOn",  "input": "no",  "syncPublicParticipant": false,  
+           "path": "common/visualisation_master"  
+       },  
+       "brainhex": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "moduleStatistic": "output/ModuleStatistic",  
+           "locales": "de,en,",  
+             "icon": "brainhex",  "iconPrefix": "fac",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "finishManuel": false,  
+           "path": "information/brainhex"  
+       },  
+       "default": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "locales": "de,en,",  
+             "icon": "info",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "finishManuel": true,  
+           "path": "information/default"  
+       },  
+       "externalContent": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "info",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "finishManuel": true,  
+           "path": "information/externalContent"  
+       },  
+       "personalityTest": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "participantFinished": "output/ParticipantFinished",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "moduleStatistic": "output/ModuleStatistic",  
+           "locales": "de,en,",  
+           "sub_locales": "big5,brainhex,communication,logisticsJob,shopping,thinkingHats,",  
+             "icon": "face-rolling-eyes",  "iconPrefix": "fas",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "finishManuel": false,  "displayFinished": true,  
+           "path": "information/personalityTest"  
+       },  
+       "quiz": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "moduleStatistic": "output/ModuleStatistic",  
+           "locales": "de,en,",  
+             "icon": "questions-check",  "iconPrefix": "fac",  "type": "main",  "input": "no",  "syncPublicParticipant": true,  "finishManuel": false,  
+           "path": "information/quiz"  
+       },  
+       "survey": {  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "questions",  "iconPrefix": "fac",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "fallback": "quiz",  "finishManuel": false,  
+           "path": "information/survey"  
+       },  
+       "talk": {  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "comments",  "iconPrefix": "fas",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "fallback": "quiz",  "finishManuel": false,  
+           "path": "information/talk"  
+       },  
+       "settings": {  
+           "parameter": "TaskParameter",  
+           "path": "information/settings"  
+       }  
+   },  
+   "none": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "moduleStatistic": "output/ModuleStatistic",  
+           "locales": "de,en,",  
+             "icon": "times",  "iconPrefix": "fas",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "finishManuel": true,  
+           "path": "none",  
+       "settings": {  
+           "parameter": "TaskParameter",  
+           "path": "none/settings"  
+       }  
+   },  
+   "playing": {  
+       "coolit": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "moduleStatistic": "output/ModuleStatistic",  
+           "locales": "de,en,",  
+             "icon": "smog",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "usable": true,  "finishManuel": true,  
+           "path": "playing/coolit"  
+       },  
+       "default": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "locales": "de,en,",  
+             "icon": "gamepad",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "usable": false,  "finishManuel": true,  
+           "path": "playing/default"  
+       },  
+       "findit": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "moduleStatistic": "output/ModuleStatistic",  
+           "locales": "de,en,",  
+             "icon": "fire",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "usable": true,  "finishManuel": true,  
+           "path": "playing/findit"  
+       },  
+       "moveit": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "moduleStatistic": "output/ModuleStatistic",  
+           "locales": "de,en,",  
+             "icon": "route",  "type": "main",  "input": "optional",  "inputFilterTypes": "[\"task\"]",  "inputFilterCategories": "[\"brainstorming\"]",  "inputFilterModules": "[\"missionmap\"]",  "maxInputs": 1,  "syncPublicParticipant": false,  "usable": true,  "finishManuel": true,  
+           "path": "playing/moveit"  
+       },  
+       "raffle": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "clover",  "type": "main",  "input": "yes",  "disablePreview": "true",  "inputFilterTypes": "[\"task\", \"vote\"]",  "inputFilterModules": "[\"quiz\", \"survey\", \"talk\", \"personalityTest\", \"coolit\", \"findit\", \"moveit\", \"shopit\", \"brainstorming:default\", \"chat\", \"map\", \"missionmap\", \"voting:default\", \"slots\", \"vote\"]",  "maxInputs": 1,  "syncPublicParticipant": false,  "usable": true,  "finishManuel": true,  
+           "path": "playing/raffle"  
+       },  
+       "shopit": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "moduleStatistic": "output/ModuleStatistic",  
+           "locales": "de,en,",  
+             "icon": "basket-shopping",  "type": "main",  "input": "no",  "syncPublicParticipant": false,  "usable": true,  "finishManuel": true,  
+           "path": "playing/shopit"  
+       },  
+       "settings": {  
+           "parameter": "TaskParameter",  
+           "path": "playing/settings"  
+       }  
+   },  
+   "selection": {  
+       "visualisation_master": {  
+           "publicScreen": "output/PublicScreen",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "image",  "type": "addOn",  "input": "no",  "syncPublicParticipant": false,  
+           "path": "common/visualisation_master"  
+       },  
+       "default": {  
+           "publicScreen": "output/PublicScreen",  
+           "moderatorContent": "output/ModeratorContent",  
+           "locales": "de,en,",  
+             "icon": "check",  "type": "main",  "input": "yes",  "syncPublicParticipant": false,  "finishManuel": true,  
+           "path": "selection/default"  
+       },  
+       "settings": {  
+           "parameter": "TaskParameter",  
+           "locales": "de,en,",  
+           "path": "selection/settings"  
+       }  
+   },  
+   "voting": {  
+       "visualisation_master": {  
+           "publicScreen": "output/PublicScreen",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "image",  "type": "addOn",  "input": "no",  "syncPublicParticipant": false,  
+           "path": "common/visualisation_master"  
+       },  
+       "default": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "star",  "type": "main",  "input": "yes",  "syncPublicParticipant": false,  "finishManuel": false,  
+           "path": "voting/default"  
+       },  
+       "like": {  
+           "publicScreen": "output/PublicScreen",  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "heart",  "iconPrefix": "fas",  "type": "main",  "input": "yes",  "syncPublicParticipant": false,  "finishManuel": false,  
+           "path": "voting/like"  
+       },  
+       "slots": {  
+           "participant": "output/Participant",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "list",  "type": "main",  "input": "yes",  "syncPublicParticipant": false,  "finishManuel": true,  
+           "path": "voting/slots"  
+       },  
+       "vote": {  
+           "participant": "output/Participant",  
+           "moderatorContent": "output/ModeratorContent",  
+           "moderatorConfig": "output/ModeratorConfig",  
+           "locales": "de,en,",  
+             "icon": "questions-check",  "iconPrefix": "fac",  "type": "main",  "input": "yes",  "syncPublicParticipant": false,  "finishManuel": false,  
+           "path": "voting/vote"  
+       },  
+       "settings": {  
+           "parameter": "TaskParameter",  
+           "locales": "de,en,",  
+           "path": "voting/settings"  
+       }  
+   }  
+} 

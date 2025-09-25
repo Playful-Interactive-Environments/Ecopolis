@@ -1,0 +1,26 @@
+{
+  "description": {
+    "title": "Eight Ball",
+    "description": "Get inspired for new ideas"
+  },
+  "participant": {
+    "keepShaking": "keep shaking",
+    "startShaking": "Start shaking to get inspiration from other users. Use these ideas as an impetus for your own ideas.",
+    "noInspiration": "No texts would be delivered yet. Please be patient for a moment."
+  },
+  "moderatorConfig": {
+    "mode": "mode"
+  },
+  "enum": {
+    "mode": {
+      "Canvas": "canvas",
+      "Pixi": "pixi",
+      "PixiVue": "pixi VUE",
+      "PixiVueWrapped": "pixi VUE wrapped",
+      "GameEngineLite": "game engine lite",
+      "GameEngineLite2": "game engine lite 2",
+      "GameEngineLite3": "game engine lite 3",
+      "GameEngine": "game engine"
+    }
+  }
+}

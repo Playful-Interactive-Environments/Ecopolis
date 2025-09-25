@@ -1,0 +1,28 @@
+{
+  "description": {
+    "title": "Rate",
+    "description": "rate for each idea"
+  },
+  "publicScreen": {
+    "noIdeas": "No ideas yet - stay tuned.",
+    "chartDataLabel": "result"
+  },
+  "participant": {
+    "thanks": "thanks for the vote",
+    "waiting": "stay tuned: ideas will soon be released for voting",
+    "back": "finalize"
+  },
+  "moderatorContent": {
+  },
+  "moderatorConfig": {
+    "maxRate": "max rate",
+    "maxRateExample": "3"
+  },
+  "analytics": {
+    "highscore": {
+      "ratingSum": "Rating Sum",
+      "averageRating": "Ø Rating",
+      "bestIdeaAverageRating": "Ø Rating of best idea"
+    }
+  }
+}

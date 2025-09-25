@@ -1,0 +1,156 @@
+{
+  "snow": {
+    "startTime": 0,
+    "lifetime": {
+      "min": 4,
+      "max": 4
+    },
+    "ease": [
+      {
+        "s": 0,
+        "cp": 0.379,
+        "e": 0.548
+      },
+      {
+        "s": 0.548,
+        "cp": 0.717,
+        "e": 0.676
+      },
+      {
+        "s": 0.676,
+        "cp": 0.635,
+        "e": 1
+      }
+    ],
+    "frequency": 0,
+    "emitterLifetime": 0,
+    "maxParticles": 100000,
+    "addAtBack": false,
+    "pos": {
+      "x": 0,
+      "y": 0
+    },
+    "behaviors": [
+      {
+        "type": "alpha",
+        "config": {
+          "alpha": {
+            "list": [
+              {
+                "time": 0,
+                "value": 0.73
+              },
+              {
+                "time": 1,
+                "value": 0.46
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "moveSpeedStatic",
+        "config": {
+          "min": 200,
+          "max": 200
+        }
+      },
+      {
+        "type": "scale",
+        "config": {
+          "scale": {
+            "list": [
+              {
+                "time": 0,
+                "value": 0.05
+              },
+              {
+                "time": 1,
+                "value": 0.1
+              }
+            ]
+          },
+          "minMult": 0.5
+        }
+      },
+      {
+        "type": "rotation",
+        "config": {
+          "accel": 0,
+          "minSpeed": 0,
+          "maxSpeed": 50,
+          "minStart": 80,
+          "maxStart": 100
+        }
+      },
+      {
+        "type": "spawnShape",
+        "config": {
+          "type": "rect",
+          "data": {
+            "x": -5,
+            "y": -5,
+            "w": 900,
+            "h": 5
+          }
+        }
+      }
+    ]
+  },
+  "rain": {
+    "startTime": 0,
+    "lifetime": {
+      "min": 2,
+      "max": 2
+    },
+    "frequency": 0,
+    "emitterLifetime": 0,
+    "maxParticles": 10000,
+    "addAtBack": false,
+    "pos": {
+      "x": 0,
+      "y": 0
+    },
+    "behaviors": [
+      {
+        "type": "alphaStatic",
+        "config": {
+          "alpha": 1
+        }
+      },
+      {
+        "type": "moveSpeedStatic",
+        "config": {
+          "min": 500,
+          "max": 500
+        }
+      },
+      {
+        "type": "scaleStatic",
+        "config": {
+          "min": 0.1,
+          "max": 0.1
+        }
+      },
+      {
+        "type": "rotationStatic",
+        "config": {
+          "min": 90,
+          "max": 90
+        }
+      },
+      {
+        "type": "spawnShape",
+        "config": {
+          "type": "rect",
+          "data": {
+            "x": -5,
+            "y": -5,
+            "w": 900,
+            "h": 5
+          }
+        }
+      }
+    ]
+  }
+}

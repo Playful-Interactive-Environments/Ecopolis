@@ -1,0 +1,310 @@
+{
+  "description": {
+    "title": "Cool It",
+    "description": "Ein Spiel über den Treibhauseffekt."
+  },
+  "moderatorConfig": {
+    "mapSection": "Kartenabschnitt",
+    "replayable": "mehrfach spielbar",
+    "showTutorial": "Tutorial zeigen",
+    "showTutorialDisabled": "deaktiviert",
+    "showTutorialOnce": "einmalig",
+    "showTutorialAlways": "immer"
+  },
+  "moderatorContent": {
+    "settingsTitle": "Ideeneinstellungen",
+    "add": "Level hinzufügen",
+    "levelType": "Leveltyp",
+    "preConfig": "Vorkonfiguration",
+    "noPreConfig": "ohne",
+    "share": "für alle sichtbar machen"
+  },
+  "participant": {
+    "place": "Platzieren",
+    "newLevel": "neues Level erstellen",
+    "confirm": "Weiter",
+    "selectObstacle": "dieses Element verwenden",
+    "tutorial": {
+      "menu": "Tutorial",
+      "atmosphere": "Die Atmosphäre setzt sich aus unterschiedlichsten Gasen wie Sauerstoff, Stickstoff, Wasserdampf und vielen Anderen zusammen. Ohne sie wäre das Überleben auf der Erde nicht möglich. Erkundige dich vor dem spielen, welchen Einfluss die verschiedenen Gase haben. Das wird dir später helfen.",
+      "light": "Licht kommt in allen Formen von der Sonne zu uns. Das sichtbare Licht kommt durch die Atmosphäre und trifft auf die Erde. Beobachte was mit dem sichtbaren (hier gelbes) Licht passiert, wenn es auf ein Objekt trifft.",
+      "heat": "Deine Mission: der überschüssigen Wärmestrahlung Platz machen, dass sie wieder von der Erde entweichen kann. Schiebe dazu die Treibhausgase aus dem Weg. Woran liegt das eigentlich, dass die Erde wärmer wird?",
+      "play": "Der Balken oben zeigt dir die aktuelle Temperaturentwicklung an. Versuche, im mittleren Bereich zu bleiben. Wenn deine Durchschnittstemperatur oder 3 Gebäude den markierten Grenzwert über- oder unterschreiten, ist das Spiel vorbei.",
+      "button": {
+        "skip": "überspringen",
+        "continueButton": "weiter"
+      },
+      "order": {
+        "globalWarmingFactorReal": "Ordne die Treibhausgase nach CO2-Äquivalenten vom niedrigsten zum höchsten",
+        "lifespan": "Ordne die Treibhausgase nach Lebensdauer vom niedrigsten zum höchsten",
+        "rationGreenhouse": "Ordne die Treibhausgase nach ihrem Anteil an Treibhausgasen in der Atmosphäre vom niedrigsten zum höchsten"
+      },
+      "unknown": "unbekannt",
+      "heatGame": {
+        "move": "aus dem Weg schieben",
+        "dialogTitle": "Das Treibhausgas wurde von der Wärmestrahlung getroffen.",
+        "hit": "Das Treibhausgas wurde von der Wärmestrahlung getroffen und absorbiert die Wärmestrahlung für kurze Zeit.",
+        "heat": "Die absorbierte Wärmestrahlung wird in einer zufälligen Richtung wieder abgestrahlt, teilweise zurück zur Erde, die sich dadurch noch mehr aufheizt.",
+        "hitCount": "Trefferzahl",
+        "temperature": "Temperatur",
+        "goal": "Weltall",
+        "intro": "Schiebe die Treibhausgas aus dem Weg um die Wärmstrahlung entweichen zu lassen. \n\nOder lass die Treibhausgase mit der Wärmestrahlung interagieren und schau, wie die verschiedenen Gase die Temperatur beeinflussen.",
+        "intro1": "Schiebe die Treibhausgas aus dem Weg um die Wärmstrahlung entweichen zu lassen.",
+        "intro2": "Oder lass die Treibhausgase mit der Wärmestrahlung interagieren und schau, wie die verschiedenen Gase die Temperatur beeinflussen.",
+        "start": "Spiel starten"
+      }
+    },
+    "placeables": {
+      "city": {
+        "name": "Stadt"
+      }
+    },
+    "moleculeInfo": {
+      "pro": "Vorteil",
+      "contra": "Nachteil",
+      "rationAtmosphere": "Anteil an der Erdatmosphäre",
+      "rationGreenhouse": "Anteil an Treibhausgasen",
+      "impactGreenhouse": "Beitrag zum Treibhauseffekt",
+      "riseFactor": "Anstieg seit Beginn der Industrialisierung",
+      "globalWarmingFactor": "Globale Erwärmungspotenzial",
+      "lifespan": "Lebensdauer in der Atmosphäre",
+      "years": "Jahre",
+      "gwpInfo": "im Vergleich zu Kohlenstoffdioxid",
+      "none": "Wähle ein Molekül aus um dessen Informationen zu sehen.",
+      "overview": {
+        "title": "Übersicht",
+        "description": "Die Atmosphäre setzt sich aus mehreren Gasen zusammen, u.a. Stickstoff, Sauerstoff, Argon und Kohlenstoffdioxid. Lichtstrahlen können diese Gase ungehindert durchdringen. Trifft ein Lichtstahl auf die Erde wird er von der Oberfläche absorbiert und als Wärmestrahlung freigesetzt. Wärmestrahlung wird von den Treibhausgasen aufgenommen und erwärmt dadurch die Atmosphäre. Ohne diese Gase wäre es auf der Erde sehr kalt. Die Durchschnittstemperatur würde bei -18°C liegen! Obwohl die Atmosphäre aus nur 0,04% Treibhausgasen besteht reicht das aus um die Erde auf eine für uns angenehme Temperatur zu erwärmen. Allerdings je mehr Treibhausgase desto wärmer wird es. Gase und Strahlen sind farblos und sehr sehr klein. Damit du sie sehen kannst haben wir sie eingefärbt und stark vergrößert.",
+        "chart-atmosphere": "Zusammensetzung der Atmosphäre in %",
+        "chart-greenhouse": "Zusammensetzung der Treibhausgase in %",
+        "chart-greenhouse2": "Zusammensetzung der Treibhausgase in % ohne Wasserdampf",
+        "chart-greenhouse3": "Zusammensetzung der Treibhausgase in % ohne Wasserdampf und Kohlenstoffdioxid",
+        "chart-impact-greenhouse": "Einfluss der Treibhausgase in %"
+      },
+      "others": "Andere",
+      "waterVapor": {
+        "title": "Wasserdampf",
+        "description": "Wasser in seinem Gaszustand.",
+        "pros": "Weit oben in der Atmosphäre kondensiert Wasserdampf zurück in seine flüssige Form und fällt als Regen zurück auf die Erde. Unser Trinkwasser ist ein Teil von diesem natürlichen Zyklus.",
+        "cons": "Wasserdampf verursacht einen Hitzestau in der Atmosphäre. Wärmere Luft kann mehr Wasserdampf aufnehmen, was dazu führt, dass der Treibhauseffekt stärker wird, je wärmer es auf der Erde ist."
+      },
+      "carbonDioxide": {
+        "title": "Kohlenstoffdioxid",
+        "description": "CO2 ist das bekannteste Treibhausgas. Es kommt in einer erhöhten Konzentration in unserer Atmosphäre vor, welche durch den menschlichen Einfluss weiter zunimmt. Natürliche Qullen sind Lebewesen aller Art und Vulkane.",
+        "pros": "Kohlenstoffdioxid bewirkt, dass wir auf der Erde leben können und reagiert schwächer mit Wärmestrahlung als andere Teilchen.",
+        "cons": "Die stark steigende Konzentration erwärmt das Erdklima allerdings immer weiter. In den letzten 100 Jahren wurde die Konzentration nahezu verdoppelt. Kohlenstoffdioxid ist außedem für den Menschen giftig."
+      },
+      "methane": {
+        "title": "Methan",
+        "description": "Farblos, geruchlos und stark entflammbar.",
+        "pros": "Bestehend aus Kohlenstoff und Wasserstoff existiert Methan in unserer natürlichen Atmosphäre und entsteht in Sumpfgebieten, auf Reisfeldern oder durch das Züchten von Nutztieren. Das Abtragen von Kohle lässt ebenfalls natürliche Methanreservoirs frei.",
+        "cons": "Methan kann eine Menge an Hitze speichern. Aus allen Treibhausgasen wird Methan als zweit-wichtigstes Gas in dem vom Menschen verursachten Treibhauseffekt angesehen."
+      },
+      "nitrogenOxide": {
+        "title": "Distickstoffoxid",
+        "description": "Auch bekannt als \"Lachgas\".",
+        "pros": "Distickstoffoxid ist ein natürlicher Bestandteil im Stickstoff-Zyklus der Erde. Bakterien im Boden aber auch Wasser erzeugen dieses Gas.",
+        "cons": "Manche Fabriken, Kraftwerke aber auch Dünger erzeugen dieses Gas ebenfalls. Es ist ein starkes Treibhausgas welches zusätzlich auch der Ozonschicht schadet."
+      },
+      "ozone": {
+        "title": "Ozon",
+        "description": "Ein wichtiges Schild vor schädlicher Sonnenstrahlung!",
+        "pros": "Weit oben in der Atmosphäre liegt die Ozonschicht. Sie blockt schädliche Sonnenstrahlung und schützt uns vor dessen negativen Auswirkungen.",
+        "cons": "Weiter am Boden wirkt Ozon jedoch als Treibhausgas und wird üblicherweise durch die Verbrennung von Gasen in Autos oder Fabriken erzeugt."
+      },
+      "fluorinatedGases": {
+        "title": "Fluorgase",
+        "description": "Künstlich aber hoch effizient.",
+        "pros": "Fluorgase werden üblicherweise anstelle von Ozon-Schädlichen Gasen eingesetzt und können häufig in Haushaltsgeräten wie zum Beispiel einem Kühlschrank wiedergefunden werden. Manche Industrien bauen auch sehr stark auf diesen Gasen auf.",
+        "cons": "Diese Gase haben kein natürliches Vorkommen und werden künstlich hergestellt. Sie sind unglaublich starke Treibhausgase und können für mehrere tausend Jahre in der Atmosphäre verbleiben."
+      },
+      "oxygen": {
+        "title": "Sauerstoff",
+        "description": "Das Element, welches uns am Leben erhält.",
+        "pros": "Während Sauerstoff nicht das häufigste in unserer Atmosphäre ist, ist es dennoch das Wichtigste. Die meisten Lebensformen auf der Erde absorbieren dieses Gas durch das Atmen der Luft, was es zu einem essentiellen Gas macht.",
+        "cons": "Während der Nutzen in der Medizin auch riesig ist, wird Sauerstoff in der Industrie häufig als verbrennungsförderndes Gas verwendet."
+      },
+      "nitrogen": {
+        "title": "Stickstoff",
+        "description": "Das häufigste Element in unserer Atmosphäre.",
+        "pros": "Als häufigstes Gas in der Erdatmosphäre und dessen stark inerte Natur machen Stickstoff zu einem sehr nützlichen Gas in vielen Anwendungen. Es wird sowohl in seiner Gasform als auch im flüssigen Zustand häufig in der Lebensmittel- oder Chemie-Industrie verwendet.",
+        "cons": ""
+      },
+      "argon": {
+        "title": "Argon",
+        "description": "Kommt häufiger vor als Helium.",
+        "pros": "Argon ist ein Edelgas und inert, weshalb es auch in vielen Industrien verwendet werden kann. Ein Beispiel wäre der Gasschild eines Lichtbogens beim Lichtbogenschweißen.",
+        "cons": ""
+      },
+      "helium": {
+        "title": "Helium",
+        "description": "Die kälteste Substanz der Erde.",
+        "pros": "Helium ist ein Edelgas und inert. Dieses Attribut und der besonders niedrige Siedepunkt (-269°C) machen dieses Gas besonders wichtig in der Industrie.",
+        "cons": "Leider hat Helium großen Bedarf, aber geringes Vorkommen. Auf der Erde kann es hauptsächlich von natürlich vorkommenden Quellen bezogen werden."
+      }
+    },
+    "buildingInfo": {
+      "none": "Wähle ein Gebäude aus um dessen Informationen zu sehen.",
+      "building01": {
+        "title": "Wohnhaus",
+        "description": "Helle Farben und eine gute Wärmedämmung sorgen dafür, dass das Gebäude im Sommer kühl und im Winter warm bleibt."
+      },
+      "building02": {
+        "title": "Einfamilienhaus",
+        "description": "Helle Farben und eine gute Wärmedämmung sorgen dafür, dass das Gebäude im Sommer kühl und im Winter warm bleibt."
+      },
+      "building03": {
+        "title": "Mehrfamilienhaus",
+        "description": "Helle Farben und eine gute Wärmedämmung sorgen dafür, dass das Gebäude im Sommer kühl und im Winter warm bleibt."
+      },
+      "building04": {
+        "title": "Wohnhaus",
+        "description": "Dunkle Farben und eine viel Glas sorgen dafür, dass das Gebäude im Sommer sehr warm wird."
+      },
+      "glassBuilding01": {
+        "title": "Bürogebäude",
+        "description": "Glas erwärmt sich rasch und speichert diese Wärme schlecht. Das Glas gibt die Wärme vor allem an seine Umgebung wieder ab. Zudem reflektiert Glas das sichtbare Sonnenlicht stark, was die direkte Umgebung ebenfalls erwärmt."
+      },
+      "glassBuilding02": {
+        "title": "Bürogebäude",
+        "description": "Glas erwärmt sich rasch und speichert diese Wärme schlecht. Das Glas gibt die Wärme vor allem an seine Umgebung wieder ab. Zudem reflektiert Glas das sichtbare Sonnenlicht stark, was die direkte Umgebung ebenfalls erwärmt."
+      },
+      "glassBuilding03": {
+        "title": "Bürogebäude",
+        "description": "Glas erwärmt sich rasch und speichert diese Wärme schlecht. Das Glas gibt die Wärme vor allem an seine Umgebung wieder ab. Zudem reflektiert Glas das sichtbare Sonnenlicht stark, was die direkte Umgebung ebenfalls erwärmt."
+      },
+      "parkingLot01": {
+        "title": "Parkplatz",
+        "description": "Asphalt erhitzt sich schneller als begrünter Boden, und gibt diese Hitze dann auch wieder an die Umgebung ab. Dadurch ist es im Sommer auf Betonflächen auch merkbar heißer als auf begrüntem Boden."
+      },
+      "industry01": {
+        "title": "Lagerturm",
+        "description": "Dunkle Farben nehmen viel Wärme in Form von Strahlung auf. Metalle erwärme sich sehr schnell durch das Sonnenlicht. Beide erwärmen sich stark und schnell und geben diese Wärme schnell auch wieder an die Umgebung ab."
+      },
+      "industry02": {
+        "title": "Fabrik",
+        "description": "Dunkle Farben nehmen viel Wärme in Form von Strahlung auf. Metalle erwärme sich sehr schnell durch das Sonnenlicht. Beide erwärmen sich stark und schnell und geben diese Wärme schnell auch wieder an die Umgebung ab."
+      },
+      "industry03": {
+        "title": "Fabrik",
+        "description": "Dunkle Farben nehmen viel Wärme in Form von Strahlung auf. Metalle erwärme sich sehr schnell durch das Sonnenlicht. Beide erwärmen sich stark und schnell und geben diese Wärme schnell auch wieder an die Umgebung ab."
+      },
+      "industry04": {
+        "title": "Fabrik",
+        "description": "Helle Farben und eine gute Wärmedämmung sorgen dafür, dass das Gebäude im Sommer kühl und im Winter warm bleibt."
+      },
+      "trees01": {
+        "title": "Bäume",
+        "description": "Mithilfe der Photosynthese können Bäume CO2 in O2 umwandeln und verdunsten dabei Wasser zu Wasserdampf. Die Blätter sorgen somit nicht nur für einen Schatten, sondern durch das Abgeben von Wasserdampf auch für ein angenehmes Klima. Das Holz und der Wasserdampf erwärmen sich nur langsam und speichern diese Wärme gut."
+      },
+      "cow": {
+        "title": "Kühe",
+        "description": "Kühe produzieren bei der Verdauung Methan."
+      },
+      "fertilizer": {
+        "title": "Düngemittel",
+        "description": "Stickstoffdünger in der Landwirtschaft und Viehzucht sind die Hauptquellen für Distickstoffoxidemissionen."
+      }
+    },
+    "moleculeType": {
+      "greenhouseGas": "Treibhausgas",
+      "atmosphericGas": "Atmosphärisches Gas"
+    },
+    "highScore": {
+      "header": "Highscore"
+    },
+    "playDialog": {
+      "header": "Level spielen",
+      "play": "starten",
+      "cancel": "abbrechen"
+    },
+    "temperatureScale": {
+      "lowerLimit": "arktisch",
+      "upperLimit": "tropisch"
+    },
+    "playResult": {
+      "0": {
+        "title": "Oje!",
+        "message": {
+          "1": "Die Treibhausgaskonzentration in der gesamten Atmosphäre führt dazu, dass weniger Wärme von unserer Erde entweichen kann. Wäre es sinnvoll alle Treibhausgase zu entfernen? Könnten wir so das Problem lösen? Was meinst du?",
+          "2": "Leider wird zu viel von der Wärmestrahlung erneut in Richtung Erde von den Treibhausgasen abgegeben. Wenn man nur die Treibhausgaskonzentration irgendwie senken könnte … dann würde vielleicht nicht so viel Wärmestrahlung zurück auf die Erde geschickt werden.",
+          "3": "Es ist nicht leicht sich für das Klima einzusetzen. Doch für eine schöne Zukunft ist es das sicher Wert! Gemeinsam schaffen wir das – versuche es einfach nochmal!"
+        }
+      },
+      "1": {
+        "title": "Weiter so!",
+        "message": {
+          "1": "Vielleicht ist dir aufgefallen, dass die Treibhausgase nicht auf jede Strahlungsart reagiert. Versuche es nochmals und beobachte, auf was die Treibhausgase reagieren.",
+          "2": "Vielleicht ist dir aufgefallen, dass nicht alle Teilchen in der Atmosphäre auf die Wärmestrahlung reagieren. Kannst du herausfinden, welche keinen Beitrag zum Treibhauseffekt liefern?",
+          "3": "Unsere Kohlenstoffspeicher sind einfach überfordert. Aber was ist das eigentlich? Schau doch einmal im Internet nach."
+        }
+      },
+      "2": {
+        "title": "Super!",
+        "message": {
+          "1": "Du schaffst das sicher auch ein zweites Mal so gut!\nAchte auf die Umgebung – was sind denn richtige Wärmestrahler und Treibhausgas-Produzenten? Kannst du ein paar entdecken?",
+          "2": "Gibt es in deiner Schule Projekte, die dem Klima helfen? Was wäre deiner Meinung nach ein tolles Gruppenprojekt für dich und deine Freunde?",
+          "3": "Wenn du und deine Freunde sich weiterhin bemühen Energie zu sparen, dann können wir es gemeinsam schaffen!"
+        }
+      },
+      "3": {
+        "title": "Fabelhaft!",
+        "message": {
+          "1": "Du hast den Weg für die Wärmestrahlung frei machen können!\nNatürlich geht das alles etwas leichter, wenn insgesamt weniger Treibhausgase in der Atmosphäre vorkommen. Welche Treibhausgase kennst du denn eigentlich und woher kommen sie? Schau doch einmal in deinem Teilchen-Dex nach.",
+          "2": "Du hast die Temperatur nicht zu stark ansteigen lassen!\nVielleicht ist dir schon einmal aufgefallen, dass es in einer stark bebauten Stadt im Sommer sehr heiß werden kann. Hast du dir dafür schon einmal die Gebäude angesehen? Was könnte man an Gebäuden verändern, um weniger Wärmestrahlung zu verursachen?\n",
+          "3": "Dir ist es gelungen das 2-Grad-Ziel einzuhalten. Doch … was ist das eigentlich?"
+        }
+      }
+    },
+    "difficultyLevel": {
+      "veryEasy": {
+        "title": "sehr einfach",
+        "description": "Zur Zeit der Eiszeit betrug die globale Lufttemperatur -6°C. Versuch unter diesen Bedingungen einer leichten Eiszeit von nur -1°C die Temperatur in der Stadt im Gleichgewicht zu halten und die Erde vor dem Einfrieren zu bewahren, indem du Treibhausgase mit den Wärmestrahlen kollidieren lässt."
+      },
+      "easy": {
+        "title": "einfach",
+        "description": "Zu Beginn der Industrialisierung gab es keine Klimaerwärmung (globale Lufttemperatur = 0°C). Versuch unter diesen Bedingungen, die Temperatur in der Stadt im Gleichgewicht zu halten. Im Idealfall musst du nicht viel tun, weil die Atmosphäre im Gleichgewicht ist. Aber der Zufall führte auch zu Temperaturschwankungen in dieser Zeit, also greife vorsichtig ein, um diese Zufälligkeiten auszugleichen."
+      },
+      "today": {
+        "title": "heute",
+        "description": "Seit dem Beginn der Industrialisierung vor etwa 200 Jahren ist die globale Lufttemperatur aufgrund der Zunahme der Treibhausgase um mehr als 1 °C gestiegen. Versuch, die Erde kühl zu halten und zu verhindern, dass die roten Wärmestrahlen zu sehr mit den Treibhausgasen kollidieren. Aber bitte verhindere den Treibhauseffekt nicht vollständig, denn wir wollen ja auch nicht erfrieren."
+      },
+      "hard": {
+        "title": "schwer",
+        "description": "Nach dem Pariser Klimaabkommen soll der globale Anstieg der Lufttemperatur auf 2 °C begrenzt werden. Versuche unter diesen Bedingungen, die Erde kühl zu halten und zu verhindern, dass die roten Wärmestrahlen zu sehr mit den Treibhausgasen kollidieren. Aber bitte verhindere den Treibhauseffekt nicht gänzlich, denn wir wollen auch nicht erfrieren."
+      }
+    },
+    "weatherInfo": {
+      "snow": "Schneewarnung",
+      "hail": "Starkwetterwarnung",
+      "hypothermia": "ACHTUNG: Unterkühlung!",
+      "overheating": "ACHTUNG: Überhitzung!"
+    }
+  },
+  "statistic": {
+    "level": "Wie oft wurde welcher Level gespielt?",
+    "temperatureRise": "Wie oft wurde welche Schwierigkeitsstufe gespielt?",
+    "winPoints": "Wie oft wurde wieviele Punkte erzielt?",
+    "temperature": "Was war die Endtemperatur?",
+    "moleculeDecreaseCount": "Wie viele Molecule wurden neutralisiert?",
+    "moleculeMovedCount": "Wie viele Molecule wurden bewegt?",
+    "moleculeHitCount": "Wie viele Molecule wurden getroffen?",
+    "obstacleHitCount": "Wie viele Objekte wurden getroffen?",
+    "regionHitCount": "Wie viele Regionen wurden getroffen?",
+    "rayCount": "Wie viele Strahlen wurden erzeugt?",
+    "rating": "Wie oft wurden wie viele Punkte erzielt?",
+    "avatar": "Wie oft hat welcher Benutzer einen Level gespielt?",
+    "build": "Wie oft hat welcher Benutzer einen Level erstellt?",
+    "time": "Wie viele Sekunden hat es gedauert, das Level zu beenden?"
+  },
+  "publicScreen": {
+    "tutorial": "Tutorial",
+    "highscore": "Highscore"
+  },
+  "analytics": {
+    "highscore": {
+      "playTime": "Spielzeit",
+      "stars": "Sterne",
+      "points": "Punkte"
+    }
+  }
+}

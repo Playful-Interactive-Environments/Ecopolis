@@ -1,0 +1,12 @@
+{
+  "description": {
+    "title": "Umfrage",
+    "description": "Rufe den Wissensstatus ab "
+  },
+  "analytics": {
+    "highscore": {
+      "points": "Punkte",
+      "stars": "Sterne"
+    }
+  }
+}

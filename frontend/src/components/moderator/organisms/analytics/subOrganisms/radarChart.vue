@@ -1,0 +1,442 @@
+<template>
+  <div class="radarChartContainer">
+    <div
+      class="radar-chart"
+      :style="{
+        width: size + 'px',
+        height: size + 'px',
+        margin: showLabels ? '4rem' : 0,
+      }"
+    >
+      <svg :width="size" :height="size" viewBox="0 0 100 100">
+        <!-- Draw the grid -->
+        <polygon
+          v-for="level in gridLevels"
+          :key="level"
+          :points="getPolygonPoints(level)"
+          :style="{ strokeWidth: opacity ? 0.2 : 1 }"
+          class="grid-polygon"
+        ></polygon>
+
+        <!-- Draw the axes -->
+        <line
+          v-for="(label, index) in labels"
+          :key="label"
+          x1="50"
+          y1="50"
+          :x2="getAxisEnd(index, maxRadius).x"
+          :y2="getAxisEnd(index, maxRadius).y"
+          :style="{ strokeWidth: opacity ? 0.2 : 1 }"
+          class="axis-line"
+        ></line>
+
+        <!-- Draw the data polygons -->
+        <polygon
+          v-for="dataset in normalizedDatasets"
+          :key="dataset.avatar.id"
+          :points="getDataPoints(dataset.data)"
+          :fill="datasetColors[dataset.avatar.id]"
+          :fill-opacity="
+            opacity ? datasetOpacities[dataset.avatar.id] - 0.2 : 1
+          "
+          :stroke="datasetColors[dataset.avatar.id]"
+          :stroke-opacity="opacity ? datasetOpacities[dataset.avatar.id] : 1"
+          stroke-width="0.5"
+          class="radar-polygon"
+        />
+
+        <!-- Draw the average dataset polygon -->
+        <polygon
+          v-if="averageDataset && showAverage"
+          :points="getDataPoints(averageDataset.data)"
+          class="average-radar-polygon"
+        />
+        <pattern
+          id="diagonalHatch"
+          patternUnits="userSpaceOnUse"
+          width="4"
+          height="4"
+        >
+          <path
+            d="M-1,1 l2,-2
+           M0,4 l4,-4
+           M3,5 l2,-2"
+            class="hatch-path"
+          />
+        </pattern>
+      </svg>
+      <div v-if="showLabels" class="labels">
+        <div
+          v-for="(label, index) in labels"
+          :key="'label-' + index"
+          :style="getLabelPosition(index)"
+          class="radar-label"
+        >
+          <div v-if="activeLabel === label" class="selectableParticipants">
+            <font-awesome-icon
+              v-for="avatar of getParticipantsOfFilterClass(index)"
+              :key="avatar.id"
+              :icon="avatar.symbol"
+              class="avatar-icon"
+              :style="{
+                color: avatar.color,
+                fontSize: 'var(--font-size-xsmall)',
+              }"
+            />
+          </div>
+          <div>
+            <p class="twoLineText radar-label-text">
+              {{
+                $t(
+                  `module.information.personalityTest.${test}.result.${label}.name`
+                )
+              }}
+            </p>
+            <p v-if="getParticipantsOfFilterClass(index).length > 0">
+              {{ getParticipantsOfFilterClass(index).length }}
+              <font-awesome-icon icon="user" />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+import { Prop, Watch } from 'vue-property-decorator';
+import { Avatar } from '@/types/api/Participant';
+import ToolTip from '@/components/shared/atoms/ToolTip.vue';
+import TaskType from '@/types/enum/TaskType';
+
+@Options({
+  components: {
+    ToolTip,
+  },
+  emits: ['update:selectedParticipantIds'],
+})
+export default class RadarChart extends Vue {
+  @Prop({ type: Array, required: true }) readonly labels!: string[];
+  @Prop({ default: () => '' }) readonly test!: string;
+  @Prop({ default: () => '' }) readonly title!: string;
+  @Prop({ type: Array, required: true }) readonly datasets!: {
+    data: number[];
+    avatar: Avatar;
+  }[];
+  @Prop({ type: Number, default: 300 }) readonly size!: number;
+  @Prop({ type: Number, default: 5 }) readonly levels!: number;
+  @Prop({ default: { min: 0, max: 10 } }) readonly range!: {
+    min: number;
+    max: number;
+  };
+
+  @Prop({ default: 'primary' }) readonly filterClass!: string;
+  @Prop({ default: () => [] }) selectedParticipantIds!: string[];
+  @Prop({ type: Number, default: 5 }) readonly defaultColor!: string;
+
+  @Prop({ default: true }) readonly showLabels!: string;
+  @Prop({ default: true }) readonly showAverage!: string;
+  @Prop({ default: true }) readonly opacity!: string;
+
+  taskType = TaskType.INFORMATION;
+  normalizedDatasets: { data: number[]; avatar: Avatar }[] = [];
+
+  activeLabel = '';
+
+  get minValue(): number {
+    return this.range.min;
+  }
+
+  get maxValue(): number {
+    return this.range.max;
+  }
+
+  created() {
+    this.updateNormalizedDatasets();
+  }
+
+  participantSelectionChanged(ids: string[] | null, label: string) {
+    if (this.activeLabel === label) {
+      this.activeLabel = '';
+    } else {
+      this.activeLabel = label;
+    }
+    if (ids) {
+      if (JSON.stringify(this.selectedParticipantIds) === JSON.stringify(ids)) {
+        this.$emit('update:selectedParticipantIds', []);
+      } else {
+        this.$emit('update:selectedParticipantIds', ids);
+      }
+    }
+  }
+
+  @Watch('datasets', { immediate: true, deep: true })
+  updateNormalizedDatasets() {
+    this.normalizedDatasets = this.datasets
+      .map((dataset) => ({
+        ...dataset,
+        data: this.normalizeData(dataset.data),
+      }))
+      .sort(
+        (a, b) =>
+          b.data.reduce(
+            (acc: number, current: number): number => acc + current,
+            0
+          ) -
+          a.data.reduce(
+            (acc: number, current: number): number => acc + current,
+            0
+          )
+      );
+  }
+
+  get datasetColors(): Record<string, string> {
+    return this.datasets.reduce((acc, dataset) => {
+      acc[dataset.avatar.id] = this.getColor(dataset);
+      return acc;
+    }, {} as Record<string, string>);
+  }
+
+  get datasetOpacities(): Record<string, number> {
+    return this.datasets.reduce((acc, dataset) => {
+      acc[dataset.avatar.id] = this.calculateOpacity(dataset);
+      return acc;
+    }, {} as Record<string, number>);
+  }
+
+  getColor(dataset: { data: unknown[]; avatar: Avatar }): string {
+    if (this.selectedParticipantIds.includes(dataset.avatar.id)) {
+      return dataset.avatar.color;
+    }
+    return this.defaultColor;
+  }
+
+  calculateOpacity(dataset: { data: unknown[]; avatar: Avatar }): number {
+    if (this.selectedParticipantIds.includes(dataset.avatar.id)) {
+      return 1;
+    } else if (
+      !this.selectedParticipantIds.length ||
+      !this.datasets.find((dataset) =>
+        this.selectedParticipantIds.includes(dataset.avatar.id)
+      )
+    ) {
+      return 0.4;
+    }
+    return 0.11;
+  }
+
+  normalizeData(data: number[]): number[] {
+    const { min, max } = this.range;
+    const range = max - min || 1;
+    return data.map((value) => ((value - min) / range) * 100);
+  }
+
+  get averageDataset(): { data: number[]; avatar: Avatar } | null {
+    if (this.datasets.length === 0) return null;
+
+    const numDatasets = this.datasets.length;
+    const numPoints = this.labels.length;
+
+    const averageData = Array.from(
+      { length: numPoints },
+      (_, i) =>
+        this.datasets.reduce((sum, dataset) => sum + dataset.data[i], 0) /
+        numDatasets
+    );
+
+    return {
+      data: this.normalizeData(averageData),
+      avatar: { id: 'null', color: 'var(--color-evaluating)', symbol: 'null' },
+    };
+  }
+
+  get maxRadius() {
+    return 50;
+  }
+
+  get gridLevels() {
+    return Array.from({ length: this.levels }, (_, i) => (i + 1) / this.levels);
+  }
+
+  getPolygonPoints(level: number): string {
+    const radius = level * this.maxRadius;
+    const points = this.labels.map((_, index) => {
+      const { x, y } = this.getAxisEnd(index, radius);
+      return `${x},${y}`;
+    });
+    return points.join(' ');
+  }
+
+  getAxisEnd(index: number, radius: number): { x: number; y: number } {
+    const angle = (Math.PI * 2 * index) / this.labels.length - Math.PI / 2;
+    return {
+      x: 50 + radius * Math.cos(angle),
+      y: 50 + radius * Math.sin(angle),
+    };
+  }
+
+  getDataPoints(data: number[]): string {
+    const points = data.map((value, index) => {
+      const { x, y } = this.getAxisEnd(index, (value / 100) * this.maxRadius);
+      return `${x},${y}`;
+    });
+    return points.join(' ');
+  }
+
+  getLabelPosition(index: number): Record<string, string> {
+    const radius = 60; // Slightly outside the chart
+    const { x, y } = this.getAxisEnd(index, radius);
+
+    const normalizedX = (x / 100) * this.size;
+    const normalizedY = (y / 100) * this.size;
+
+    return {
+      position: 'absolute',
+      left: `${normalizedX}px`,
+      top: `${normalizedY}px`,
+      transform: 'translate(-50%, -50%)',
+      width: `${this.size / 4}px`,
+    };
+  }
+
+  getParticipantsOfFilterClass(index: number): Avatar[] {
+    switch (this.filterClass) {
+      case 'primary':
+        return this.getParticipantsOfPrimaryClass(index);
+      case 'secondary':
+        return this.getParticipantsOfSecondaryClass(index);
+      case 'exception':
+        return this.getParticipantsOfExceptionClass(index);
+    }
+    return this.getParticipantsOfPrimaryClass(index);
+  }
+
+  getParticipantsOfPrimaryClass(index: number): Avatar[] {
+    const participants: Avatar[] = [];
+
+    for (const entry of this.normalizedDatasets) {
+      if (entry.data[index] >= Math.max(...entry.data)) {
+        participants.push(entry.avatar);
+      }
+    }
+    return participants;
+  }
+
+  getParticipantsOfSecondaryClass(index: number): Avatar[] {
+    const participants: Avatar[] = [];
+
+    for (const entry of this.normalizedDatasets) {
+      const value = entry.data[index];
+      const sortedData = [...entry.data].sort((a, b) => b - a);
+      const secondMaxValue = sortedData[1];
+
+      if (value === secondMaxValue) {
+        participants.push(entry.avatar);
+      }
+    }
+    return participants;
+  }
+
+  getParticipantsOfExceptionClass(index: number): Avatar[] {
+    const participants: Avatar[] = [];
+
+    for (const entry of this.normalizedDatasets) {
+      if (entry.data[index] <= Math.min(...entry.data)) {
+        participants.push(entry.avatar);
+      }
+    }
+    return participants;
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.radarChartContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.radar-chart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-polygon {
+  fill: none;
+  stroke: #ccc;
+  will-change: transform;
+}
+
+.axis-line {
+  stroke: #666;
+  will-change: transform;
+}
+
+.radar-polygon {
+  animation: appear 0.5s ease forwards;
+  transition: all 0.5s ease;
+  will-change: fill-opacity, stroke-opacity;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.average-radar-polygon {
+  animation: appear 0.5s ease forwards;
+  fill: url(#diagonalHatch);
+  stroke: var(--color-evaluating);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.hatch-path {
+  stroke: var(--color-evaluating);
+  stroke-width: 0.6;
+}
+
+.radar-label {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xsmall);
+  color: var(--color-dark-contrast);
+  font-weight: var(--font-weight-default);
+  transition: all 0.3s ease;
+}
+
+.avatar-icon {
+  color: var(--color-dark-contrast);
+  font-size: var(--font-size-large);
+  padding: 0.2rem;
+}
+
+.classSelection {
+  font-size: var(--font-size-small);
+}
+
+.selectableParticipants {
+  position: absolute;
+  top: -1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.2rem;
+  background-color: white;
+  border-radius: var(--border-radius-small);
+  padding: 0.1rem;
+}
+</style>

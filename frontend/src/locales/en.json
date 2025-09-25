@@ -1,0 +1,804 @@
+{
+  "info": {
+    "copyToClipboard": "Successfully copied to clipboard.",
+    "accountCreated": "Your account was successfully created.",
+    "updatePublicScreen": "Successfully updated public screen.",
+    "updateParticipantState": "Successfully updated participant state.",
+    "postIdea": "Thank you for the idea! - {0}"
+  },
+  "confirm": {
+    "delete": {
+      "message": "Do you really want to delete the entry?",
+      "title": "Delete",
+      "ok": "Delete",
+      "cancel": "Cancel"
+    },
+    "clipboard": {
+      "pasteNoData": "Clipboard does not contain matching data",
+      "clipboardNotAllowed": "Not allowed to read clipboard.",
+      "clipboardInfo": "To be able to paste data from the clipboard, you must allow the page to access the clipboard, otherwise this feature will be disabled.",
+      "clipboardInfoTitle": "Allow paste data from the clipboard",
+      "clipboardInfoOk": "OK",
+      "clipboardInfoCancel": "Deny"
+    }
+  },
+  "error": {
+    "vuelidate": {
+      "Value is required": "This field must be set.",
+      "Value is not a valid email address": "Value is not a valid email address",
+      "This field should be at least 8 long": "This field should be at least 8 long",
+      "The value is not a valid URL address": "The value is not a valid URL address",
+      "required": "This field must be set.",
+      "email": "Value is not a valid email address",
+      "toShort": "The input is too short. The minimum length is ",
+      "toLong": "The input is too long. The maximum length is ",
+      "url": "The value is not a valid URL address",
+      "number": "The value is not a valid number",
+      "date": "The value is not a valid date",
+      "wrongPasswordSyntax": "Password must contain at least one lowercase and uppercase letter, a number and a special character.",
+      "passwordNotMatch": "Password repetition does not match.",
+      "keyNotMatch": "This is a prototype. You need the prototype key to test the application in this state.",
+      "keywordsRequired": "Your idea is very long, please provide some keywords.",
+      "noSelection": "Please select the data to be assigned.",
+      "validationErrors": "Not all input fields are valid. Please check your input."
+    },
+    "route": {
+      "authorisationExpired": "Please log in again -  your login has timed out. ",
+      "incorrectAuthorisationType": "Incorrect authorisation type. Please log in again."
+    },
+    "gui": {
+      "copyToClipboard": "Could not copy to clipboard."
+    },
+    "api": {
+      "general": {
+        "User has no rights for this entity": "User has no rights for this entity.",
+        "User has no rights for this service": "User has no rights for this service.",
+        "No valid access token specified": "No valid access token specified",
+        "Unauthorized": "User is not logged in or the access token has expired."
+      },
+      "login": {
+        "post": {
+          "username or password": {
+            "NotExist": "The username or password is incorrect."
+          },
+          "username": {
+            "NotConfirmed": "Email was not confirmed."
+          }
+        }
+      },
+      "register": {
+        "post": {
+          "username": {
+            "Exist": "The email address already exists."
+          }
+        }
+      },
+      "session": {
+        "post": {
+          "connectionKey": {
+            "NotValid": "Connection key is already assigned."
+          }
+        }
+      },
+      "idea": {
+        "post": {
+          "idea": {
+            "Exist": "The idea has already been submitted."
+          },
+          "taskId": {
+            "NotValid": "The task is no longer active."
+          }
+        }
+      },
+      "vote": {
+        "post": {
+          "taskId": {
+            "NotValid": "The task is no longer active."
+          }
+        }
+      },
+      "participant": {
+        "join": {
+          "noCode": "Please enter a code.",
+          "codeInvalid": "Sorry, the provided code is invalid.",
+          "Expired": "The session has expired."
+        }
+      },
+      "reconnect": {
+        "get": {
+          "browserKey": {
+            "NotExist": "Sorry, the provided code is invalid.",
+            "Expired": "The session has expired."
+          }
+        }
+      },
+      "connect": {
+        "post": {
+          "sessionKey": {
+            "NotExist": "Sorry, the provided code is invalid.",
+            "Expired": "The session has expired.",
+            "NotConfirmed": "Email was not confirmed."
+          }
+        }
+      },
+      "authorized_user": {
+        "post": {
+          "username": {
+            "NotExist": "User not exists"
+          }
+        }
+      }
+    }
+  },
+  "moderator": {
+    "atom": {
+      "imagePicker": {
+        "add": "add media"
+      }
+    },
+    "molecule": {
+      "moduleCount": {
+        "topics": "Topic",
+        "tasks": "Task",
+        "participants": "Participant",
+        "users": "Moderator"
+      },
+      "moduleCountPlural": {
+        "topics": "Topics",
+        "tasks": "Tasks",
+        "participants": "Participants",
+        "users": "Moderators"
+      },
+      "navigation": {
+        "sessions": "Sessions",
+        "profile": "Profile",
+        "settings": "Settings",
+        "userlist": "User List"
+      },
+      "sessionCode": {
+        "shareSubject": "join play.ecopolis.at session",
+        "shareBody": "connection key: @KEY \nlink: @LINK"
+      },
+      "ideaFilter": {
+        "filterPlaceholder": "filter by text...",
+        "filterByState": "filter by state",
+        "order": "order",
+        "syncActiveMessage": "Synchronization of the filter settings with the public screen enabled",
+        "syncDeactivateMessage": "Synchronization of the filter settings with the public screen disabled",
+        "sortAscending": "sort ascending",
+        "sortDescending": "sort descending",
+        "minimizeText": "minimize Texts",
+        "maximizeText": "maximize Texts",
+        "syncActive": "Enable sync of filters with public screen",
+        "syncDisable": "Disable sync of filters with public screen"
+      },
+      "sessionFilter": {
+        "filterPlaceholder": "Search...",
+        "subjectPlaceholder": "Subject",
+        "sortAscending": "sort ascending",
+        "sortDescending": "sort descending"
+      }
+    },
+    "organism": {
+      "cards": {
+        "moduleCard": {
+          "addOn": "add-on"
+        },
+        "sessionCard": {
+          "select": "Go to session",
+          "edit": "Edit Session",
+          "delete": "Delete",
+          "clone": "Clone Session",
+          "clonePrompt": "Do you really want to clone this session?"
+        },
+        "topicCard": {
+          "clone": "Clone Topic",
+          "clonePrompt": "Do you really want to clone this topic?"
+        }
+      },
+      "settings": {
+        "analytics": {
+          "header": "Analytics"
+        },
+        "sidebarSettings": {
+          "download": "download"
+        },
+        "timerSettings": {
+          "header": "Set Status",
+          "time": "Time limit",
+          "useTimer": "activate time limit",
+          "submit": "Save",
+          "deactivate": "deactivate",
+          "close": "finished",
+          "custom": "custom",
+          "on": "on",
+          "off": "off"
+        },
+        "ideaSettings": {
+          "header": "Idea settings",
+          "keywords": "short description",
+          "keywordsExample": "keywords",
+          "description": "long description",
+          "descriptionExample": "...",
+          "image": "image",
+          "imageExample": "",
+          "link": "link",
+          "linkExample": "",
+          "submit": "Save",
+          "edit": "edit",
+          "delete": "delete",
+          "statistic": "statistics",
+          "state": "change state of Idea"
+        },
+        "linkSettings": {
+          "link": "link",
+          "linkExample": "",
+          "submit": "Save"
+        },
+        "facilitatorSettings": {
+          "header": "manage co authors",
+          "info": "insert the email address of a desired co author",
+          "email": "email",
+          "role": "role",
+          "allowAnonymous": "allow everyone to view public screen",
+          "publicScreen": "Anonymous Public Link"
+        },
+        "topicDependencySettings": {
+          "header": "manage task dependencies"
+        },
+        "participantSettings": {
+          "header": "manage participants",
+          "info": "Add new participants or topicDependencySettingsdelete unused participant keys.",
+          "avatar": "avatar",
+          "browserKey": "individual connection key",
+          "ideaCount": "number of ideas submitted",
+          "voteCount": "number of votes submitted",
+          "add": "create a new participant",
+          "removeSelected": "remove selected participants",
+          "export": "export connection pdf",
+          "connectionInfo": "You have been invited to a interactive participation activity. To join the activity please enter your individual key.",
+          "connectionSubject": "Your individual ecopolis invitation",
+          "key": "key",
+          "link": "link",
+          "everyoneCanJoin": "Anyone with the public key can participate in the session."
+        },
+        "languageSettings": {
+          "header": "language settings",
+          "info": "Change display language."
+        },
+        "taskSettings": {
+          "header": "Add a Module",
+          "info": "Modules are the place where all the interaction happens.",
+          "preview-header": "Preview",
+          "preview-info": "This data serves as input for the module.",
+          "taskType": "Task type",
+          "input": "Input",
+          "source": "source",
+          "sourceTopic": "source topic",
+          "maxCount": "max count",
+          "filter": "filter",
+          "order": "order",
+          "addInput": "add input",
+          "moduleType": "Module type",
+          "title": "Title",
+          "question": "Question",
+          "questionExample": "e.g. What should be the name of our new app?",
+          "description": "Description",
+          "descriptionExample": "e.g. The purpose of the meeting is to come up with new ideas our new app.",
+          "keywords": "Keywords for timeline",
+          "keywordsExample": "keyword",
+          "submit": "Save module",
+          "saveAndActivate": "Save and activate module",
+          "edit": "Edit module",
+          "confirm": "Confirm module",
+          "confirmAndActivate": "Confirm and activate module",
+          "moduleSearch": "type in a search module name",
+          "displayAllModules": "display all modules",
+          "clone": "Clone Module",
+          "delete": "delete",
+          "move": "move",
+          "statistic": "statistics",
+          "settings": "Module settings",
+          "topic": "topic",
+          "session": "session"
+        },
+        "taskMoveSettings": {
+          "header": "Move Task",
+          "info": "Move the task to another topic or session.",
+          "topic": "topic",
+          "session": "session",
+          "submit": "move"
+        },
+        "sessionSettings": {
+          "header": "Create Session",
+          "settings": "Session settings",
+          "headerEdit": "Edit Session",
+          "info": "The session is the place that bundles all information belonging to your brainstorming adventure.",
+          "title": "Title",
+          "titleExample": "e.g. Marketing Meeting",
+          "description": "Description",
+          "descriptionExample": "e.g. The purpose of the meeting is to come up with new ideas our new app.",
+          "subject": "Subject",
+          "subjectExample": "New...",
+          "expirationDate": "Expiration Date",
+          "expirationDatePlaceholder": "Pick a day",
+          "topics": "Topics",
+          "topicsInfo": "Topics help to make a clear distinction between subjects that should have separate brainstorming modules. Tip: Keep it simple - one or two topics are usually enough!",
+          "firstTopic": "Topic 1",
+          "topicExample": "e.g. New app Name",
+          "theme": "participant view",
+          "default": "default",
+          "calendar": "calendar",
+          "submit": "Save session",
+          "customKey": "Automatic key generation",
+          "topicActivation": "topic visibility",
+          "startingPoints": "starting points",
+          "visibility": "visibility",
+          "template": "template",
+          "empty": "empty"
+        },
+        "topicSettings": {
+          "header": "Create Topic",
+          "headerEdit": "Edit Topic",
+          "info": "Topics structure your session.",
+          "title": "Title",
+          "titleExample": "e.g. What is your favourite ...",
+          "description": "Description",
+          "descriptionExample": "",
+          "submit": "Save topic",
+          "clone": "Clone Task",
+          "edit": "edit",
+          "delete": "delete",
+          "clonePrompt": "Do you really want to clone this task?",
+          "statistic": "statistics",
+          "drag": "drag and drop",
+          "settings": "topic settings",
+          "activateTopic": "activate topic",
+          "deactivateTopic": "deactivate topic"
+        }
+      },
+      "session": {
+        "overview": {
+          "header": "Your Sessions",
+          "add": "New Session",
+          "hidden": " hidden"
+        }
+      },
+      "statistics": {
+        "participantActivity": "participant activity"
+      },
+      "processTimeline": {
+        "activatePublicScreen": "display this content on the public screen",
+        "changePublicScreen": "display this item on the public screen",
+        "activateParticipant": "activate this item for the participants",
+        "deactivateParticipant": "deactivate this task for the participants",
+        "changeOrder": "change the order of the items",
+        "selectItem": "select this item",
+        "otherTopic": "topic",
+        "on": "on",
+        "off": "off"
+      },
+      "taskTimeline": {
+        "activatePublicScreen": "display this topic on the public screen",
+        "changePublicScreen": "display this task on the public screen",
+        "activateParticipant": "activate this task for the participants",
+        "deactivateParticipant": "deactivate this task for the participants",
+        "changeOrder": "change the order of the tasks",
+        "selectItem": "select this task",
+        "on": "on",
+        "off": "off"
+      },
+      "analytics": {
+        "loading": "Loading, please wait...",
+        "loadingNoTasks": "No tasks selected",
+        "collapse": "collapse",
+        "expand": "expand",
+        "tutorial": {
+          "participantSelection": {
+            "title": "Participant Selection",
+            "info": "Here you can select the participants for your session. You can filter by name or email address. Click on a participant to see their details."
+          },
+          "overview": {
+            "title": "Overview",
+            "info": "Here you can see an overview of all tasks and topics of your session. Click on a task to see the details."
+          },
+          "table": {
+            "title": "Tables",
+            "info": "Here you can see an overview of all tasks and topics of your session. Click on a task to see the details."
+          },
+          "stackedBarChart": {
+            "title": "Surveys and Quizzes",
+            "info": "Here you can see an overview of all tasks and topics of your session. Click on a task to see the details."
+          },
+          "radarChart": {
+            "title": "Typology tests",
+            "info": "Here you can see an overview of all tasks and topics of your session. Click on a task to see the details."
+          }
+        },
+        "participantSelection": {
+          "title": "Participant Selection"
+        },
+        "parallelCoordinates": {
+          "title": "Overview"
+        },
+        "tables": {
+          "selectTask": "select Task",
+          "table": "Table",
+          "title": "Tables"
+        },
+        "stackedBarCharts": {
+          "selectTask": "select Task",
+          "survey": "Survey or Quiz",
+          "title": "Surveys and Quizzes"
+        },
+        "radarCharts": {
+          "primary": "primary class",
+          "secondary": "secondary class",
+          "exception": "exception class",
+          "title": "Typology tests",
+          "noTypeSelected": "All Types",
+          "noClassSelected": "All Classes"
+        },
+        "legend": {
+          "gearIcon": "Axis value settings",
+          "listIcon": "List of ideas",
+          "participantCount": "Participant count",
+          "overUnder": "Entries over/under average",
+          "lineSolid": "Participant data line",
+          "lineDashed": "Connection over missing entries",
+          "lineAvg": "Average line"
+        },
+        "taskSelection": "Task selection"
+      }
+    },
+    "view": {
+      "login": {
+        "header": "Login",
+        "info": "Go ahead and login to access all your existing resources create new brainstorming sessions.",
+        "email": "Email",
+        "emailInfo": "Enter your email",
+        "password": "Password",
+        "passwordInfo": "Enter your password",
+        "submit": "Login",
+        "forgot": "Forgot Password?",
+        "register": {
+          "header": "New here?",
+          "info": "Go ahead and create an account if you want to use our great brainstorming tool.",
+          "submit": "Register"
+        },
+        "confirm": "Resend confirmation mail",
+        "confirmSend": "Confirmation email has been sent. Please also check your junk mail folder in case the mail does not appear."
+      },
+      "register": {
+        "header": "Register",
+        "info": "Please enter your personal info to create an account.",
+        "email": "Email",
+        "emailInfo": "Enter your email",
+        "password": "Password",
+        "passwordInfo": "Enter your password",
+        "passwordConform": "Password repeat",
+        "passwordConformInfo": "Repeat your password",
+        "submit": "Register",
+        "login": {
+          "header": "Welcome back!",
+          "info": "If you already have an account, just go ahead and login to access all\n your existing resources.",
+          "submit": "Login"
+        },
+        "prototypeKey": "prototype key",
+        "prototypeKeyInfo": "This is a prototype. You need the prototype key to test the application in this state."
+      },
+      "profile": {
+        "header": "Your Profile",
+        "info": "Email Address: ",
+        "changePassword": "Change Password",
+        "changeLanguage": "Change Language",
+        "delete": "Delete Profile",
+        "submit": "Logout"
+      },
+      "confirmEmail": {
+        "thanks": "Thank you for confirming your email. Follow the link to login.",
+        "home": "Go to login",
+        "failed": "The token for confirmation is wrong.",
+        "header": "Confirm your email",
+        "info": "Email Address: ",
+        "submit": "Confirm"
+      },
+      "changePassword": {
+        "header": "Change password",
+        "info": "Email Address: ",
+        "oldPassword": "Old Password",
+        "oldPasswordInfo": "Enter your password",
+        "newPassword": "New Password",
+        "newPasswordInfo": "Enter your new password",
+        "passwordConform": "Password repeat",
+        "passwordConformInfo": "Repeat your new password",
+        "submit": "Save"
+      },
+      "resetPassword": {
+        "header": "Reset password",
+        "info": "If you have forgotten your password, enter your email here and we will send you a link to reset your password.",
+        "email": "email",
+        "emailInfo": "Enter your email",
+        "submit": "Reset",
+        "mailSend": "Reset email has been sent. Please also check your junk mail folder in case the mail does not appear."
+      },
+      "forgetPassword": {
+        "header": "Reset password",
+        "info": "Email Address: ",
+        "newPassword": "New password",
+        "newPasswordInfo": "Enter your new password",
+        "passwordConform": "Password repeat",
+        "passwordConformInfo": "Repeat your new password",
+        "submit": "Save"
+      },
+      "sessionDetails": {
+        "addTopic": "add topic"
+      },
+      "topicDetails": {
+        "addTask": "add task",
+        "participantCount": "participants",
+        "topic": "topic",
+        "clone": "Clone Task",
+        "edit": "edit",
+        "delete": "delete",
+        "clonePrompt": "Do you really want to clone this task?",
+        "statistic": "Statistics for",
+        "settings": "task settings"
+      },
+      "userList": {
+        "header": "user list",
+        "username": "email",
+        "creationDate": "created on",
+        "confirmed": "email confirmed",
+        "ownSessions": "created sessions",
+        "sharedSessions": "sessions invited by others",
+        "confirm": "confirm"
+      }
+    }
+  },
+  "participant": {
+    "molecules": {
+      "moduleInfo": {
+        "next": "next",
+        "prev": "back"
+      }
+    },
+    "organism": {
+      "modelDefaultContainer": {
+        "timeLeft": "time left"
+      }
+    },
+    "view": {
+      "join": {
+        "header": "Ready for\nadventure?",
+        "info": "Just enter the code your moderator provided and you’re ready to go!",
+        "browserKeyInfo": "Your last individual connections have been saved. You can rejoin past sessions if the sessions are still open for participation by selecting them from the list. If you want to join a new session, please enter the new session PIN.",
+        "pinInfo": "Enter Session PIN",
+        "submit": "Join session"
+      },
+      "overview": {
+        "publicScreen": "Public View",
+        "disconnect": "Logout",
+        "avatar": "Your avatar",
+        "finishTask": "check off task",
+        "finishQuestion": "Are you sure you want to finish the task?",
+        "yes": "yes",
+        "no": "no"
+      }
+    }
+  },
+  "shared": {
+    "atom": {
+      "timer": {
+        "inactive": "inactive"
+      }
+    },
+    "organism": {
+      "imageUploader": {
+        "header": "upload and crop image",
+        "uploadText": "Drop file here or click to upload",
+        "uploadTip": "jpg/png/gif files",
+        "save": "Done"
+      },
+      "drawingUploader": {
+        "header": "create a sketch",
+        "save": "Done"
+      },
+      "game": {
+        "levelSettings": {
+          "levelName": "level name"
+        },
+        "levelBuilder": {
+          "everythingPlaced": "everything placed",
+          "maxCountPlaced": "max objects of type placed",
+          "itemSelection": {
+            "selectItem": "select placing item"
+          },
+          "paste": {
+            "header": "paste clipboard scene",
+            "text": "Do you really want to replace the current items in the scene with the clipboard?",
+            "yes": "yes",
+            "no": "no"
+          },
+          "save": {
+            "header": "save changes",
+            "text": "Do you want to save the changes in the level?",
+            "yes": "yes",
+            "no": "no"
+          }
+        }
+      }
+    },
+    "view": {
+      "home": {
+        "header": "Brainstorm to infinity and beyond!",
+        "info": "Ecopolis takes a new approach to brainstorming with multiple people. For creating new brainstorming sessions, use the Moderator tool. You can then join an existing brainstorming session via the session code.",
+        "login": "Moderator tool",
+        "join": "Join Brainstorming",
+        "imprint": "Imprint"
+      },
+      "imprint": {
+        "imprint": "Imprint",
+        "owner": "Media owner and publisher",
+        "rights": "Image rights",
+        "support": "Support",
+        "liability": "Liability",
+        "home": "Home"
+      },
+      "notFound": {
+        "header": "404 - Not found",
+        "info": "Sorry, this page does either not exist, or you are not authorized to access it.",
+        "submit": "Go to Homepage"
+      },
+      "publicScreen": {
+        "connectionKey": "connection key",
+        "title": "public screen",
+        "connectTo": "connect to"
+      }
+    }
+  },
+  "enum": {
+    "taskType": {
+      "null": "",
+      "playing": "Playing",
+      "information": "Information",
+      "brainstorming": "Brainstorming",
+      "selection": "Selection",
+      "categorisation": "Categorisation",
+      "voting": "Voting"
+    },
+    "taskCategory": {
+      "playing": "playing",
+      "informing": "informing",
+      "brainstorming": "brainstorming",
+      "structuring": "structuring",
+      "evaluating": "evaluating"
+    },
+    "ideaSortOrder": {
+      "null": "",
+      "timestamp": "chronological",
+      "alphabetical": "alphabetical",
+      "state": "status",
+      "participant": "participant",
+      "count": "frequency",
+      "hierarchy": "categorisation",
+      "view": "voting",
+      "order": "custom",
+      "input": "input source"
+    },
+    "ideaState": {
+      "new": "none",
+      "handled": "handled",
+      "duplicate": "duplicate",
+      "thumbs_down": "thumbs down",
+      "thumbs_up": "thumbs up"
+    },
+    "sessionSortOrder": {
+      "null": "",
+      "chronological": "Chronological",
+      "alphabetical": "Alphabetical",
+      "topics": "Topics",
+      "tasks": "Tasks",
+      "moderators": "Moderators",
+      "participants": "Participants"
+    },
+    "viewType": {
+      "task": "task",
+      "selection": "selection",
+      "vote": "vote",
+      "hierarchy": "hierarchy"
+    },
+    "questionType": {
+      "multiplechoice": "Multiple Choice",
+      "singlechoice": "Single Choice",
+      "order": "Order",
+      "rating": "Rating",
+      "slider": "Slider",
+      "number": "Number",
+      "text": "Text",
+      "image": "Image",
+      "info": "Info text"
+    },
+    "userType": {
+      "FACILITATOR": "facilitator",
+      "MODERATOR": "moderator",
+      "OWNER": "owner",
+      "ALL": "all"
+    },
+    "locale": {
+      "en": "english",
+      "de": "german"
+    },
+    "topicActivation": {
+      "always": "default",
+      "after_previous_started": "after all previous tasks started",
+      "after_previous_finished": "after all previous tasks finished"
+    },
+    "sessionVisibilityType": {
+      "private": "private",
+      "public": "public",
+      "template": "template"
+    }
+  },
+  "general": {
+    "back": "BACK",
+    "publicScreen": "Public Screen",
+    "moduleActive": "Active",
+    "noPublicView": "unfortunately there is no public view for this module"
+  },
+  "tutorial": {
+    "reactivate": "Reactivate Tutorial",
+    "sessionOverview": {
+      "add": "click this button to create your first session"
+    },
+    "sessionDetails": {
+      "addTopic": "A session can consist of several topics. Click this button to create your first topic.",
+      "selectTopic": "A session can consist of several topics. Click this to display the details of the topic.",
+      "changeOrder": "Change the order of the topics by drag and drop.",
+      "publicScreen": "Open public screen view.",
+      "connectionCode": "Participants can connect to this session with this code.",
+      "shareCode": "Share the code by sending an invitation to all participants.",
+      "coModerator": "Add co-moderators",
+      "participants": "Manage participants",
+      "disconnect": "Disconnect from session"
+    },
+    "topicDetails": {
+      "taskType": "You can define tasks of different types. Tasks build on each other and serve as input for further tasks. The starting point is brainstorming. By creating a first brainstorming task, the greyed-out tasks become available.",
+      "addTask": "A topic can consist of several tasks. Click this button to create your first task.",
+      "selectTask": "A topic can consist of several tasks. Click this to display the details of the task."
+    },
+    "processTimeline": {
+      "activatePublicScreen": "activate this switch to display this content on the public screen",
+      "changePublicScreen": "move the slider to change the item on the public screen",
+      "activateParticipant": "click on the cellphone to activate this item for the participants",
+      "changeOrder": "change the order of the items by drag and drop along the timeline",
+      "selectItem": "click on the item title to display the item details",
+      "showNullPublicScreen": "set the public screen slider to this position to display overview on the public screen",
+      "publicScreenForOtherTopic": "The Public Screen is assigned to a different topic. By clicking on this switch, the overview can be activated on the public screen.",
+      "showResult": "Show evaluation"
+    },
+    "taskTimeline": {
+      "activatePublicScreen": "activate this switch to display this topic on the public screen",
+      "changePublicScreen": "move the slider to change the task on the public screen",
+      "activateParticipant": "click on the cellphone to activate this task for the participants",
+      "changeOrder": "change the order of the tasks by drag and drop along the timeline",
+      "selectItem": "click on the task title to display the task details",
+      "showNullPublicScreen": "set the public screen slider to this position to display the connection key on the public screen",
+      "publicScreenForOtherTopic": "The Public Screen is assigned to a different topic. By clicking on this switch, the connection key view can be activated on the public screen."
+    },
+    "taskSettings": {
+      "input": "Tasks build on each other and serve as input for further tasks.",
+      "inputSource": "Define the sources that serve as the basis for this task.",
+      "inputMaxCount": "How many records of this source do you want to use as a basis? If no input is made, all records of the source are used.",
+      "inputFilter": "Here you can filter the data records of the selected source according to status.",
+      "inputOrder": "In which order should the source data be sorted for further processing? The sorting also determines the selection of the data sets if the field max count has a value.",
+      "inputAdd": "The task can obtain source data from several sources. Click the button to add another source.",
+      "title": "Fill in the input fields to describe the task.",
+      "module": "Several modules are available for this task type. Select a basic module (recognisable by the round radio buttons) and any number of additional modules (recognisable by the long toggle buttons).",
+      "unusedModule": "For reasons of simplicity, only those modules that have already been used by you are displayed by default.",
+      "baseModule": "Click on the radio button to expand the basic module.",
+      "additionalModule": "Activate the toggle button to activate the supplementary module.",
+      "searchModule": "Search module by name."
+    }
+  }
+}

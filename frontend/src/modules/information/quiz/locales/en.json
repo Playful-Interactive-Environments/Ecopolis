@@ -1,0 +1,70 @@
+{
+  "description": {
+    "title": "Quiz",
+    "description": "check the state of knowledge "
+  },
+  "moderatorConfig": {
+    "answerCount": "answer options",
+    "moderatedQuestionFlow": "moderated question flow",
+    "questionType": "questionnaire type",
+    "time": "time",
+    "showResult": "show explanation",
+    "answerCountExample": "3",
+    "theme": "theme",
+    "paper": "paper",
+    "interview": "interview",
+    "default": "default"
+  },
+  "moderatorContent": {
+    "questionType": "question type",
+    "question": "question",
+    "questionExample": "what is ...",
+    "detailInfos": "detail information",
+    "detailInfosExample": "This means ...",
+    "explanation": "explanation after answering",
+    "explanationExample": "the answer of the question is ...",
+    "answer": "answer",
+    "answerExample": "option",
+    "minValue": "min value",
+    "maxValue": "max value",
+    "correctValue": "correct value",
+    "submit": "save",
+    "addAnswer": "add answer",
+    "noQuestionSelected": "No question selected.",
+    "hasAnswer": "has correct answer",
+    "dependency": "dependency",
+    "none": "none"
+  },
+  "publicScreen": {
+    "chartDataLabelCorrect": "correct",
+    "chartDataLabelIncorrect": "incorrect",
+    "chartDataLabelResult": "participants"
+  },
+  "participant": {
+    "thanksModerated": "Your answer has been saved.",
+    "thanksIndividual": "Your answer has been saved.",
+    "previous": "previous",
+    "next": "next",
+    "submit": "Save",
+    "waiting": "Please wait. Questions and answers are being loaded.",
+    "imageKeywords": "image caption",
+    "good": "fully applies",
+    "bad": "strongly disagree",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "enum": {
+    "questionType": {
+      "quiz": "quiz",
+      "survey": "survey",
+      "talk": "talk"
+    }
+  },
+  "analytics": {
+    "highscore": {
+      "points": "Points",
+      "stars": "Stars",
+      "sumCorrect": "Correct answers"
+    }
+  }
+}

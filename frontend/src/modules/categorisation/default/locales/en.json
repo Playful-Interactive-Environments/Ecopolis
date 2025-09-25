@@ -1,0 +1,29 @@
+{
+  "description": {
+    "title": "Categorisation",
+    "description": "Define categories and assign ideas"
+  },
+  "moderatorContent": {
+    "categoryName": "Name",
+    "categoryNamePlaceholder": "new category name ...",
+    "submit": "+",
+    "add": "Add category",
+    "dragIdea": "Move idea here",
+    "sortOrder": "order by",
+    "undefined": "uncategorised",
+    "displayAll": "display all"
+  },
+  "settings" : {
+    "header": "Add/Edit category",
+    "info": "Give the category a name",
+    "title": "Name",
+    "titleExample": "test category",
+    "description": "description",
+    "descriptionExample": "",
+    "image": "image",
+    "link": "link",
+    "color": "color",
+    "submit": "save category",
+    "undefined": "uncategorised"
+  }
+}

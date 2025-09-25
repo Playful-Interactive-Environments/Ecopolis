@@ -1,0 +1,17 @@
+{
+  "description": {
+    "title": "Frame",
+    "description": "Zeige externe Inhalte"
+  },
+  "moderatorConfig": {
+    "link": "Link zu externen Inhalten",
+    "pdf": "Lade eine PDF hoch (überschreibt link)",
+    "invalid": "Ungültiger Link oder Dateientyp.",
+    "participantView": "Teilnehmer sehen Inhalt auf ihren Geräten",
+    "preview": "Vorschau: ",
+    "upload": "Hochladen"
+  },
+  "participant": {
+    "participantViewFalse": "Teilnehmeransicht wurde von Moderator blockiert."
+  }
+}

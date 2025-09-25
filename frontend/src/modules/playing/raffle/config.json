@@ -1,0 +1,12 @@
+{
+  "icon": "clover",
+  "type": "main",
+  "input": "yes",
+  "disablePreview": "true",
+  "inputFilterTypes": "[\"task\", \"vote\"]",
+  "inputFilterModules": "[\"quiz\", \"survey\", \"talk\", \"personalityTest\", \"coolit\", \"findit\", \"moveit\", \"shopit\", \"brainstorming:default\", \"chat\", \"map\", \"missionmap\", \"voting:default\", \"slots\", \"vote\"]",
+  "maxInputs": 1,
+  "syncPublicParticipant": false,
+  "usable": true,
+  "finishManuel": true
+}

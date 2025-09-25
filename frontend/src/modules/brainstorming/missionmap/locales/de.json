@@ -1,0 +1,189 @@
+{
+  "description": {
+    "title": "Maßnahmen",
+    "description": "unterstütze mit deinen erspielten Wählerstimmen Maßnahmen"
+  },
+  "participant": {
+    "rate": "Rate",
+    "description": "Beschreibung",
+    "explanation": "Stellungnahme",
+    "freeExplanation": "Freier Text für eigene Erklärung oder Antwortvorschlag",
+    "save": "speichern",
+    "cancel": "abbrechen",
+    "yourPart": "dein Anteil",
+    "sort": "Massnahmen sortieren",
+    "points": "Punkte",
+    "finished": {
+      "header": "Aufgabe abschließen",
+      "text": "Möchten Sie diese Aufgabe beenden, um zur nächsten überzugehen?",
+      "yes": "ja",
+      "no": "nein"
+    },
+    "tabs": {
+      "measures": "Maßnahmen",
+      "statistic": "Status",
+      "influenceAreas": "Entwicklung",
+      "electricity": "Elektrizität",
+      "map": "Karte"
+    },
+    "add": "eigenen Vorschlag hinzufügen",
+    "chart": {
+      "x": "Maßnahmen",
+      "y-influenceAreas": "Entwicklung der Gesellschaft",
+      "y-electricity": "Stromanteil in %",
+      "y-electricityAmount": "Stromverbrauch für ganz Österreich in TWh",
+      "y-electricity1": "Stromanteil in % Ausgangssituation",
+      "y-electricity2": "Stromanteil in % druch gemeinsam vereinbarten Maßnahmen"
+    },
+    "loi": {
+      "title": "Unterstützungserklärung",
+      "name": "Kurzbezeichnung",
+      "no": "Registrierungsnummer",
+      "description": "Text des Volksbegehrens",
+      "points": "Wählerstimmen einsetzen",
+      "participation": "Bisherige Beteiligung",
+      "count": "Anzahl der Wählerstimmen",
+      "minCount": "Mindestens benötigte Wählerstimmen",
+      "explanation": "Stellungnahme",
+      "spent": "unterstützen mit $count Wählerstimmen",
+      "spentHeader": "weitere Wählerstimmen für die Maßnahme ausgeben",
+      "nothingToSpent": "du hast derzeit zu wenig Punkte um für dieses Maßnahme weiteren Wählerstimmen zu vergeben",
+      "maxSpent": "du hast bereits die maximalle mögliche Unterstützung für diese Maßnahme vergeben",
+      "maxSpentAll": "es wurde bereits die maximalle mögliche Unterstützung für diese Maßnahme vergeben",
+      "new": "davon neu",
+      "target": "insgesamt benötigt",
+      "actual": "bereits erhalten",
+      "own": "dein Anteil",
+      "minParticipants": "Mindestanzahl der Teilnehmer",
+      "countParticipants": "Anzahl der Teilnehmer"
+    }
+  },
+  "moderatorConfig": {
+    "mapSection": "Kartenausschnitt",
+    "effectElectricity": "Beeinflusst den Strommix",
+    "allowParticipationMeasures": "Teilnehmer dürfen ihre eigenen Maßnahmen vorschlagen",
+    "minParticipants": "Defaultwert für mindestens erforderliche Teilnehmer",
+    "minPoints": "Defaultwert für erforderliche Mindestpunktzahl pro Teilnehmer",
+    "maxPoints": "Defaultwert für maximal zu vergebende Punkte pro Teilnehmer",
+    "explanation": "allgemeine Textvorschläge für die Stellungnahmen der Teilnehmer zu den einzelnen Maßnahmen",
+    "maxRatingStars": "maximale Bewertungssterne",
+    "startingPoint": "Ausgangssituation",
+    "insertInitProgressionFromInput": "Startprogression von der Eingabe einfügen",
+    "theme": "Thema",
+    "preparation": "Vorbereitung",
+    "meeting": "Sitzung",
+    "default": "Standard",
+    "addExplanation": "hinzufügen"
+  },
+  "moderatorContent": {
+    "settingsTitle": "Ideeneinstellungen",
+    "displayAll": "Alle Anzeigen",
+    "add": "Info hinzufügen",
+    "points": "Benötigte Summe an Punkten",
+    "minParticipants": "mindestens erforderliche Teilnehmer",
+    "minPoints": "erforderliche Mindestpunktzahl pro Teilnehmer",
+    "maxPoints": "maximal zu vergebende Punkte pro Teilnehmer",
+    "explanation": "Textvorschläge für die Kommentare der Teilnehmer zu dieser Maßnahme",
+    "electricityInfluence": "Einfluss auf Strommix",
+    "mapLocation": "Standort",
+    "share": "für alle sichtbar machen",
+    "evaluation": "Bewertung",
+    "reason": "Begründung für die Ablehnung",
+    "save": "speichern",
+    "reasonsForRejection": "Begründe deine Ablehnung",
+    "electricityValidationErrors": "Stromsumme muss 0 sein, bitte die Werte so anpassen, dass die Summe wieder 0 ist anstelle von ",
+    "addExplanation": "hinzufügen",
+    "impact": "Auswirkungen auf",
+    "electricity": {
+      "none": "0",
+      "min-demand": "Reduktion",
+      "max-demand": "Erhöhung",
+      "min-supply": " geringere Deckung des Gesamtbedarfs",
+      "max-supply": " zusätzliche Deckung des Gesamtbedarfs"
+    },
+    "ratingChart": "Verteilung der Ratings",
+    "orderChart": "Verteilung der Sortierreihenfolge",
+    "future": "Zukunft"
+  },
+  "publicScreen": {
+    "noIdeas": "Noch keine Ideen - Bleib dran."
+  },
+  "statistic": {
+    "input": "Ausgangswerte",
+    "current": "aktuelle Wert",
+    "rating": "Bewertung pro Idee",
+    "order": "Reihenfolge pro Idee",
+    "pointsSpent": "ausgegebene Punkte pro Idee",
+    "pointsCollected": "gesammelte Punkte pro User",
+    "explanation": "Erklärung pro Idee",
+    "ownIdeas": "eigene Ideen",
+    "progress": "Entwicklung"
+  },
+  "gameConfig": {
+    "eco": "Umwelt",
+    "social": "Soziales",
+    "business": "Wirtschaft"
+  },
+  "enum": {
+    "progress": {
+      "origin": "Ausgang",
+      "progress": "Ergebniss",
+      "general": "gemeinsam",
+      "own": "eigener Anteil",
+      "ownFuture": "eigener Weg"
+    },
+    "progressLong": {
+      "origin": "Ausgangssituation",
+      "general": "gemeinsamer Fortschritte",
+      "own": "eigener Anteil am gemeinsamen Fortschritt",
+      "ownFuture": "eigener Weg"
+    },
+    "electricityInfluence": {
+      "increase_electricity_demand": "Strombedarf erhöhen",
+      "change_electricity_supply": "Stromzusammensetzung ändern"
+    },
+    "electricityConsumption": {
+      "industry": "Industrie",
+      "traffic": "Verkehr",
+      "services": "Dienstleistungen",
+      "household": "Private Haushalt",
+      "agriculture": "Landwirtschaft"
+    },
+    "influenceScale": {
+      "-5": "Verschlechterung",
+      "0": "unverändert",
+      "5": "Verbesserung"
+    },
+    "influenceResult": {
+      "-10": "dingender Handlungsbedarf",
+      "-9": "dingender Handlungsbedarf",
+      "-8": "dingender Handlungsbedarf",
+      "-7": "dingender Handlungsbedarf",
+      "-6": "dingender Handlungsbedarf",
+      "-5": "Handlungsbedarf",
+      "-4": "Handlungsbedarf",
+      "-3": "Handlungsbedarf",
+      "-2": "verbesserungswürdig",
+      "-1": "verbesserungswürdig",
+      "0": "verbesserungswürdig",
+      "1": "verbesserungswürdig",
+      "2": "verbesserungswürdig",
+      "3": "auf einen guten Weg",
+      "4": "auf einen guten Weg",
+      "5": "auf einen guten Weg",
+      "6": "ideale Entwicklung",
+      "7": "ideale Entwicklung",
+      "8": "ideale Entwicklung",
+      "9": "ideale Entwicklung",
+      "10": "ideale Entwicklung"
+    }
+  },
+  "analytics": {
+    "highscore": {
+      "ideas": "Ideen",
+      "points": "Punkte",
+      "ideaCount": "Ideen Anzahl",
+      "pointsSpent": "ausgegebene Punkte"
+    }
+  }
+}

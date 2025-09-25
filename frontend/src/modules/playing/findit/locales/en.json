@@ -1,0 +1,184 @@
+{
+  "description": {
+    "title": "Save It",
+    "description": "Find and collect possible hazards to prevent the environmental damage!"
+  },
+  "moderatorConfig": {
+    "mapSection": "map section",
+    "replayable": "replayable",
+    "showTutorial": "show tutorial",
+    "showTutorialDisabled": "disabled",
+    "showTutorialOnce": "once",
+    "showTutorialAlways": "always",
+    "placeables": "weather",
+    "all": "all"
+  },
+  "moderatorContent": {
+    "tabs": {
+      "play": "play",
+      "edit": "edit"
+    },
+    "add": "add level",
+    "levelType": "level type",
+    "preConfig": "pre-configuration",
+    "noPreConfig": "none",
+    "share": "make it visible to all"
+  },
+  "participant": {
+    "lostText": "You have unfortunately not found a dangerous object for too long, which has now caused a damage. You have lost, please try again.",
+    "win": "Completed!",
+    "winText": "You managed to save the environment from the hazardous objects!",
+    "lost": "Not in time!",
+    "newLevel": "create new level",
+    "place": "Place",
+    "play": "Start",
+    "tutorial": {
+      "menu": "tutorial",
+      "placing": "Building:\nClick on any spot in the scene to get a list of placeable objects and choose one of those objects to place it.\nMove the object by drag and drop and rotate, scale or delete the selected object by using the toolbar button.",
+      "finding": "Searching: \nScattered throughout this scene are dangerous hazards. Collect them by clicking on them and prevent a massive disaster before it is too late!\nUse the magnifying glass to look behind trees and other view obstructing objects."
+    },
+    "collectable": "very good, this object was searched for",
+    "not-collectable": "this object does not belong here, but is not wanted in this case",
+    "not-searched": "this object belong here",
+    "correct": "correct",
+    "incorrect": "incorrect",
+    "placeables": {
+      "fire": {
+        "name": "fire",
+        "hazards": {
+          "cigarette": {
+            "name": "Cigarette",
+            "description": "Cigarettes which haven't been extinguished properly are one of the most severe fire hazards out there. They get thrown out of cars or get left behind by hikers on their way to the top."
+          },
+          "campfire": {
+            "name": "Campfire",
+            "description": "Campfires can be rekindled by the wind, causing a forest fire."
+          },
+          "dead-tree": {
+            "name": "dead Tree",
+            "description": "Dead trees can dry out, which increases the risk of them catching fire."
+          },
+          "bottle":{
+            "name": "Glass Bottle",
+            "description": "Well done! This object does not belong in nature. Although glass bottles can only very rarely cause fires, they can do so under certain conditions. Animals can also be injured by broken glass. So pick it up and dispose of it properly!"
+          }
+        },
+        "red_herring": {
+          "turtle": {
+            "name": "Turtles",
+            "description": "Turtles do not occur naturally in our area. Exposed in the forest, they are defenseless."
+          },
+          "bug": {
+            "name": "Bugs",
+            "description": "Beetles are part of the natural ecosystem, form the basis of the food chain for other animals and loosen the soil. Their survival is therefore important for the survival of the forest and other animals."
+          },
+          "oil": {
+            "name": "Oil Canister",
+            "description": "Oil can get into the environment and contaminate/poison the environment."
+          },
+          "electricalScrap": {
+            "name": "Electrical Scrap",
+            "description": "Batteries in e-waste can get into the environment and contaminate/poison the environment."
+          },
+          "plastic_bottle":{
+            "name": "Plastic Bottle",
+            "description": "This object does not belong here, but is not wanted in this case. Plastic bottles do not decompose and remain in nature for many years. They can also be dangerous for animals. So pick it up and dispose of it properly!"
+          }
+        }
+      },
+      "flood": {
+        "name": "flood",
+        "hazards": {
+          "fish": {
+            "name": "Fish",
+            "description": "Fishes can be stranded after the flood and need to be rescued."
+          },
+          "sandbag": {
+            "name": "Sandbag",
+            "description": "Sandbags have to be removed after the flood is over, as they are blocking paths and streets."
+          },
+          "animal": {
+            "name": "Animal",
+            "description": "Animals can drown."
+          },
+          "garbage": {
+            "name": "Garbage",
+            "description": "Garbage can be carried away by the flood and must be collected again later in order to not pollute the environment."
+          },
+          "branches": {
+            "name": "Branches",
+            "description": "Branches and Driftwood can be washed into the streets and have to be cleaned up."
+          },
+          "bottle":{
+            "name": "Glass Bottle",
+            "description": "Well done! This object does not belong in nature. Glass bottles do not rot and remain in nature for many years. Animals can injure themselves on broken glass. So pick it up and dispose of it properly!"
+          },
+          "plastic_bottle": {
+            "name": "Plastic Bottle",
+            "description": "Well done! This object does not belong in nature. Plastic bottles do not decompose and remain in nature for many years. They can also be dangerous for animals. So pick it up and dispose of it properly!"
+          },
+          "oil": {
+            "name": "Oil Canister",
+            "description": "Oil can get into the water and contaminate/poison the environment."
+          },
+          "electricalScrap": {
+            "name": "Electrical Scrap",
+            "description": "Batteries in e-waste can get into the water and contaminate/poison the environment."
+          }
+        },
+        "red_herring": {
+          "turtle": {
+            "name": "Turtles",
+            "description": "Turtles do not occur naturally in our area. Exposed in the forest, they are defenseless."
+          },
+          "bug": {
+            "name": "Bugs",
+            "description": "Beetles are part of the natural ecosystem, form the basis of the food chain for other animals and loosen the soil. Their survival is therefore important for the survival of the forest and other animals."
+          }
+        }
+      }
+    },
+    "collectKey": {
+      "dispose": "dispose",
+      "recycle": "recycle",
+      "leave": "leave",
+      "rescue": "rescue"
+    },
+    "returnToMenu": "Return to Menu.",
+    "categorisationButtons": {
+      "flammable": "fire hazard",
+      "non-flammable": "no hazard"
+    },
+    "highscore": {
+      "header": "highscore",
+      "collected": "collected",
+      "classified": "classified",
+      "time": "time"
+    }
+  },
+  "statistic": {
+    "level": "How many times was which level played?",
+    "rating": "How many times how many points were scored?",
+    "play": "How often has which user played a level?",
+    "build": "How often has which user created a level?",
+    "time": "How many seconds did it take to finish the level?",
+    "item": {
+      "play": "How often was which item found?",
+      "build": "How often was which item hidden?"
+    },
+    "itemCount": {
+      "play": "How many items were found?",
+      "build": "How many items were hidden?"
+    }
+  },
+  "publicScreen": {
+    "tutorial": "tutorial",
+    "highscore": "highscore"
+  },
+  "analytics": {
+    "highscore": {
+      "stars": "Stars",
+      "points": "Points"
+    }
+  }
+}

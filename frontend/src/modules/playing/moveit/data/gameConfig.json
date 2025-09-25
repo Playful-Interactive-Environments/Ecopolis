@@ -1,0 +1,453 @@
+{
+  "particles": {
+    "carbonDioxide": {
+      "color": "#fe6e5d",
+      "calculation": "trackingData.consumption * fuelValue",
+      "tireProportion": 0
+    },
+    "dust": {
+      "color": "#1d2948",
+      "calculation": "trackingData.consumption * fuelValue + trackingData.tireWareRate * 5",
+      "tireProportion": 5
+    },
+    "methane": {
+      "color": "#f3a40a",
+      "calculation": "trackingData.consumption * fuelValue",
+      "tireProportion": 0
+    },
+    "microplastic": {
+      "color": "#0192d0",
+      "calculation": "trackingData.tireWareRate * 10",
+      "tireProportion": 10
+    }
+  },
+  "vehicles": {
+    "car": {
+      "icon": "car",
+      "tires": 4,
+      "types": [
+        {
+          "requirementCount": 1,
+          "name": "sport",
+          "image": "sport-car.png",
+          "imageTop": "sport-car-top.png",
+          "fuel": "gasoline",
+          "power": 300,
+          "speed": 300,
+          "mpg": 10,
+          "acceleration": 2,
+          "persons": 2,
+          "flowResistance": 0.28,
+          "profileArea": 1.5,
+          "weight": 800,
+          "rollingResistanceCoefficient": 0.015,
+          "tireAbrasion": 0.18,
+          "efficiency": 0.3,
+          "treadwear": 200,
+          "tireDiameter": 0.5,
+          "tireWidth": 0.2,
+          "tireWareEmissionFactors": 13
+        },
+        {
+          "requirementCount": 1,
+          "name": "suv",
+          "image": "suv.png",
+          "imageTop": "suv-top.png",
+          "fuel": "diesel",
+          "power": 200,
+          "speed": 250,
+          "mpg": 9,
+          "acceleration": 3,
+          "persons": 5,
+          "flowResistance": 0.5,
+          "profileArea": 2.3,
+          "weight": 1400,
+          "rollingResistanceCoefficient": 0.015,
+          "tireAbrasion": 0.16,
+          "efficiency": 0.3,
+          "treadwear": 200,
+          "tireDiameter": 0.5,
+          "tireWidth": 0.2,
+          "tireWareEmissionFactors": 18
+        },
+        {
+          "requirementCount": 2,
+          "name": "e-suv",
+          "image": "e-suv.png",
+          "imageTop": "e-suv-top.png",
+          "fuel": "electricity",
+          "power": 200,
+          "speed": 250,
+          "mpg": 29,
+          "acceleration": 3,
+          "persons": 5,
+          "flowResistance": 0.5,
+          "profileArea": 2.3,
+          "weight": 1500,
+          "rollingResistanceCoefficient": 0.015,
+          "tireAbrasion": 0.16,
+          "efficiency": 0.99,
+          "treadwear": 200,
+          "tireDiameter": 0.5,
+          "tireWidth": 0.2,
+          "tireWareEmissionFactors": 19
+        },
+        {
+          "requirementCount": 0,
+          "name": "compact",
+          "image": "compact-car.png",
+          "imageTop": "compact-car-top.png",
+          "fuel": "gasoline",
+          "power": 120,
+          "speed": 150,
+          "mpg": 5,
+          "acceleration": 5,
+          "persons": 2,
+          "flowResistance": 0.3,
+          "profileArea": 1.6,
+          "weight": 600,
+          "rollingResistanceCoefficient": 0.015,
+          "tireAbrasion": 0.1,
+          "efficiency": 0.25,
+          "treadwear": 200,
+          "tireDiameter": 0.5,
+          "tireWidth": 0.2,
+          "tireWareEmissionFactors": 8
+        },
+        {
+          "requirementCount": 2,
+          "name": "e-car",
+          "image": "e-car.png",
+          "imageTop": "e-car-top.png",
+          "fuel": "electricity",
+          "power": 150,
+          "speed": 150,
+          "mpg": 17,
+          "acceleration": 3,
+          "persons": 5,
+          "flowResistance": 0.25,
+          "profileArea": 1.6,
+          "weight": 900,
+          "rollingResistanceCoefficient": 0.015,
+          "tireAbrasion": 0.12,
+          "efficiency": 0.99,
+          "treadwear": 200,
+          "tireDiameter": 0.5,
+          "tireWidth": 0.2,
+          "tireWareEmissionFactors": 15
+        }
+      ]
+    },
+    "motorcycle": {
+      "icon": "motorcycle",
+      "tires": 2,
+      "types": [
+        {
+          "requirementCount": 4,
+          "name": "moped",
+          "image": "motorcycle.png",
+          "imageTop": "motorcycle-top.png",
+          "fuel": "gasoline",
+          "power": 15,
+          "speed": 60,
+          "mpg": 2.5,
+          "persons": 1,
+          "flowResistance": 0.8,
+          "profileArea": 0.7,
+          "weight": 130,
+          "rollingResistanceCoefficient": 0.015,
+          "tireAbrasion": 0.018,
+          "efficiency": 0.25,
+          "treadwear": 200,
+          "tireDiameter": 0.6,
+          "tireWidth": 0.1,
+          "tireWareEmissionFactors": 4
+        },
+        {
+          "requirementCount": 4,
+          "name": "e-moped",
+          "image": "e-scooter.png",
+          "imageTop": "e-scooter-top.png",
+          "fuel": "electricity",
+          "power": 30,
+          "speed": 60,
+          "mpg": 1,
+          "persons": 1,
+          "flowResistance": 0.8,
+          "profileArea": 0.7,
+          "weight": 150,
+          "rollingResistanceCoefficient": 0.015,
+          "tireAbrasion": 0.018,
+          "efficiency": 0.99,
+          "treadwear": 200,
+          "tireDiameter": 0.6,
+          "tireWidth": 0.1,
+          "tireWareEmissionFactors": 4.3
+        },
+        {
+          "requirementCount": 4,
+          "name": "motorcycle",
+          "image": "motorbike.png",
+          "imageTop": "motorbike-top.png",
+          "fuel": "gasoline",
+          "power": 48,
+          "speed": 175,
+          "mpg": 4.5,
+          "acceleration": 5.5,
+          "persons": 1,
+          "flowResistance": 0.8,
+          "profileArea": 0.7,
+          "weight": 200,
+          "rollingResistanceCoefficient": 0.015,
+          "tireAbrasion": 0.018,
+          "efficiency": 0.25,
+          "treadwear": 200,
+          "tireDiameter": 0.6,
+          "tireWidth": 0.1,
+          "tireWareEmissionFactors": 5
+        },
+        {
+          "requirementCount": 5,
+          "name": "city",
+          "image": "bike.png",
+          "imageTop": "bike-top.png",
+          "fuel": "none",
+          "speed": 40,
+          "persons": 1,
+          "flowResistance": 0.8,
+          "profileArea": 0.6,
+          "weight": 17,
+          "rollingResistanceCoefficient": 0.01,
+          "tireAbrasion": 0.006,
+          "efficiency": 0.99,
+          "treadwear": 200,
+          "tireDiameter": 0.8,
+          "tireWidth": 0.05,
+          "tireWareEmissionFactors": 1
+        },
+        {
+          "requirementCount": 5,
+          "name": "e-bike",
+          "image": "e-bike.png",
+          "imageTop": "e-bike-top.png",
+          "fuel": "electricity",
+          "speed": 50,
+          "mpg": 0.5,
+          "persons": 1,
+          "flowResistance": 0.8,
+          "profileArea": 0.6,
+          "weight": 50,
+          "rollingResistanceCoefficient": 0.01,
+          "tireAbrasion": 0.006,
+          "efficiency": 0.99,
+          "treadwear": 200,
+          "tireDiameter": 0.8,
+          "tireWidth": 0.05,
+          "tireWareEmissionFactors": 1
+        }
+      ]
+    },
+    "bus": {
+      "icon": "bus",
+      "tires": 4,
+      "types": [
+        {
+          "requirementCount": 3,
+          "name": "bus",
+          "image": "bus.png",
+          "imageTop": "bus-top.png",
+          "fuel": "diesel",
+          "power": 250,
+          "speed": 150,
+          "mpg": 25,
+          "acceleration": 5,
+          "persons": 30,
+          "flowResistance": 1,
+          "profileArea": 3.1,
+          "weight": 8000,
+          "rollingResistanceCoefficient": 0.01,
+          "tireAbrasion": 0.16,
+          "efficiency": 0.3,
+          "treadwear": 200,
+          "tireDiameter": 0.7,
+          "tireWidth": 0.3,
+          "tireWareEmissionFactors": 70
+        },
+        {
+          "requirementCount": 3,
+          "name": "e-bus",
+          "image": "e-bus.png",
+          "imageTop": "e-bus-top.png",
+          "fuel": "electricity",
+          "power": 250,
+          "speed": 150,
+          "mpg": 115,
+          "acceleration": 5,
+          "persons": 30,
+          "flowResistance": 1,
+          "profileArea": 3.1,
+          "weight": 8500,
+          "rollingResistanceCoefficient": 0.01,
+          "tireAbrasion": 0.16,
+          "efficiency": 0.99,
+          "treadwear": 200,
+          "tireDiameter": 0.7,
+          "tireWidth": 0.3,
+          "tireWareEmissionFactors": 72
+        }
+      ]
+    }
+  },
+  "electricity": {
+    "water": {
+      "value": 9.69,
+      "perUnit": {
+        "carbonDioxideEquivalent": 24,
+        "carbonDioxide": 12,
+        "methane": 10,
+        "dust": 2,
+        "microplastic": 0
+      },
+      "color": "#1d2948",
+      "icon": "water",
+      "iconCode": "\uf773"
+    },
+    "wind": {
+      "value": 2.69,
+      "perUnit": {
+        "carbonDioxideEquivalent": 86,
+        "carbonDioxide": 66,
+        "methane": 14,
+        "dust": 6,
+        "microplastic": 0
+      },
+      "color": "#0192d0",
+      "icon": "wind",
+      "iconCode": "\uf72e"
+    },
+    "biomass": {
+      "value": 10.71,
+      "perUnit": {
+        "carbonDioxideEquivalent": 230,
+        "carbonDioxide": 110,
+        "methane": 100,
+        "dust": 20,
+        "microplastic": 0
+      },
+      "color": "#e086cb",
+      "icon": "seedling",
+      "iconCode": "\uf4d8"
+    },
+    "sun": {
+      "value": 1.12,
+      "perUnit": {
+        "carbonDioxideEquivalent": 143,
+        "carbonDioxide": 113,
+        "methane": 20,
+        "dust": 10,
+        "microplastic": 0
+      },
+      "color": "#f3a40a",
+      "icon": "sun",
+      "iconCode": "\uf185"
+    },
+    "green": {
+      "value": 0.31,
+      "perUnit": {
+        "carbonDioxideEquivalent": 38,
+        "carbonDioxide": 31,
+        "methane": 5,
+        "dust": 2,
+        "microplastic": 0
+      },
+      "color": "#01cf9e",
+      "icon": "leaf",
+      "iconCode": "\uf06c"
+    },
+    "gas": {
+      "value": 73.07,
+      "perUnit": {
+        "carbonDioxideEquivalent": 447,
+        "carbonDioxide": 307,
+        "methane": 100,
+        "dust": 40,
+        "microplastic": 0
+      },
+      "color": "#871a70",
+      "icon": "gas-pump",
+      "iconCode": "\uf52f"
+    },
+    "others": {
+      "value": 2.41,
+      "perUnit": {
+        "carbonDioxideEquivalent": 798,
+        "carbonDioxide": 548,
+        "methane": 200,
+        "dust": 50,
+        "microplastic": 0
+      },
+      "color": "#fe6e5d",
+      "icon": "bolt",
+      "iconCode": "\uf0e7"
+    }
+  },
+  "fuel": {
+    "diesel": {
+      "perUnit": {
+        "carbonDioxideEquivalent": 2650,
+        "carbonDioxide": 2050,
+        "methane": 500,
+        "dust": 100,
+        "microplastic": 0,
+        "kwh": 9.9,
+        "weight": 830,
+        "calorific": 45.4,
+        "efficiency": 0.3
+      }
+    },
+    "gasoline": {
+      "perUnit": {
+        "carbonDioxideEquivalent": 2320,
+        "carbonDioxide": 1770,
+        "methane": 450,
+        "dust": 100,
+        "microplastic": 0,
+        "kwh": 8.6,
+        "weight": 740,
+        "calorific": 42.7,
+        "efficiency": 0.25
+      }
+    },
+    "gas": {
+      "perUnit": {
+        "carbonDioxideEquivalent": 1630,
+        "carbonDioxide": 1050,
+        "methane": 300,
+        "dust": 280,
+        "microplastic": 0,
+        "kwh": 13.3,
+        "weight": 0.8,
+        "calorific": 50,
+        "efficiency": 0.3
+      }
+    },
+    "electricity": {
+      "perUnit": {
+        "efficiency": 0.99
+      }
+    },
+    "none": {
+      "perUnit": {
+        "carbonDioxideEquivalent": 0,
+        "carbonDioxide": 0,
+        "methane": 0,
+        "dust": 0,
+        "microplastic": 0,
+        "kwh": 0,
+        "weight": 0,
+        "calorific": 0,
+        "efficiency": 1
+      }
+    }
+  }
+}

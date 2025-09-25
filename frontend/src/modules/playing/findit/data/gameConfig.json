@@ -1,0 +1,538 @@
+{
+  "fire": {
+    "settings": {
+      "background": "/assets/games/findit/fire/background/forest.png",
+      "defaultType": "hazards",
+      "defaultName": "cigarette",
+      "icon": "fire",
+      "color": "#c55e44"
+    },
+    "categories": {
+      "hazards": {
+        "settings": {
+          "icon": "fire",
+          "order": 10,
+          "collectable": true,
+          "spritesheet": "/assets/games/findit/fire/hazard.json",
+          "explanationText": "module.playing.findit.participant.placeables.fire",
+          "escalationShape": ["smoke", "fire"],
+          "placingRegions": [[[0, 0], [100, 0], [100, 100], [0, 100]]],
+          "checkCompletelyInside": true
+        },
+        "items": {
+          "cigarette": {
+            "escalationLevels": [
+              { "min": 90, "max": 120 },
+              { "min": 45, "max": 60 }
+            ],
+            "severity": 3,
+            "maxCount": 10,
+            "width": 1,
+            "shape": "rect",
+            "explanationKey": "cigarette",
+            "collectKey": "dispose"
+          },
+          "campfire": {
+            "escalationLevels": [
+              { "min": 45, "max": 60 },
+              { "min": 30, "max": 45 }
+            ],
+            "severity": 1,
+            "maxCount": 1,
+            "width": 5,
+            "shape": "circle",
+            "explanationKey": "campfire",
+            "collectKey": "dispose"
+          },
+          "dead-tree": {
+            "escalationLevels": [
+              { "min": 90, "max": 120 },
+              { "min": 45, "max": 60 }
+            ],
+            "severity": 1,
+            "maxCount": 5,
+            "width": 7,
+            "shape": "rect",
+            "explanationKey": "dead-tree",
+            "collectKey": "dispose"
+          },
+          "bottleWhite": {
+            "escalationLevels": [
+              { "min": 90, "max": 120 },
+              { "min": 45, "max": 60 }
+            ],
+            "severity": 3,
+            "maxCount": 5,
+            "width": 1,
+            "shape": "rect",
+            "explanationKey": "bottle",
+            "collectKey": "recycle"
+          },
+          "bottleWine": {
+            "escalationLevels": [
+              { "min": 90, "max": 120 },
+              { "min": 45, "max": 60 }
+            ],
+            "severity": 3,
+            "maxCount": 5,
+            "width": 1,
+            "shape": "rect",
+            "explanationKey": "bottle",
+            "collectKey": "recycle"
+          },
+          "bottleBeer": {
+            "escalationLevels": [
+              { "min": 90, "max": 120 },
+              { "min": 45, "max": 60 }
+            ],
+            "severity": 3,
+            "maxCount": 5,
+            "width": 1,
+            "shape": "rect",
+            "explanationKey": "bottle",
+            "collectKey": "recycle"
+          }
+        }
+      },
+      "red_herring": {
+        "settings": {
+          "icon": "masks-theater",
+          "order": 1,
+          "collectable": false,
+          "spritesheet": "/assets/games/findit/fire/red_herring.json",
+          "explanationText": "module.playing.findit.participant.placeables.fire"
+        },
+        "items": {
+          "oil": {
+            "severity": 1,
+            "maxCount": 2,
+            "width": 4,
+            "shape": "rect",
+            "explanationKey": "oil",
+            "collectKey": "dispose"
+          },
+          "scooter": {
+            "severity": 1,
+            "maxCount": 2,
+            "width": 4,
+            "shape": "rect",
+            "explanationKey": "electricalScrap",
+            "collectKey": "recycle"
+          },
+          "handy": {
+            "severity": 1,
+            "maxCount": 3,
+            "width": 1,
+            "shape": "rect",
+            "explanationKey": "electricalScrap",
+            "collectKey": "recycle"
+          },
+          "turtle": {
+            "severity": 1,
+            "maxCount": 5,
+            "width": 3,
+            "shape": "rect",
+            "explanationKey": "turtle",
+            "collectKey": "rescue"
+          },
+          "ladybug": {
+            "severity": 1,
+            "maxCount": 5,
+            "width": 0.5,
+            "shape": "rect",
+            "explanationKey": "bug",
+            "collectKey": "leave",
+            "notSearched": true
+          },
+          "bug": {
+            "severity": 1,
+            "maxCount": 5,
+            "width": 0.5,
+            "shape": "rect",
+            "explanationKey": "bug",
+            "collectKey": "leave",
+            "notSearched": true
+          },
+          "dragonfly": {
+            "severity": 1,
+            "maxCount": 5,
+            "width": 0.5,
+            "shape": "rect",
+            "explanationKey": "bug",
+            "collectKey": "leave",
+            "notSearched": true
+          },
+          "earthworm": {
+            "severity": 1,
+            "maxCount": 5,
+            "width": 1,
+            "shape": "rect",
+            "explanationKey": "bug",
+            "collectKey": "leave",
+            "notSearched": true
+          },
+          "plasticBottle": {
+            "severity": 1,
+            "maxCount": 5,
+            "width": 1,
+            "shape": "rect",
+            "explanationKey": "plastic_bottle",
+            "collectKey": "recycle"
+          }
+        }
+      },
+      "obstacles": {
+        "settings": {
+          "icon": "tree",
+          "order": 100,
+          "collectable": false,
+          "spritesheet": "/assets/games/findit/fire/obstacle.json"
+        },
+        "items": {
+          "bush": {
+            "maxCount": 30,
+            "width": 10,
+            "shape": "circle"
+          },
+          "tree": {
+            "maxCount": 10,
+            "width": 17,
+            "shape": "circle"
+          },
+          "wood": {
+            "maxCount": 5,
+            "width": 5,
+            "shape": "rect"
+          },
+          "stone": {
+            "maxCount": 20,
+            "width": 3,
+            "shape": "circle"
+          }
+        }
+      }
+    }
+  },
+  "flood": {
+    "settings": {
+      "background": "/assets/games/findit/flood/background/flood.png",
+      "defaultType": "hazards",
+      "defaultName": "cigarette",
+      "icon": "water",
+      "color": "#63c3cb"
+    },
+    "categories": {
+      "hazards": {
+        "settings": {
+          "icon": "water",
+          "order": 10,
+          "collectable": true,
+          "spritesheet": "/assets/games/findit/flood/hazard.json",
+          "explanationText": "module.playing.findit.participant.placeables.flood",
+          "escalationShape": [
+            "splash",
+            "smoke"
+          ],
+          "placingRegions": [[[0, 0], [100, 0], [100, 100], [0, 100]]],
+          "checkCompletelyInside": true
+        },
+        "items": {
+          "fish": {
+            "escalationLevels": [
+              {
+                "min": 70,
+                "max": 90
+              },
+              {
+                "min": 45,
+                "max": 60
+              }
+            ],
+            "severity": 3,
+            "maxCount": 10,
+            "width": 3,
+            "shape": "rect",
+            "explanationKey": "fish",
+            "collectKey": "rescue",
+            "placingRegions": [[[0, 0], [15, 0], [20, 50], [40, 100], [0, 100]]]
+          },
+          "dog": {
+            "escalationLevels": [
+              {
+                "min": 25,
+                "max": 60
+              },
+              {
+                "min": 30,
+                "max": 45
+              }
+            ],
+            "severity": 1,
+            "maxCount": 2,
+            "width": 5,
+            "shape": "circle",
+            "explanationKey": "animal",
+            "collectKey": "rescue",
+            "placingRegions": [[[15, 0], [100, 0], [100, 100], [40, 100], [20, 50]]]
+          },
+          "cat": {
+            "escalationLevels": [
+              {
+                "min": 25,
+                "max": 60
+              },
+              {
+                "min": 30,
+                "max": 45
+              }
+            ],
+            "severity": 1,
+            "maxCount": 2,
+            "width": 4,
+            "shape": "circle",
+            "explanationKey": "animal",
+            "collectKey": "rescue",
+            "placingRegions": [[[15, 0], [100, 0], [100, 100], [40, 100], [20, 50]]]
+          },
+          "sandbag": {
+            "escalationLevels": [
+              {
+                "min": 100,
+                "max": 150
+              },
+              {
+                "min": 45,
+                "max": 60
+              }
+            ],
+            "severity": 2,
+            "maxCount": 5,
+            "width": 2,
+            "shape": "rect",
+            "explanationKey": "sandbag",
+            "collectKey": "recycle",
+            "placingRegions": [[[0, 0], [15, 0], [20, 50], [40, 100], [0, 100]]]
+          },
+          "branches": {
+            "escalationLevels": [
+              {
+                "min": 100,
+                "max": 150
+              },
+              {
+                "min": 45,
+                "max": 60
+              }
+            ],
+            "severity": 2,
+            "maxCount": 5,
+            "width": 5,
+            "shape": "rect",
+            "explanationKey": "branches",
+            "collectKey": "dispose",
+            "placingRegions": [[[0, 0], [15, 0], [20, 50], [40, 100], [0, 100]]]
+          },
+          "bottleWhite": {
+            "escalationLevels": [
+              {
+                "min": 85,
+                "max": 130
+              },
+              {
+                "min": 45,
+                "max": 60
+              }
+            ],
+            "severity": 2,
+            "maxCount": 5,
+            "width": 0.5,
+            "shape": "rect",
+            "explanationKey": "garbage",
+            "collectKey": "recycle",
+            "placingRegions": [[[15, 0], [100, 0], [100, 100], [40, 100], [20, 50]]]
+          },
+          "bottleWine": {
+            "escalationLevels": [
+              {
+                "min": 85,
+                "max": 130
+              },
+              {
+                "min": 45,
+                "max": 60
+              }
+            ],
+            "severity": 2,
+            "maxCount": 5,
+            "width": 0.5,
+            "shape": "rect",
+            "explanationKey": "garbage",
+            "collectKey": "recycle",
+            "placingRegions": [[[15, 0], [100, 0], [100, 100], [40, 100], [20, 50]]]
+          },
+          "bottleBeer": {
+            "escalationLevels": [
+              {
+                "min": 85,
+                "max": 130
+              },
+              {
+                "min": 45,
+                "max": 60
+              }
+            ],
+            "severity": 2,
+            "maxCount": 5,
+            "width": 0.5,
+            "shape": "rect",
+            "explanationKey": "garbage",
+            "collectKey": "recycle",
+            "placingRegions": [[[15, 0], [100, 0], [100, 100], [40, 100], [20, 50]]]
+          },
+          "oil": {
+            "escalationLevels": [
+              {
+                "min": 85,
+                "max": 130
+              },
+              {
+                "min": 45,
+                "max": 60
+              }
+            ],
+            "severity": 2,
+            "maxCount": 5,
+            "width": 4,
+            "shape": "rect",
+            "explanationKey": "oil",
+            "collectKey": "dispose",
+            "placingRegions": [[[15, 0], [100, 0], [100, 100], [40, 100], [20, 50]]]
+          },
+          "scooter": {
+            "escalationLevels": [
+              {
+                "min": 85,
+                "max": 130
+              },
+              {
+                "min": 45,
+                "max": 60
+              }
+            ],
+            "severity": 2,
+            "maxCount": 5,
+            "width": 4,
+            "shape": "rect",
+            "explanationKey": "electricalScrap",
+            "collectKey": "recycle",
+            "placingRegions": [[[15, 0], [100, 0], [100, 100], [40, 100], [20, 50]]]
+          },
+          "handy": {
+            "escalationLevels": [
+              {
+                "min": 85,
+                "max": 130
+              },
+              {
+                "min": 45,
+                "max": 60
+              }
+            ],
+            "severity": 2,
+            "maxCount": 5,
+            "width": 0.5,
+            "shape": "rect",
+            "explanationKey": "electricalScrap",
+            "collectKey": "recycle",
+            "placingRegions": [[[15, 0], [100, 0], [100, 100], [40, 100], [20, 50]]]
+          }
+        }
+      },
+      "red_herring": {
+        "settings": {
+          "icon": "masks-theater",
+          "order": 1,
+          "collectable": false,
+          "spritesheet": "/assets/games/findit/flood/red_herring.json",
+          "explanationText": "module.playing.findit.participant.placeables.flood"
+        },
+        "items": {
+          "turtle": {
+            "severity": 1,
+            "maxCount": 5,
+            "width": 3,
+            "shape": "rect",
+            "explanationKey": "turtle",
+            "collectKey": "rescue"
+          },
+          "ladybug": {
+            "severity": 1,
+            "maxCount": 5,
+            "width": 0.5,
+            "shape": "rect",
+            "explanationKey": "bug",
+            "collectKey": "leave",
+            "notSearched": true
+          },
+          "bug": {
+            "severity": 1,
+            "maxCount": 5,
+            "width": 0.5,
+            "shape": "rect",
+            "explanationKey": "bug",
+            "collectKey": "leave",
+            "notSearched": true
+          },
+          "dragonfly": {
+            "severity": 1,
+            "maxCount": 5,
+            "width": 0.5,
+            "shape": "rect",
+            "explanationKey": "bug",
+            "collectKey": "leave",
+            "notSearched": true
+          },
+          "earthworm": {
+            "severity": 1,
+            "maxCount": 5,
+            "width": 1,
+            "shape": "rect",
+            "explanationKey": "bug",
+            "collectKey": "leave",
+            "notSearched": true
+          }
+        }
+      },
+      "obstacles": {
+        "settings": {
+          "icon": "tree",
+          "order": 100,
+          "collectable": false,
+          "spritesheet": "/assets/games/findit/flood/obstacle.json"
+        },
+        "items": {
+          "bush": {
+            "maxCount": 30,
+            "width": 10,
+            "shape": "circle"
+          },
+          "tree": {
+            "maxCount": 10,
+            "width": 17,
+            "shape": "circle"
+          },
+          "wood": {
+            "maxCount": 5,
+            "width": 5,
+            "shape": "rect"
+          },
+          "stone": {
+            "maxCount": 20,
+            "width": 3,
+            "shape": "circle"
+          }
+        }
+      }
+    }
+  }
+}

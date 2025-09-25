@@ -1,0 +1,184 @@
+{
+  "description": {
+    "title": "Save It",
+    "description": "Finde und sammle mögliche Gefahren, um Umweltschäden zu verhindern!"
+  },
+  "moderatorConfig": {
+    "mapSection": "Kartenabschnitt",
+    "replayable": "mehrfach spielbar",
+    "showTutorial": "Tutorial zeigen",
+    "showTutorialDisabled": "deaktiviert",
+    "showTutorialOnce": "einmalig",
+    "showTutorialAlways": "immer",
+    "placeables": "Wetter",
+    "all": "Alle"
+  },
+  "moderatorContent": {
+    "tabs": {
+      "play": "spielen",
+      "edit": "bearbeiten"
+    },
+    "add": "Level hinzufügen",
+    "levelType": "Leveltyp",
+    "preConfig": "Vorkonfiguration",
+    "noPreConfig": "ohne",
+    "share": "für alle sichtbar machen"
+  },
+  "participant": {
+    "place": "Platzieren",
+    "play": "Start",
+    "newLevel": "neues Level erstellen",
+    "lotText": "Du hast leider zu lange ein gefährliches Objekt nicht gefunden, das nun einen Schaden verursacht hat. Du hast verloren, bitte versuche es noch einmal.",
+    "win": "Geschafft!",
+    "winText": "Du hast es geschafft, die Umwelt vor den gefährlichen Objekten zu schützen!",
+    "lost": "Nicht rechtzeitig!",
+    "tutorial": {
+      "menu": "Tutorial",
+      "placing": "Level bauen:\nKlicke auf einen beliebige Stelle in der Szene um eine Auswahl an Objekten zu bekommen. Wähle eines der Objekte aus um es an dem ausgewählten Ort zu platzieren.\nVerschiebe das Objekt durch drag and drop und Drehe, skaliere und lösche das ausgewählte Objekt durch klick auf die Buttons in der Symbolleiste.",
+      "finding": "Suchen:\nDiese Szene ist nicht so harmlos wie sie scheint!\nAn manchen Orten verstecken sich gefährliche Objekte, die früher oder später eine Katastrophe verursachen könnten. Sammle diese Objekte mit einem Klick ein und verhindere eine große Katastrophe, bevor es zu spät ist!\nBenutze die Lupe, um hinter Bäume und andere Objekte zu schauen."
+    },
+    "collectable": "sehr gut, dieses Objekt wurde gesucht",
+    "not-collectable": "dieses Objekt gehört nicht hierher, wird aber in diesem Fall nicht gesucht",
+    "not-searched": "dieses Objekt gehört hierher",
+    "correct": "richtig",
+    "incorrect": "falsch",
+    "placeables": {
+      "fire": {
+        "name": "Feuer",
+        "hazards": {
+          "cigarette": {
+            "name": "Zigarette",
+            "description": "Nicht ordentlich ausgedämpfte Zigaretten sind einer der größten Waldbrandverursacher. Häufig werden sie aus fahrenden Autos geworfen oder auf Wanderwegen zurückgelassen."
+          },
+          "campfire": {
+            "name": "Lagerfeuer",
+            "description": "Lagerfeuer können vom Wind neu angefacht werden und so einen Waldbrand auslösen."
+          },
+          "dead-tree": {
+            "name": "Toter Baum",
+            "description": "Tote Bäume können austrocknen und bieten somit ein erhöhtes Risiko Feuer zu fangen."
+          },
+          "bottle": {
+            "name": "Glasflasche",
+            "description": "Gut gemacht! Dieses Objekt gehört nicht in die Natur. Glasflaschen können zwar nur ganz selten, aber unter bestimmten Bedingungen Brände auslösen. Auch Tiere können sich an Glasscherben verletzen. Deshalb: Aufheben und richtig entsorgen!"
+          }
+        },
+        "red_herring": {
+          "turtle": {
+            "name": "Schildkröte",
+            "description": "Schildkröten kommen in unserer Gegend nicht natürlich vor. Im Wald ausgesetzt, sind sie schutzlos."
+          },
+          "bug": {
+            "name": "Käfer",
+            "description": "Käfer sind Teil des natürlichen Ökosystems, bilden die Grundlage der Nahrungskette für andere Tiere und lockern den Boden. Ihr Überleben ist daher wichtig für das Überleben des Waldes und anderer Tiere."
+          },
+          "oil": {
+            "name": "Ölkanister",
+            "description": "Öl kann in die Umwelt gelangen und dabei die Umwelt verunreinigen/vergiften."
+          },
+          "electricalScrap": {
+            "name": "Elektroschrot",
+            "description": "Akkus in Elektroschrot kann in die Umwelt gelangen und dabei die Umwelt verunreinigen/vergiften."
+          },
+          "plastic_bottle": {
+            "name": "Plastikflasche",
+            "description": "Dieses Objekt gehört nicht hierher, wird aber in diesem Fall nicht gesucht. Plastikflaschen verrotten nicht und bleiben viele Jahre in der Natur. Sie können außerdem für Tiere gefährlich sein. Deshalb: Aufheben und richtig entsorgen!"
+          }
+        }
+      },
+      "flood": {
+        "name": "Überschwemmung",
+        "hazards": {
+          "fish": {
+            "name": "Fisch",
+            "description": "Fische können nach der Flut gestrandet sein und müssen gerettet werden."
+          },
+          "sandbag": {
+            "name": "Sandsack",
+            "description": "Sandsäcke müssen nach der Flut weggeräumt werden, da sie Straßen und Wege blockieren."
+          },
+          "animal": {
+            "name": "Tier",
+            "description": "Tiere können ertrinken."
+          },
+          "garbage": {
+            "name": "Müll",
+            "description": "Müll kann von der Flut weggetragen werden und muss später wieder eingesammelt werden um die Umwelt nicht zu verschmutzen."
+          },
+          "branches": {
+            "name": "Äste",
+            "description": "Äste können während der Flut in die Straßen gespült werden und müssen danach aufgeräumt werden."
+          },
+          "bottle": {
+            "name": "Glasflasche",
+            "description": "Gut gemacht! Dieses Objekt gehört nicht in die Natur. Glasflaschen verrotten nicht und bleiben viele Jahre in der Natur. Tiere können sich an Glasscherben verletzen. Deshalb: Aufheben und richtig entsorgen!"
+          },
+          "plastic_bottle": {
+            "name": "Plastikflasche",
+            "description": "Gut gemacht! Dieses Objekt gehört nicht in die Natur. Plastikflaschen verrotten nicht und bleiben viele Jahre in der Natur. Sie können außerdem für Tiere gefährlich sein. Deshalb: Aufheben und richtig entsorgen!"
+          },
+          "oil": {
+            "name": "Ölkanister",
+            "description": "Öl kann ins Wasser gelangen und dabei die Umwelt verunreinigen/vergiften."
+          },
+          "electricalScrap": {
+            "name": "Elektroschrot",
+            "description": "Akkus in Elektroschrot kann ins Wasser gelangen und dabei die Umwelt verunreinigen/vergiften."
+          }
+        },
+        "red_herring": {
+          "turtle": {
+            "name": "Schildkröte",
+            "description": "Schildkröten kommen in unserer Gegend nicht natürlich vor. Im Wald ausgesetzt, sind sie schutzlos."
+          },
+          "bug": {
+            "name": "Käfer",
+            "description": "Käfer sind Teil des natürlichen Ökosystems, bilden die Grundlage der Nahrungskette für andere Tiere und lockern den Boden. Ihr Überleben ist daher wichtig für das Überleben des Waldes und anderer Tiere."
+          }
+        }
+      }
+    },
+    "collectKey": {
+      "dispose": "entsorgen",
+      "recycle": "recyceln",
+      "leave": "lassen",
+      "rescue": "retten"
+    },
+    "returnToMenu": "Zurück zum Menü.",
+    "categorisationButtons": {
+      "flammable": "Brandgefahr",
+      "non-flammable": "keine Gefahr"
+    },
+    "highscore": {
+      "header": "Highscore",
+      "collected": "eingesammelt",
+      "classified": "klassifiziert",
+      "time": "Zeit"
+    }
+  },
+  "statistic": {
+    "level": "Wie oft wurde welcher Level gespielt?",
+    "rating": "Wie oft wurden wie viele Punkte erzielt?",
+    "play": "Wie oft hat welcher Benutzer einen Level gespielt?",
+    "build": "Wie oft hat welcher Benutzer einen Level erstellt?",
+    "time": "Wie viele Sekunden hat es gedauert, das Level zu beenden?",
+    "item": {
+      "play": "Wie oft wurde welches Element gefunden?",
+      "build": "Wie oft wurde welcher Gegenstand versteckt?"
+    },
+    "itemCount": {
+      "play": "Wie viele Gegenstände wurden gefunden?",
+      "build": "Wie viele Gegenstände wurden versteckt?"
+    }
+  },
+  "publicScreen": {
+    "tutorial": "Tutorial",
+    "highscore": "Highscore"
+  },
+  "analytics": {
+    "highscore": {
+      "stars": "Sterne",
+      "points": "Punkte"
+    }
+  }
+}

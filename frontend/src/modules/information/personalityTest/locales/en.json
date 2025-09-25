@@ -1,0 +1,22 @@
+{
+  "description": {
+    "title": "Typology",
+    "description": "Discover more about yourself and others."
+  },
+  "moderatorConfig": {
+    "test": "test"
+  },
+  "moderatorContent": {
+  },
+  "publicScreen": {
+  },
+  "participant": {
+    "thanksIndividual": "Your answer has been saved.",
+    "previous": "previous",
+    "next": "next",
+    "submit": "Save",
+    "waiting": "Please wait. Questions and answers are being loaded.",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

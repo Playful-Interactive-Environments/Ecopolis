@@ -1,0 +1,37 @@
+{
+  "description": {
+    "title": "Tombola",
+    "description": "Aus allen Teilnehmenden wird nach dem Zufallsprinzip ein Gewinner ermittelt."
+  },
+  "moderatorConfig": {
+    "condition": "Kondition",
+    "winText": "Gewinnbenachrichtigung"
+  },
+  "moderatorContent": {
+    "draw": "ziehen",
+    "raffle": "Ziehung",
+    "avatar": "Teilnehmer",
+    "noData": "Es gibt noch keine passenden Teilnehmer.",
+    "allSelected": "Alle geeigneten Teilnehmer sind bereits ausgelost worden."
+  },
+  "participant": {
+    "wait": "Du bist noch nicht gezogen worden. Versuch es später noch einmal.",
+    "no-raffle": "Es gab noch keine Ziehung. Versuch es später noch einmal.",
+    "win": "Herzlichen Glückwunsch, du wurdest gezogen.",
+    "raffle": "Ziehung",
+    "index": "Ziehungsnummer",
+    "count": "Losnummer",
+    "code": "Gewinncode"
+  },
+  "enum": {
+    "raffleCondition": {
+      "participated": "teilgenommen",
+      "finished": "abgeschlossen",
+      "won": "gewonnen"
+    }
+  },
+  "statistic": {
+  },
+  "publicScreen": {
+  }
+}

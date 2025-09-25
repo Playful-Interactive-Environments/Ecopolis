@@ -1,0 +1,189 @@
+{
+  "description": {
+    "title": "Measures",
+    "description": "support measures with the votes you have earned"
+  },
+  "participant": {
+    "rate": "rate",
+    "description": "description",
+    "explanation": "comment",
+    "freeExplanation": "free text for own explanation or suggested answer",
+    "save": "save",
+    "cancel": "cancel",
+    "yourPart": "your part",
+    "sort": "Sort measures",
+    "points": "points",
+    "finished": {
+      "header": "finish task",
+      "text": "Do you want to finish this task to move on to the next one?",
+      "yes": "yes",
+      "no": "no"
+    },
+    "tabs": {
+      "measures": "measures",
+      "statistic": "state",
+      "influenceAreas": "development",
+      "electricity": "electricity",
+      "map": "map"
+    },
+    "add": "add own measure",
+    "chart": {
+      "x": "measures",
+      "y-influenceAreas": "development of society",
+      "y-electricity": "electricity ratio in %",
+      "y-electricityAmount": "Electricity consumption for the whole of Austria in TWh",
+      "y-electricity1": "Electricity share in % of initial situation",
+      "y-electricity2": "Electricity share in % due to jointly agreed measures"
+    },
+    "loi": {
+      "title": "declaration of support",
+      "name": "Short name",
+      "no": "Registration number",
+      "description": "Text of the referendum",
+      "points": "Invest votes",
+      "participation": "previous participation",
+      "count": "Number of votes",
+      "minCount": "Minimum number of votes required",
+      "explanation": "comment",
+      "spent": "support with $count votes",
+      "spentHeader": "spend additional votes on measure",
+      "nothingToSpent": "you currently have too few points to award any more votes for this measure",
+      "maxSpent": "you have already allocated the maximum possible support for this measure",
+      "maxSpentAll": "the maximum possible support has already been allocated for this measure",
+      "new": "thereof new",
+      "target": "required in total",
+      "actual": "already received",
+      "own": "your part",
+      "minParticipants": "Minimum number of participants",
+      "countParticipants": "Number of participants"
+    }
+  },
+  "moderatorConfig": {
+    "mapSection": "map section",
+    "effectElectricity": "effect electricity",
+    "allowParticipationMeasures": "participants can submit their own measures",
+    "minParticipants": "minimum required participants",
+    "minPoints": "minimum required points per participant",
+    "maxPoints": "maximum points to be spent per participant",
+    "explanation": "general suggested texts for the participants' comments on the individual measures",
+    "maxRatingStars": "max rating stars",
+    "startingPoint": "starting point",
+    "insertInitProgressionFromInput": "insert starting progression from input",
+    "theme": "theme",
+    "preparation": "preparation",
+    "meeting": "council meeting",
+    "default": "default",
+    "addExplanation": "add"
+  },
+  "moderatorContent": {
+    "settingsTitle": "idea settings",
+    "displayAll": "display all",
+    "add": "add content",
+    "points": "required sum of points",
+    "minParticipants": "minimum required participants",
+    "minPoints": "minimum required points per participant",
+    "maxPoints": "maximum points to be spent per participant",
+    "explanation": "suggested texts for the participants' comments on this measure",
+    "mapLocation": "location",
+    "electricityInfluence": "electricity influence",
+    "share": "make it visible to all",
+    "evaluation": "evaluation",
+    "reason": "reason for rejection",
+    "save": "save",
+    "reasonsForRejection": "Give reasons for your rejection",
+    "electricityValidationErrors": "electricity sum must be 0 please adjust the values so that the sum is again 0 instead of ",
+    "addExplanation": "add",
+    "impact": "impact on",
+    "electricity": {
+      "none": "0",
+      "min-demand": "reduction",
+      "max-demand": "increase",
+      "min-supply": " lower coverage of the total demand",
+      "max-supply": " additional coverage of the total demand"
+    },
+    "ratingChart": "rating distribution",
+    "orderChart": "order distribution",
+    "future": "future"
+  },
+  "publicScreen": {
+    "noIdeas": "No ideas yet - stay tuned."
+  },
+  "statistic": {
+    "input": "input values",
+    "current": "current values",
+    "rating": "rating per idea",
+    "order": "order per idea",
+    "pointsSpent": "spent points per idea",
+    "pointsCollected": "collected points per user",
+    "explanation": "explanation per idea",
+    "ownIdeas": "onw ideas",
+    "progress": "progress"
+  },
+  "gameConfig": {
+    "eco": "environment",
+    "social": "social",
+    "business": "business"
+  },
+  "enum": {
+    "progress": {
+      "origin": "initial",
+      "progress": "result",
+      "general": "joint",
+      "own": "own part",
+      "ownFuture": "own path"
+    },
+    "progressLong": {
+      "origin": "initial situation",
+      "general": "joint progression",
+      "own": "own part in the joint progress",
+      "ownFuture": "own path"
+    },
+    "electricityInfluence": {
+      "increase_electricity_demand": "increase electricity demand",
+      "change_electricity_supply": "change electricity supply"
+    },
+    "electricityConsumption": {
+      "industry": "industry",
+      "traffic": "traffic",
+      "services": "services",
+      "household": "household",
+      "agriculture": "agriculture"
+    },
+    "influenceScale": {
+      "-5": "deterioration",
+      "0": "unchanged",
+      "5": "improvement"
+    },
+    "influenceResult": {
+      "-10": "urgent need for action",
+      "-9": "urgent need for action",
+      "-8": "urgent need for action",
+      "-7": "urgent need for action",
+      "-6": "urgent need for action",
+      "-5": "need for action",
+      "-4": "need for action",
+      "-3": "need for action",
+      "-2": "improvable",
+      "-1": "improvable",
+      "0": "improvable",
+      "1": "improvable",
+      "2": "improvable",
+      "3": "on the right track",
+      "4": "on the right track",
+      "5": "on the right track",
+      "6": "ideal development",
+      "7": "ideal development",
+      "8": "ideal development",
+      "9": "ideal development",
+      "10": "ideal development"
+    }
+  },
+  "analytics": {
+    "highscore": {
+      "ideas": "Ideas",
+      "points": "Points",
+      "ideaCount": "Idea count",
+      "pointsSpent": "Points spent"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "icon": "times",
+  "iconPrefix": "fas",
+  "type": "main",
+  "input": "no",
+  "syncPublicParticipant": false,
+  "finishManuel": true
+}

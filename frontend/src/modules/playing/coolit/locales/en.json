@@ -1,0 +1,310 @@
+{
+  "description": {
+    "title": "Cool It",
+    "description": "A game about the greenhouse effect."
+  },
+  "moderatorConfig": {
+    "mapSection": "map section",
+    "replayable": "replayable",
+    "showTutorial": "show tutorial",
+    "showTutorialDisabled": "disabled",
+    "showTutorialOnce": "once",
+    "showTutorialAlways": "always"
+  },
+  "moderatorContent": {
+    "settingsTitle": "idea settings",
+    "add": "add level",
+    "levelType": "level type",
+    "preConfig": "pre-configuration",
+    "noPreConfig": "none",
+    "share": "make it visible to all"
+  },
+  "participant": {
+    "newLevel": "create new level",
+    "confirm": "Continue",
+    "place": "Place",
+    "selectObstacle": "use this obstacle",
+    "tutorial": {
+      "menu": "tutorial",
+      "atmosphere": "The atmosphere is made up of a wide variety of gases such as oxygen, nitrogen, water vapor and many others. Without them, survival on earth would not be possible. Before playing, find out what influence the different gases have. This will help you later.",
+      "light": "Light comes to us in all forms from the sun. Visible light comes through the atmosphere and hits the earth. Observe what happens to the visible (here yellow) light when it hits an object.",
+      "heat": "Your mission: to make room for the excess heat radiation so that it can escape from the earth again. To do this, push the greenhouse gases out of the way. Why is the earth getting warmer?",
+      "play": "The bar at the top shows you the current temperature development. Try to stay in the middle range. If your average temperature or 3 buildings exceed or fall below the marked limit, the game is over.",
+      "button": {
+        "skip": "skip",
+        "continueButton": "continue"
+      },
+      "order": {
+        "globalWarmingFactorReal": "Order the greenhouse gases by CO2 equivalent from the lowest to the highest",
+        "lifespan": "Order the greenhouse gases by lifespan from the lowest to the highest",
+        "rationGreenhouse": "Order the greenhouse gases by proportion of greenhouse gases in the atmosphere from the lowest to the highest"
+      },
+      "unknown": "unknown",
+      "heatGame": {
+        "move": "push out of the way",
+        "dialogTitle": "The greenhouse gas was hit by the heat radiation.",
+        "hit": "The greenhouse gas was hit by the heat radiation and absorbs the heat radiation for a short time.",
+        "heat": "The absorbed heat radiation is emitted again in a random direction, partly back to the earth, which heats it up even more.",
+        "hitCount": "hit count",
+        "temperature": "temperature",
+        "goal": "space",
+        "intro": "Push the greenhouse gases out of the way to let the heat radiation escape. Or let the greenhouse gases interact with the heat radiation and see how the different gases influence the temperature.",
+        "intro1": "Push the greenhouse gases out of the way to let the heat radiation escape.",
+        "intro2": "Or let the greenhouse gases interact with the heat radiation and see how the different gases influence the temperature.",
+        "start": "start game"
+      }
+    },
+    "placeables": {
+      "city": {
+        "name": "city"
+      }
+    },
+    "moleculeInfo": {
+      "pro": "pro",
+      "contra": "contra",
+      "rationAtmosphere": "contribution to the earth's atmosphere",
+      "rationGreenhouse": "Proportion of the greenhouse effect",
+      "impactGreenhouse": "Contribution to the greenhouse effect",
+      "riseFactor": "increase since the beginning of industrialization",
+      "globalWarmingFactor": "Global Warming Potential",
+      "lifespan": "Lifetime in the atmosphere",
+      "years": "years",
+      "gwpInfo": "compared to carbon dioxide",
+      "none": "Select an available molecule to show its information.",
+      "overview": {
+        "title": "overview",
+        "description": "The respiratory sphere is composed of the gases nitrogen, oxygen, argon and carbon dioxide. Light rays can pass through these gases unhindered. When a light ray hits the earth, it is absorbed by the surface and released as thermal radiation. Heat radiation is absorbed by the greenhouse gases and thus warms the atmosphere. Without these gases it would be very cold on Earth. The average temperature would be -18°C. Although the atmosphere consists of only 0.04% greenhouse gases, this is enough to warm the earth to a temperature that is comfortable for us. However, the more greenhouse gases, the warmer it gets. Gases and rays are colourless and very very small. So that you can see them, we have coloured them and enlarged them.",
+        "chart-atmosphere": "composition of the atmosphere in %",
+        "chart-greenhouse": "composition of greenhouse gases in %",
+        "chart-greenhouse2": "composition of greenhouse gases in % without water vapor",
+        "chart-greenhouse3": "composition of greenhouse gases in % without water vapor and carbon dioxide",
+        "chart-impact-greenhouse": "impact of greenhouse gases in %"
+      },
+      "others": "others",
+      "waterVapor": {
+        "title": "Water Vapor",
+        "description": "Water in its gaseous state.",
+        "pros": "Up high in the atmosphere, it condenses back into liquid water and rains back down to Earth. The water we drink is part of this natural cycle.",
+        "cons": "Water Vapor blocks heat from escaping the atmosphere, and warmer air holds more Water Vapor. Thus, as Earth heats up, more Water Vapor in the atmosphere traps more heat."
+      },
+      "carbonDioxide": {
+        "title": "Carbon Dioxide",
+        "description": "CO2 is the best-known greenhouse gas. It occurs in increased concentrations in our atmosphere, which continue to increase due to human influence. Natural sources are living organisms of all kinds and volcanoes.",
+        "pros": "Carbon dioxide makes it possible for us to live on earth and reacts less strongly with heat radiation than other particles.",
+        "cons": "However, the rapidly increasing concentration continues to warm the Earth's climate. In the last 100 years, the concentration has almost doubled. Carbon dioxide is also toxic to humans."
+      },
+      "methane": {
+        "title": "Methane",
+        "description": "Colorless, odorless and highly flammable.",
+        "pros": "Made of carbon and hydrogen, it is a natural gas released from wetlands, growing rice or raising cattle. Mining coal also releases natural methane pockets.",
+        "cons": "Methane traps a lot of heat. It is considered the second most important contributor to human-caused global warming of all the greenhouse gases."
+      },
+      "nitrogenOxide": {
+        "title": "Nitrous Oxide",
+        "description": "Also known as \"Laughing Gas\".",
+        "pros": "Nitrous Oxide is a natural part of Earth's nitrogen cycle. Bacteria in both soil and water create this gas.",
+        "cons": "Some factories, power plants and fertilizers release this gas as well. It is a powerful greenhouse gas which also damages the protective ozone layer."
+      },
+      "ozone": {
+        "title": "Ozone",
+        "description": "A useful shield against the sun's radiation!",
+        "pros": "High up in the atmosphere, the ozone layer blocks the sun's radiation and thus protects us from those incredibly powerful rays.",
+        "cons": "Closer to the ground it acts as a greenhouse gas and is usually formed by burning gas in cars or factories."
+      },
+      "fluorinatedGases": {
+        "title": "Fluorinated Gases",
+        "description": "Non-Natural but highly effective.",
+        "pros": "Fluorinated Gases are usually used as a substitute to ozone-depleting substances and can be found in household appliances like refrigerators or similar. Some industries also heavily rely on these gases.",
+        "cons": "These gases do not appear naturally and are entirely synthetical. They are incredibly powerful greenhouse gases and some of them can linger in the atmosphere for a few millennia."
+      },
+      "oxygen": {
+        "title": "Oxygen",
+        "description": "The one that keeps us alive.",
+        "pros": "While oxygen is not the most common gas in our atmosphere, it is the most important. Most life on Earth absorbs oxygen through breathing air which makes it an essential gas in Earth's atmosphere.",
+        "cons": "While its use in medicine is highly appreciated, oxygen is also used as combustion-sustaining element in a multitude of industries."
+      },
+      "nitrogen": {
+        "title": "Nitrogen",
+        "description": "The most common gas in Earth's atmosphere.",
+        "pros": "Its close-to-inert nature and high availability make nitrogen a very useful gas for various applications. It is mostly used in food and chemical industries, in both its gaseous and liquid form.",
+        "cons": ""
+      },
+      "argon": {
+        "title": "Argon",
+        "description": "Definitely more common than Helium.",
+        "pros": "Argon is an inert gas and can thus be used across many different industries because of it. An example application would be the gas layer shielding the arc during arc welding.",
+        "cons": ""
+      },
+      "helium": {
+        "title": "Helium",
+        "description": "The coldest matter on Earth.",
+        "pros": "Helium is an inert gas which is of significant importance in many industries, mainly for its traits of being inert and having the lowest boiling point of any gas (-269°C).",
+        "cons": "Unfortunately, Helium is in high demand and short supply. On Earth it is mostly sourced from natural gas wells."
+      }
+    },
+    "buildingInfo": {
+      "none": "Select an available building to show its information.",
+      "building01": {
+        "title": "Residential building",
+        "description": "Light colours and good thermal insulation ensure that the building stays cool in summer and warm in winter."
+      },
+      "building02": {
+        "title": "Detached house",
+        "description": "Light colours and good thermal insulation ensure that the building stays cool in summer and warm in winter."
+      },
+      "building03": {
+        "title": "Apartment block",
+        "description": "Light colours and good thermal insulation ensure that the building stays cool in summer and warm in winter."
+      },
+      "building04": {
+        "title": "Residential building",
+        "description": "Dark colours and lots of glass ensure that the building is very warm in summer."
+      },
+      "glassBuilding01": {
+        "title": "Office building",
+        "description": "Glass heats up quickly and stores this heat poorly. The glass primarily releases the heat back into its surroundings. In addition, glass strongly reflects visible sunlight, which also heats up the immediate surroundings."
+      },
+      "glassBuilding02": {
+        "title": "Office building",
+        "description": "Glass heats up quickly and stores this heat poorly. The glass primarily releases the heat back into its surroundings. In addition, glass strongly reflects visible sunlight, which also heats up the immediate surroundings."
+      },
+      "glassBuilding03": {
+        "title": "Office building",
+        "description": "Glass heats up quickly and stores this heat poorly. The glass primarily releases the heat back into its surroundings. In addition, glass strongly reflects visible sunlight, which also heats up the immediate surroundings."
+      },
+      "parkingLot01": {
+        "title": "Parking lot",
+        "description": "Asphalt heats up faster than vegetated ground and emits that heat back into its surroundings. Because of that, in summer it is way hotter on asphalted areas than on vegetated areas."
+      },
+      "industry01": {
+        "title": "Warehouse tower",
+        "description": "Dark colors absorb a lot of heat in the form of radiation. Metals heat up very quickly due to sunlight. Both heat up strongly and quickly and quickly release this heat back into the environment."
+      },
+      "industry02": {
+        "title": "Factory",
+        "description": "Dark colors absorb a lot of heat in the form of radiation. Metals heat up very quickly due to sunlight. Both heat up strongly and quickly and quickly release this heat back into the environment."
+      },
+      "industry03": {
+        "title": "Factory",
+        "description": "Dark colors absorb a lot of heat in the form of radiation. Metals heat up very quickly due to sunlight. Both heat up strongly and quickly and quickly release this heat back into the environment."
+      },
+      "industry04": {
+        "title": "Factory",
+        "description": "Light colours and good thermal insulation ensure that the building stays cool in summer and warm in winter."
+      },
+      "trees01": {
+        "title": "Trees",
+        "description": "Trees absorb CO2 and provide shade."
+      },
+      "cow": {
+        "title": "Cows",
+        "description": "Cows produce methane during digestion."
+      },
+      "fertilizer": {
+        "title": "Fertilizer",
+        "description": "Nitrogenous fertilizers in agriculture and livestock farming are the main sources of nitrous oxide emissions."
+      }
+    },
+    "moleculeType": {
+      "greenhouseGas": "Greenhouse Gas",
+      "atmosphericGas": "Atmospheric Gas"
+    },
+    "highScore": {
+      "header": "highscore"
+    },
+    "playDialog": {
+      "header": "play level",
+      "play": "play",
+      "cancel": "cancel"
+    },
+    "temperatureScale": {
+      "lowerLimit": "arctic",
+      "upperLimit": "tropical"
+    },
+    "playResult": {
+      "0": {
+        "title": "Oh No.",
+        "message": {
+          "1": "Heavy storms expected towards the end of this summer.",
+          "2": "Austria now officially has less glaciers than the year before.",
+          "3": "A vast wildfire spreads across a significant part of Styria."
+        }
+      },
+      "1": {
+        "title": "Nice!",
+        "message": {
+          "1": "A slight decrease in average temperature has been noticed this year. A cool breeze makes for a wonderful summer day.",
+          "2": "Statistics show a decrease in floods during spring compared to last year.",
+          "3": "Farmers report less pests on their crops. A better and greener harvest is expected."
+        }
+      },
+      "2": {
+        "title": "Great Job!",
+        "message": {
+          "1": "More snow is expected to fall this winter. Wonderful news for ski enthusiasts!",
+          "2": "The current list of endangered species has shrunk due to the stabilization of the global climate.",
+          "3": "Some diseases have been reported to appear less often. A connection to the positive change in climate is not out of question!"
+        }
+      },
+      "3": {
+        "title": "Incredible!",
+        "message": {
+          "1": "Heat accumulation in big cities has been decreased significantly. The floor is NOT lava anymore!",
+          "2": "Regular rainfall and less droughts helped immensely in re-vitalizing the ecosystem. Austria looks a lot greener again!",
+          "3": "The glacial border has sunk again after years of rising. Natural water reserves seem to stabilize again."
+        }
+      }
+    },
+    "difficultyLevel": {
+      "veryEasy": {
+        "title": "very easy",
+        "description": "At the time of the ice age, the global air temperature was -6°C. Under the conditions of a slight ice age of only -1°C, try to keep the temperature in the city in balance and prevent the earth from freezing by colliding greenhouse gases with the heat rays. "
+      },
+      "easy": {
+        "title": "easy",
+        "description": "At the beginning of the industrialisation there was no climate acquisition (global air temperature = 0°C). Under these conditions, try to keep the temperature in the city in balance. Ideally, you don't have to do much because the atmosphere is in balance. But the coincidence also resulted in temperature fluctuations at that time, so intervene carefully to balance these coincidences."
+      },
+      "today": {
+        "title": "today",
+        "description": "Since the beginning of industrialisation about 200 years ago, the global air temperature has risen by more than 1°C due to the increase in greenhouse gases. Try to keep the earth cool and prevent the red heat rays from colliding excessively with the greenhouse gases. But please don't prevent the greenhouse effect completely, because we don't want to freeze to death either."
+      },
+      "hard": {
+        "title": "hard",
+        "description": "According to the Paris Climate Agreement, the global increase in air temperature should be limited to 2°C. Under these conditions, try to keep the earth cool and prevent the red heat rays from colliding excessively with the greenhouse gases. But please don't prevent the greenhouse effect altogether, because we don't want to freeze to death either."
+      }
+    },
+    "weatherInfo": {
+      "snow": "snow warning",
+      "hail": "severe weather warning",
+      "hypothermia": "ATTENTION: hypothermia!",
+      "overheating": "ATTENTION: overheating!"
+    }
+  },
+  "statistic": {
+    "level": "How many times was which level played?",
+    "temperatureRise": "How many times was which difficulty level played?",
+    "winPoints": "How many times was how many points scored?",
+    "temperature": "What was the final temperature?",
+    "moleculeDecreaseCount": "How many molecules were neutralised?",
+    "moleculeMovedCount": "How many molecules were moved?",
+    "moleculeHitCount": "How many molecules were hit?",
+    "obstacleHitCount": "How many objects were hit?",
+    "regionHitCount": "How many regions were hit?",
+    "rayCount": "How many rays were generated?",
+    "rating": "How many times how many points were scored?",
+    "avatar": "How often has which user played a level?",
+    "build": "How often has which user created a level?",
+    "time": "How many seconds did it take to finish the level?"
+  },
+  "publicScreen": {
+    "tutorial": "tutorial",
+    "highscore": "highscore"
+  },
+  "analytics": {
+    "highscore": {
+      "playTime": "Time played",
+      "stars": "Stars",
+      "points": "Points"
+    }
+  }
+}

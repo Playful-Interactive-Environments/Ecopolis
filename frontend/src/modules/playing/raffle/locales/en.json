@@ -1,0 +1,37 @@
+{
+  "description": {
+    "title": "Raffle",
+    "description": "Randomly select a winner from all participants."
+  },
+  "moderatorConfig": {
+    "condition": "condition",
+    "winText": "winner notification"
+  },
+  "moderatorContent": {
+    "draw": "draw",
+    "raffle": "raffle",
+    "avatar": "participant",
+    "noData": "There are no suitable participants yet.",
+    "allSelected": "All suitable participants have already been drawn."
+  },
+  "participant": {
+    "wait": "You haven't been pulled yet. Try again later.",
+    "no-raffle": "There hasn't been a draw yet. Try again later.",
+    "win": "Congratulations, you were drawn.",
+    "raffle": "raffle",
+    "index": "raffle number",
+    "count": "ticket number",
+    "code": "winning code"
+  },
+  "enum": {
+    "raffleCondition": {
+      "participated": "participated",
+      "finished": "finished",
+      "won": "won"
+    }
+  },
+  "statistic": {
+  },
+  "publicScreen": {
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "description": {
+    "title": "Move It",
+    "description": "Ein Klimaspiel über den Ausstoß von klimaschädlichen Gasen."
+  },
+  "moderatorConfig": {
+    "mapSection": "Kartenabschnitt",
+    "replayable": "mehrfach spielbar",
+    "showTutorial": "Tutorial zeigen",
+    "showTutorialDisabled": "deaktiviert",
+    "showTutorialOnce": "einmalig",
+    "showTutorialAlways": "immer"
+  },
+  "participant": {
+    "speed": "Geschwindigkeit",
+    "maxSpeed": "max",
+    "hold": "-",
+    "gas": "G",
+    "break": "B",
+    "combined": "kombiniert",
+    "separate": "separat",
+    "electricity": "Stromanteil in %",
+    "earned": "verdient",
+    "history": "Statistik",
+    "confirm": "Weiter",
+    "historyEmpty": "Dieses Fahrzeug wurde noch nicht gefahren",
+    "drivingStats": {
+      "maxSpeed": "Höchstgeschwindigkeit",
+      "avgSpeed": "Durchschnittsgeschwindigkeit",
+      "consumption": "Verbrauch",
+      "distance": "Fahrstreckenlänge",
+      "persons": "Personen",
+      "collected": "eingesammelt",
+      "time": "Gefahrene Zeit",
+      "goal": "Ziel erreicht!"
+    },
+    "vehicle-parameter": {
+      "fuel": "Treibstoff",
+      "mpg": "Verbrauch",
+      "power": "Leistung",
+      "speed": "Max. Geschwindigkeit",
+      "acceleration": "Beschleunigung",
+      "persons": "Personen"
+    },
+    "result": {
+      "carbonDioxideExplanation": "CO2 macht mit nur etwa 0,038 Prozent einen geringen Teil der Luft aus. Es hat aber in seiner Funktion als Treibhausgas eine entscheidende Rolle für unser Klima: CO2 absorbiert einen Teil der von der Erde in das Weltall abgegebenen Wärme und strahlt diese zurück auf die Erde. Durch diesen natürlichen Treibhauseffekt entsteht auf der Erde das uns bekannte gemäßigte Klima, welches Flora und Fauna gedeihen lässt. ",
+      "dustExplanation": "Feinstaub kann beim Menschen in die Nasenhöhle, in die Lunge und sogar in den Blutkreislauf eindringen. Je nach Größe und  Eindringtiefe der Teilchen sind die gesundheitlichen Wirkungen von Feinstaub verschieden.",
+      "methaneExplanation": "Methan ist rund 80-mal klimaschädlicher als CO2. Laut Weltklimarat hat die Freisetzung von Methan bereits zu einer Erderwärmung um 0,5 Grad beigetragen. In der EU fällt viel Methan vor allem in der Lieferkette von Erdgas an, welches zum Großteil aus Methan besteht.",
+      "microplasticExplanation": "Mikroplastik sind sehr kleine Kunststoffteile, die die Umwelt verschmutzen. Bei Mikroplastik handelt es sich nicht um eine bestimmte Art von Kunststoff, sondern um jede Art von Kunststofffragmenten, die weniger als fünf Millimeter lang sind.",
+      "veryGood": "Gratulation du bist ja schon ein richtiger Profi beim Aufräumen deiner Emissionen.",
+      "good": "Das war schon richtig gut. Versuche durch geschicktes Fahrverhalten dir nächstes Mal noch mehr Luft beim Aufräumen zu lassen. Dann schaffst du auch noch den Rest.",
+      "notBad": "Das war gar nicht schlecht, aber da geht noch mehr. Versuche durch geschicktes Fahrverhalten dir nächstes Mal noch mehr Luft beim Aufräumen zu lassen. Dann schaffst du nächstes Mal sicher mehr.",
+      "improvable": "Das geht besser. Versuche durch geschicktes Fahrverhalten dir nächstes Mal noch mehr Luft beim Aufräumen zu lassen. Dann schaffst du nächstes Mal sicher mehr.",
+      "collected": "eingesammelt",
+      "notCollected": "nicht eingesammelt"
+    },
+    "select": "auswählen",
+    "info": {
+      "electricity": {
+        "title": "Strommix",
+        "description": "Der aktuelle Standard-Strommix setzt sich wie in der Grafik dargestellt zusammen. Diese Zusammensetzung beeinflusst die Klimafreundlichkeit von Elektroautos. Du kannst diesen Mix durch deine Wahl von Maßnahmen im Gemeinderat beeinflussen.",
+        "scale": "Stromanteil in %"
+      },
+      "emissionsPerFuel": {
+        "title": "Emissionen pro Kraftstoff",
+        "description": "In diesem Diagramm kannst du sehen, wie viele Treibhausgase in welchem Kraftstoff stecken. Elektrizität hängt vom Strommix ab und kann im Gemeinderat beeinflusst werden.",
+        "scale": {
+          "x": "Kraftstoff",
+          "y": "gCO2eq/kWh"
+        }
+      },
+      "emissionsPerElectricitySource": {
+        "title": "Emissionen pro Stromquelle",
+        "description": "Die Grafik zeigt, wie viele Treibhausgase von welcher Stromquelle erzeugt werden.",
+        "scale": {
+          "x": "Stromquelle",
+          "y": "gCO2eq/kWh"
+        }
+      },
+      "driving": {
+        "scale": {
+          "x": "zurückgelegter Weg in km",
+          "y": "Emissionen pro Person in g/kWh"
+        }
+      },
+      "distance": {
+        "title": "Weg-Zeit-Diagramm",
+        "scale": {
+          "x": "Zeit in s",
+          "y": "km"
+        }
+      },
+      "speed": {
+        "title": "Geschwindigkeit-Zeit-Digramm",
+        "scale": {
+          "x": "Zeit in s",
+          "y": "km/h"
+        }
+      },
+      "persons": {
+        "title": "Personenanzahl pro Zeitpunkt",
+        "scale": {
+          "x": "Zeit in s",
+          "y": "Personen"
+        }
+      },
+      "emissions": {
+        "input": "Emissionen pro Zeitpunkt",
+        "collected": "eingesammelte Emissionen pro Zeitpunkt",
+        "outside": "frei gesetzte Emissionen pro Zeitpunkt",
+        "scale": {
+          "x": "Zeit in s",
+          "y": "Emissionen pro Person in g/kWh"
+        }
+      }
+    },
+    "play": "Start",
+    "playDialog": {
+      "header": "Level spielen",
+      "play": "starten",
+      "cancel": "abbrechen"
+    },
+    "navigationType": {
+      "speed": {
+        "title": "speed",
+        "description": "Steuern Sie die Fahrzeuggeschwindigkeit mit dem Gaspedal und der Bremse."
+      },
+      "acceleration": {
+        "title": "Beschleunigung",
+        "description": "Steuern Sie die Fahrzeuggeschwindigkeit mit dem Gaspedalschieber."
+      },
+      "speedDirection": {
+        "title": "Geschwindigkeit und Fahrtrichtung",
+        "description": "Steuern Sie die Fahrzeuggeschwindigkeit mit dem Gaspedal und der Bremse und die Fahrtrichtung mit dem Joystick."
+      },
+      "accelerationDirection": {
+        "title": "Beschleunigung und Fahrtrichtung",
+        "description": "Steuern Sie die Fahrzeuggeschwindigkeit mit dem Gaspedalschieber und die Fahrtrichtung mit dem Joystick."
+      },
+      "joystick": {
+        "title": "joystick",
+        "description": "Steuern Sie die Geschwindigkeit und die Fahrtrichtung des Fahrzeugs mit dem Joystick."
+      }
+    },
+    "movingType": {
+      "path": {
+        "title": "navigiert",
+        "description": "Folge dem festgelegten Pfad."
+      },
+      "free": {
+        "title": "Freistil",
+        "description": "Bestimme deinen eigenen Pfad. "
+      }
+    },
+    "highScore": {
+      "header": "Highscore"
+    },
+    "tutorial": {
+      "menu": "Tutorial",
+      "select": "Der Verkehr ist für 30% der Treibhausgasemissionen verantwortlich.\nVersuche herauszufinden, welche Auswirkungen verschiedene Fahrzeugtypen haben.",
+      "statistics": "Das Diagramm oben zeigt, wie viele Treibhausgase in einer kWh Kraftstoff stecken.\nFür Treibstoffe wie Diesel und Benzin ist das konstant. Bei Elektroautos allerdings hängt es vom Strommix ab. Unter Strommix versteht man, aus welchen Quellen (z.B. Wasserkraft, Windenergie oder Erdgas) sich der Strom zusammensetzt.",
+      "drive": "Neben der Wahl des Fahrzeugs spielt auch das Fahrverhalten eine entscheidende Rolle. Je schneller du fährst, desto mehr Kraftstoff benötigst du.",
+      "statsGame": "In der Statistik oberhalb der Karte kannst du sehen, wie viele Emissionen freigesetzt werden. Alle Emissionen im rot markierten Bereich gehen direkt in die Umwelt. Für alle darunter hast du die Chance, sie im nächsten Schritt zu bereinigen.",
+      "speed": "Mit den Pedalen unten rechts kannst du beschleunigen und bremsen. Das Auto lenkt selbstständig.",
+      "joystick": "Mit dem Joystick unten rechts kannst du beschleunigen, bremsen und lenken. Mit dem Schieberegler auf der linken Seite kannst du die Höchstgeschwindigkeit einstellen.",
+      "combined": "Mit den Pedalen unten rechts kannst du beschleunigen und bremsen. Verwende den Joystick auf der linken Seite, um zu lenken.",
+      "bus": "Aber auch die Anzahl der Passagiere macht einen Unterschied. Je voller das Fahrzeug, desto mehr Personen teilen sich die Emissionen.\nBleib an Bushaltestellen stehen, um Leute einsteigen zu lassen.",
+      "cleanUp": "Versuche nun, die von dir verursachten Emissionen zu beseitigen, indem du sie in die richtige Tonne wirfst.\nAber pass auf! Wenn es zu viele freie Emissionen gibt, verflüchtigen sie sich und gelangen in die Umwelt.",
+      "nudging": "Du kannst mehrere Partikel derselben Art zusammenhängen. So kannst du sie schneller wieder beseitigen!",
+      "improve": "Versuche, dir beim nächsten Mal beim Aufräumen durch geschicktes Fahrverhalten mehr Luft zu lassen, oder beeinflusse den Strommix durch entsprechende Maßnahmen in der Maßnahmenkarte.\nNeben Treibhausgasen wird auch Mikroplastik durch Reifenabrieb und Feinstaub freigesetzt."
+    }
+  },
+  "enums": {
+    "particle": {
+      "carbonDioxide": "CO2",
+      "dust": "Feinstaub",
+      "methane": "CH4",
+      "microplastic": "Mikroplastik",
+      "carbonDioxideEquivalent": "CO2-Äquivalent"
+    },
+    "electricity": {
+      "water": "Wasserkraft",
+      "wind": "Windenergie",
+      "biomass": "Biomasse",
+      "sun": "Photovoltaik",
+      "green": "Sonstige Ökoenergie",
+      "gas": "Erdgas",
+      "others": "Sonstige"
+    },
+    "vehicles": {
+      "car": {
+        "category": "Auto",
+        "sport": "Sportwagen",
+        "suv": "SUV",
+        "e-suv": "E-SUV",
+        "compact": "Kleinwagen",
+        "e-car": "E-Auto"
+      },
+      "motorcycle": {
+        "category": "Zweirad",
+        "moped": "Moped",
+        "e-moped": "Elektroroller",
+        "motorcycle": "Motorrad",
+        "e-bike": "E Bike",
+        "city": "Citybike"
+      },
+      "scooter":  {
+        "category": "Scooter",
+        "e-scooter": "E-Scooter"
+      },
+      "bus": {
+        "category": "Bus",
+        "bus": "Bus",
+        "e-bus": "Elektrobus"
+      },
+      "bike": {
+        "category": "Fahrrad"
+      }
+    },
+    "fuel": {
+      "diesel": "Diesel",
+      "gasoline": "Benzin",
+      "gas": "Erdgas",
+      "electricity": "Strom",
+      "none": "keinen"
+    },
+    "units": {
+      "ps": "PS",
+      "km/h": "km/h",
+      "km": "km",
+      "min": "min",
+      "liters/100": "Liter pro 100 km",
+      "liters": "Liter",
+      "seconds": "m/s pro Sekunde",
+      "kw/100": "kWh pro 100 km",
+      "kw": "kWh"
+    }
+  },
+  "statistic": {
+    "rating": "Wie oft wurden wie viele Punkte erzielt?",
+    "avatar": "Wie oft hat welcher Benutzer einen Level gespielt?",
+    "vehicleCategory": "Welche Fahrzeugtypen wurden wie oft eingesetzt?",
+    "vehicleType": "Welche Fahrzeugkategorien wurden wie oft eingesetzt?",
+    "navigationType": "Welche Navigationsmodus wurden wie oft eingesetzt?",
+    "movingType": "Welche Bewegungsmodus wurden wie oft eingesetzt?",
+    "stops": "Wie oft hat der Fahrer während der Fahrt angehalten?",
+    "persons": "Wie viele Personen befanden sich im Bus?",
+    "speed": {
+      "max": "Was war die Höchstgeschwindigkeit?",
+      "average": "Wie hoch war die Durchschnittsgeschwindigkeit?"
+    },
+    "playTime": "Wie lange wurde gespielt?",
+    "selectTime": "Wie lange wurde ausgewählt?",
+    "driveTime": "Wie lange wurde gefahren?",
+    "cleanupTime": "Wie lange wurde aufgeräumt?",
+    "particleState": {
+      "totalCount": {
+        "average": "Wie viele Partikel wurden im Durchschnitt emittiert?",
+        "min": "Wie viele Partikel wurden mindestens emittiert?",
+        "max": "Wie hoch war die maximale Anzahl der emittierten Partikel?"
+      },
+      "collectedCount": {
+        "average": "Wie viele Partikel wurden im Durchschnitt gesammelt?",
+        "min": "Wie viele Partikel wurden mindestens gesammelt?",
+        "max": "Wie hoch war die maximale Anzahl der gesammelten Partikel?"
+      }
+    },
+    "line": {
+      "speed": {
+        "average": "Wie war das durchschnittliche Fahrverhalten pro Fahrzeugtyp?",
+        "min": "Welches war das beste Fahrverhalten pro Fahrzeugtyp?",
+        "max": "Welches war das schlechteste Fahrverhalten pro Fahrzeugtyp?"
+      },
+      "persons": {
+        "mix": "Wie war die Buspersonenanzahl?"
+      }
+    }
+  },
+  "publicScreen": {
+    "tutorial": "Tutorial",
+    "highscore": "Highscore"
+  },
+  "analytics": {
+    "highscore": {
+      "playTime": "Spielzeit",
+      "stars": "Sterne",
+      "points": "Punkte",
+      "maxSpeed": "Max Geschwindigkeit",
+      "averageSpeed": "Ø Geschwindigkeit",
+      "consumption": "Verbrauch",
+      "units": {
+        "maxSpeed": "km/h",
+        "averageSpeed": "km/h",
+        "consumption": "l"
+      }
+    }
+  }
+}

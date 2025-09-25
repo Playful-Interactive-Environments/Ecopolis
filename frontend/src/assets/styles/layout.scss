@@ -1,0 +1,246 @@
+.layout {
+  &__columns {
+    width: 100%;
+    column-width: 10rem;
+    column-gap: 1rem;
+    column-fill: balance;
+  }
+
+  &__level {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    > * {
+      vertical-align: middle;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.sidebar {
+  min-width: var(--sidebar-min-width);
+  width: var(--sidebar-width);
+
+  &.el-aside {
+    width: var(--sidebar-width);
+    height: 100%;
+  }
+}
+
+.sidebar__mobile_header,
+.sidebar__page-header span.toggleSidebarButton {
+  display: none;
+}
+
+.sidebar__mobile_header {
+  background-color: var(--color-primary);
+  padding: 1rem;
+  color: white;
+}
+
+@media only screen and (min-width: 650px) {
+  .sidebar {
+    &__trigger {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .sidebar__mobile_header,
+  .sidebar__page-header span.toggleSidebarButton {
+    display: block;
+  }
+
+  .el-aside.sidebar {
+    display: none;
+    width: 0;
+    min-width: 0;
+  }
+}
+
+.content_filter {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--color-dark-contrast);
+  width: 100%;
+  display: table;
+
+  > * {
+    display: table-cell;
+  }
+
+  label {
+    width: 20%;
+  }
+
+  .heading {
+    color: white;
+  }
+}
+
+
+.card {
+  &__content {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    word-break: break-word;
+    align-items: flex-end;
+    text-align: left;
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+  }
+
+  &__menu {
+    color: var(--color-dark-contrast-light);
+    cursor: pointer;
+  }
+
+  &__title {
+    font-weight: var(--font-weight-semibold);
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.stack {
+  max-width: 10rem;
+  &__container {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    //display: inline;
+    vertical-align: center;
+
+    &__image {
+      border-radius: var(--border-radius-xs);
+      border: 1px solid #c0ccda;
+      width: 100%;
+      padding-top: 100%; /* 1:1 Aspect Ratio */
+    }
+  }
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  &__action {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;
+    color: #fff;
+    opacity: 0;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity var(--el-transition-duration);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.level {
+  &.is-desktop {
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+
+    .level-left, .level-right {
+      flex-direction: column;
+      display: flex;
+      max-width: unset;
+      width: unset;
+      align-items: stretch;
+
+      .level-item {
+        max-width: unset;
+        width: unset;
+
+        div {
+          text-align: center;
+        }
+      }
+    }
+
+    .level-left + .level-right {
+      margin-top: 1.5rem;
+    }
+
+    .level-left .level-item:not(:last-child), .level-right .level-item:not(:last-child) {
+      margin-right: unset;
+      margin-left: unset;
+    }
+  }
+}
+
+.participant-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.participant-background {
+  background-color: var(--color-background);
+
+  .el-dialog {
+    max-width: 45rem;
+  }
+}
+
+.full-height {
+  min-height: var(--app-height);
+}
+
+.full-height-header {
+  min-height: calc(var(--app-height) - var(--header-height) - 1rem);
+}
+
+.fill {
+  height: 100%;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.centered,
+.centered-horizontal {
+  align-items: center;
+  text-align: center;
+}
+
+.centered {
+  justify-content: center;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: inherit;
+}

@@ -1,0 +1,9 @@
+{
+  "icon": "questions",
+  "iconPrefix": "fac",
+  "type": "main",
+  "input": "no",
+  "syncPublicParticipant": false,
+  "fallback": "quiz",
+  "finishManuel": false
+}

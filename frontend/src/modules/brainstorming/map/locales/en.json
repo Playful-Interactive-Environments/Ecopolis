@@ -1,0 +1,18 @@
+{
+  "description": {
+    "title": "Map it",
+    "description": "anchor your ideas on the map"
+  },
+  "participant": {
+  },
+  "moderatorConfig": {
+    "mapSection": "map section"
+  },
+  "moderatorContent": {
+    "settingsTitle": "idea settings",
+    "displayAll": "display all"
+  },
+  "publicScreen": {
+    "noIdeas": "No ideas yet - stay tuned."
+  }
+}

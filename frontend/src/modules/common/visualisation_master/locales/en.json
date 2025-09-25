@@ -1,0 +1,110 @@
+{
+  "description": {
+    "title": "Visualisation",
+    "description": "Visualise Ideas"
+  },
+  "moderatorConfig": {
+    "voteUseAverage": "Use average votings",
+    "podium": {
+      "topAmount": "top amount"
+    }
+  },
+  "visModules": {
+    "gallery": {
+      "description": {
+        "title": "Gallery",
+        "description": "Show items as gallery."
+      }
+    },
+    "cardShuffle": {
+      "description": {
+        "title": "Card Shuffle",
+        "description": "Show ideas as a card shuffle animation."
+      }
+    },
+    "infiniteScroll": {
+      "description": {
+        "title": "Infinite Scrolling",
+        "description": "Ideas are scrolled infinitely."
+      }
+    },
+    "barChart": {
+      "description": {
+        "title": "Bar Chart",
+        "description": "data or votes displayed as a bar chart."
+      }
+    },
+    "strata": {
+      "description": {
+        "title": "Strata",
+        "description": "Ideas race to the top. Highest voted idea wins."
+      }
+    },
+    "podium": {
+      "description": {
+        "title": "Podium",
+        "description": "Ideas ranked on a podium."
+      }
+    },
+    "elimination": {
+      "description": {
+        "title": "Elimination",
+        "description": "The best ideas remain."
+      }
+    },
+    "canvasModule": {
+      "description": {
+        "title": "Canvas",
+        "description": "Move ideas around and draw."
+      }
+    },
+    "analytics": {
+      "description": {
+        "title": "Analytics",
+        "description": "Analytics of all tasks."
+      }
+    },
+    "analyticsDashboard": {
+      "description": {
+        "title": "Dashboard",
+        "description": "Get an overview over all games.",
+        "module": {
+          "billboard": "Problem Products",
+          "highscore": "Highscore",
+          "join": "Join Session on:",
+          "drivingStats": {
+            "maxSpeed": "max",
+            "avgSpeed": "average",
+            "consumption": "fuel",
+            "distance": "distance",
+            "persons": "persons",
+            "collected": "collected",
+            "time": "Time driven",
+            "goal": "Goal reached!"
+          },
+          "coolItStats": {
+            "temperature": "temperature",
+            "normalisedTime": "time",
+            "moleculeHitCount": "molecule hits"
+          },
+          "shopItStats": {
+            "units": {
+              "kg": "kg",
+              "kwh": "kwh",
+              "years": "years",
+              "l": "l",
+              "price": "€"
+            },
+            "cardProperties": {
+              "CO²": "CO²",
+              "electricity": "Energy",
+              "lifetime": "Lifetime",
+              "water": "Water",
+              "money": "Money"
+            }
+          }
+        }
+      }
+    }
+  }
+}

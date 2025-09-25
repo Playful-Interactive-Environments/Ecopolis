@@ -1,0 +1,804 @@
+{
+  "info": {
+    "copyToClipboard": "Erfolgreich in Zwischenablage gespeichert.",
+    "accountCreated": "Dein Konto wurde erfolgreich erstellt.",
+    "updatePublicScreen": "Publikumsansicht erfolgreich aktualisiert.",
+    "updateParticipantState": "Teilnehmendenstatus erfolgreich aktualisiert.",
+    "postIdea": "Vielen Dank für deine Idee! - {0}"
+  },
+  "confirm": {
+    "delete": {
+      "message": "Willst du den Eintrag wirklich löschen?",
+      "title": "Löschen",
+      "ok": "Löschen",
+      "cancel": "Abbruch"
+    },
+    "clipboard": {
+      "pasteNoData": "Zwischenablage enthält keine passenden Daten",
+      "clipboardNotAllowed": "Das Lesen der Zwischenablage ist nicht erlaubt.",
+      "clipboardInfo": "Um Daten aus der Zwischenablage einfügen zu können, müssen Sie der Seite den Zugriff auf die Zwischenablage erlauben, andernfalls wird diese Funktion deaktiviert.",
+      "clipboardInfoTitle": "Einfügen von Daten aus der Zwischenablage erlauben",
+      "clipboardInfoOk": "OK",
+      "clipboardInfoCancel": "Verweigern"
+    }
+  },
+  "error": {
+    "vuelidate": {
+      "Value is required": "Dieses Feld muss ausgefüllt werden.",
+      "Value is not a valid email address": "Der Eintrag ist keine gültige E-Mail Adresse",
+      "This field should be at least 8 long": "Dieses Feld sollte mindestens 8 Stellen haben",
+      "The value is not a valid URL address": "Der Eintrag ist keine gültige URL",
+      "required": "Dieses Feld muss ausgefüllt werden.",
+      "email": "Der Eintrag ist keine gültige E-Mail Adresse",
+      "toShort": "Der Eintrag ist zu kurz. Die minimale Länge ist ",
+      "toLong": "Der Eintrag ist zu lang. Die maximale Länge ist ",
+      "url": "Der Eintrag ist keine gültige URL",
+      "number": "Der Eintrag ist keine gültige Zahl",
+      "date": "Der Eintrag ist kein gültiges Datum",
+      "wrongPasswordSyntax": "Das Passwort muss zumindest einen Klein- und Großbuchstaben, eine Zahl und ein Sonderzeichen enthalten.",
+      "passwordNotMatch": "Passwort-Wiederholung stimmt nicht überein.",
+      "keyNotMatch": "Dies ist ein Prototyp. Um die Applikation zu testen wird ein Prototyp-Schlüssel benötigt.",
+      "keywordsRequired": "Deine idee ist sehr lang, bitte gib ein paar Schlüselwörter ein.",
+      "noSelection": "Bitte wählen Sie die zuzuordnenden Daten aus.",
+      "validationErrors": "Nicht alle Eingabefelder sind gültig. Bitte überprüfen Sie Ihre Eingabe."
+    },
+    "route": {
+      "authorisationExpired": "Bitte neu einloggen - ihr Login ist abgelaufen.",
+      "incorrectAuthorisationType": "Falsche Autorisierungsart. Bitte neu einloggen."
+    },
+    "gui": {
+      "copyToClipboard": "Konnte nicht in Zwischenablage gespeichert werden."
+    },
+    "api": {
+      "general": {
+        "User has no rights for this entity": "Nutzer*in hat keine Rechte für diese Entität.",
+        "User has no rights for this service": "Nutzer*in hat keine Rechte für diesen Service.",
+        "No valid access token specified": "Kein gültiges Zugriffstoken angegeben",
+        "Unauthorized": "Der Benutzer ist nicht eingeloggt oder der Zugriffscode ist abgelaufen."
+      },
+      "login": {
+        "post": {
+          "username or password": {
+            "NotExist": "Der Nutzername oder Passwort ist falsch."
+          },
+          "username": {
+            "NotConfirmed": "E-Mail wurde nicht bestätigt."
+          }
+        }
+      },
+      "register": {
+        "post": {
+          "username": {
+            "Exist": "Diese E-Mail existiert bereits."
+          }
+        }
+      },
+      "session": {
+        "post": {
+          "connectionKey": {
+            "NotValid": "Der Verbindungsschlüssel ist bereits vergeben."
+          }
+        }
+      },
+      "idea": {
+        "post": {
+          "idea": {
+            "Exist": "Diese Idee wurde bereits eingereicht."
+          },
+          "taskId": {
+            "NotValid": "Diese Aufgabe ist nicht mehr aktiv."
+          }
+        }
+      },
+      "vote": {
+        "post": {
+          "taskId": {
+            "NotValid": "Diese Aufgabe ist nicht mehr aktiv."
+          }
+        }
+      },
+      "participant": {
+        "join": {
+          "noCode": "Bitte Code eingeben.",
+          "codeInvalid": "Der angegebene Code ist ungültig.",
+          "Expired": "Die Sitzung ist abgelaufen."
+        }
+      },
+      "reconnect": {
+        "get": {
+          "browserKey": {
+            "NotExist": "Der angegebene Code ist ungültig.",
+            "Expired": "Die Sitzung ist abgelaufen."
+          }
+        }
+      },
+      "connect": {
+        "post": {
+          "sessionKey": {
+            "NotExist": "Der angegebene Code ist ungültig.",
+            "Expired": "Die Sitzung ist abgelaufen.",
+            "NotConfirmed": "E-Mail wurde nicht bestätigt."
+          }
+        }
+      },
+      "authorized_user": {
+        "post": {
+          "username": {
+            "NotExist": "Nutzer*in existiert nicht"
+          }
+        }
+      }
+    }
+  },
+  "moderator": {
+    "atom": {
+      "imagePicker": {
+        "add": "Medien anhängen"
+      }
+    },
+    "molecule": {
+      "moduleCount": {
+        "topics": "Thema",
+        "tasks": "Aufgabe",
+        "participants": "Teilnehmer*in",
+        "users": "Moderator*in"
+      },
+      "moduleCountPlural": {
+        "topics": "Themen",
+        "tasks": "Aufgaben",
+        "participants": "Teilnehmer*innen",
+        "users": "Moderator*innen"
+      },
+      "navigation": {
+        "sessions": "Sitzungen",
+        "profile": "Profil",
+        "settings": "Einstellungen",
+        "userlist": "Benutzerliste"
+      },
+      "sessionCode": {
+        "shareSubject": "Tritt der play.ecopolis.at Sitzung bei",
+        "shareBody": "Verbindungsschlüssel: @KEY \nlink: @LINK"
+      },
+      "ideaFilter": {
+        "filterPlaceholder": "Nach Text filtern...",
+        "filterByState": "Nach Status filtern",
+        "order": "Sortierung",
+        "syncActiveMessage": "Synchronisierung der Filtereinstellungen mit der Publikumsansicht aktiviert",
+        "syncDeactivateMessage": "Synchronisierung der Filtereinstellungen mit der Publikumsansicht deaktiviert",
+        "sortAscending": "aufsteigende Sortierung",
+        "sortDescending": "absteigende Sortierung",
+        "minimizeText": "Texte minimieren",
+        "maximizeText": "Texte maximieren",
+        "syncActive": "Synchronisierung der Filter mit der Publikumsansicht",
+        "syncDisable": "Deaktiviere Synchronisierung der Filter mit der Publikumsansicht"
+      },
+      "sessionFilter": {
+        "filterPlaceholder": "Suchen...",
+        "subjectPlaceholder": "Betreff",
+        "sortAscending": "aufsteigende Sortierung",
+        "sortDescending": "absteigende Sortierung"
+      }
+    },
+    "organism": {
+      "cards": {
+        "moduleCard": {
+          "addOn": "add-on"
+        },
+        "sessionCard": {
+          "select": "Zur Sitzung",
+          "edit": "Sitzung bearbeiten",
+          "delete": "Löschen",
+          "clone": "Duplizieren",
+          "clonePrompt": "Wollen Sie diese Sitzung wirklich duplizieren?"
+        },
+        "topicCard": {
+          "clone": "Duplizieren",
+          "clonePrompt": "Wollen die dieses Thema wirklich duplizieren?"
+        }
+      },
+      "settings": {
+        "analytics": {
+          "header": "Statistik"
+        },
+        "sidebarSettings": {
+          "download": "herunterladen"
+        },
+        "timerSettings": {
+          "header": "Status setzen",
+          "time": "Zeitlimit",
+          "useTimer": "aktiviere Zeitlimit",
+          "submit": "Speichern",
+          "close": "fertig",
+          "deactivate": "deaktivieren",
+          "custom": "individuell",
+          "on": "an",
+          "off": "aus"
+        },
+        "ideaSettings": {
+          "header": "Ideen-Einstellungen ",
+          "keywords": "kurze Beschreibung",
+          "keywordsExample": "Schlüsselwörter",
+          "description": "lange Beschreibung",
+          "descriptionExample": "...",
+          "image": "Bild",
+          "imageExample": "",
+          "link": "Link",
+          "linkExample": "",
+          "submit": "speichern",
+          "edit": "bearbeiten",
+          "delete": "löschen",
+          "statistic": "Statistik",
+          "state": "Ändere den Status der Idee"
+        },
+        "linkSettings": {
+          "link": "Link",
+          "linkExample": "",
+          "submit": "speichern"
+        },
+        "facilitatorSettings": {
+          "header": "Co-Autor*innen verwalten",
+          "info": "Füge die E-Mail des*der gewünschten Autors*in ein",
+          "email": "E-Mail",
+          "role": "Rolle",
+          "allowAnonymous": "Jedem Zugriff auf die Publikumsansicht erlauben",
+          "publicScreen": "Anonymer Link zur Publikumsansicht"
+        },
+        "topicDependencySettings": {
+          "header": "Aufgabenabhängigkeiten verwalten"
+        },
+        "participantSettings": {
+          "header": "Teilnehmer*innen verwalten",
+          "info": "Fügen Sie neue Teilnehmer*innen hinzu oder löschen Sie nicht verwendete Teilnehmerschlüssel.",
+          "avatar": "Avatar",
+          "browserKey": "individueller Verbindungsschlüssel",
+          "ideaCount": "Anzahl der eingereichten Ideen",
+          "voteCount": "Anzahl der abgegebenen Stimmen",
+          "add": "Neue Teilnehmer*innen anlegen",
+          "removeSelected": "Ausgewählte Teilnehmer löschen",
+          "export": "Export Verbindungs-PDF",
+          "connectionInfo": "Du wurdest zu einer interaktiven Aktivität eingeladen worden. Um der Aktivität teilzunehmen, gib bitte deinen individuellen Schlüssels ein.",
+          "connectionSubject": "Deine individuelle Ecopolis-Einladung",
+          "key": "Teilnahmeschlüssel",
+          "link": "Link",
+          "everyoneCanJoin": "Jeder, der den öffentlichen Schlüssel besitzt, kann an der Sitzung teilnehmen."
+        },
+        "languageSettings": {
+          "header": "Sprache verwalten",
+          "info": "Spracheinstellungen ändern."
+        },
+        "taskSettings": {
+          "header": "Modul hinzufügen",
+          "info": "In den Modulen spielt sich die gesamte Interaktion ab.",
+          "preview-header": "Vorschau",
+          "preview-info": "Diese Daten dienen als Input für das Modul.",
+          "taskType": "Aufgabentyp",
+          "input": "Eingabe",
+          "source": "Quelle",
+          "sourceTopic": "Thema Quelle",
+          "maxCount": "maximale Anzahl",
+          "filter": "Filter",
+          "order": "Sortierung",
+          "addInput": "Eingabe hinzufügen",
+          "moduleType": "Modultyp",
+          "title": "Titel",
+          "question": "Frage",
+          "questionExample": "z.B. Was sollte der Name unserer neuen App sein?",
+          "description": "Beschreibung",
+          "descriptionExample": "z.B. Der Sinn dieses Meetings ist, Ideen für unsere neue App zu finden.",
+          "keywords": "Schlüsselwörter für die Zeitachse",
+          "keywordsExample": "Schlüsselwort",
+          "submit": "Modul speichern",
+          "saveAndActivate": "Modul speichern und aktivieren",
+          "edit": "Modul bearbeiten",
+          "confirm": "Modul bestätigen",
+          "confirmAndActivate": "Modul speichern und aktivieren",
+          "moduleSearch": "Gib einen Modulnamen ein",
+          "displayAllModules": "Alle Module anzeigen",
+          "clone": "Modul duplizieren",
+          "delete": "löschen",
+          "move": "verschieben",
+          "statistic": "Statistik",
+          "settings": "Modul-Einstellungen",
+          "topic": "Thema",
+          "session": "Session"
+        },
+        "taskMoveSettings": {
+          "header": "Aufgabe verschieben",
+          "info": "Verschiebe die Aufgabe in ein anderes Thema oder eine andere Sitzung.",
+          "topic": "Thema",
+          "session": "Session",
+          "submit": "verschieben"
+        },
+        "sessionSettings": {
+          "header": "Sitzung erstellen",
+          "settings": "Sitzungs-Einstellungen",
+          "headerEdit": "Sitzung bearbeiten",
+          "info": "Die Sitzung ist, wo alle Informationen des Brainstorming-Abenteuers gebündelt werden",
+          "title": "Titel",
+          "titleExample": "e.g. Marketing-Treffen",
+          "description": "Beschreibung",
+          "descriptionExample": "z.B. Der Sinn dieses Meetings ist, Ideen für unsere neue App zu finden.",
+          "subject": "Betreff",
+          "subjectExample": "Neu...",
+          "expirationDate": "Ablaufdatum",
+          "expirationDatePlaceholder": "Wähle einen Tag aus",
+          "topics": "Themen",
+          "topicsInfo": "Themen helfen dabei, eine klare Unterteilung zwischen Bereichen zu definieren, die getrennte Brainstorming-Module haben sollten. Tipp: Halte es einfach, ein oder zwei Themen sind normalerweise genug!",
+          "firstTopic": "Thema 1",
+          "topicExample": "z.B. Neuer App-Name",
+          "theme": "Teilnehmeransicht",
+          "default": "Standard",
+          "calendar": "Kalender",
+          "submit": "Sitzung speichern",
+          "customKey": "Automatische Schlüsselgenerierung",
+          "topicActivation": "Themensichtbarkeit",
+          "startingPoints": "Startpunkte",
+          "visibility": "Sichtbarkeit",
+          "template": "Vorlage",
+          "empty": "leer"
+        },
+        "topicSettings": {
+          "header": "Thema erstellen",
+          "headerEdit": "Thema bearbeiten",
+          "info": "Themen strukturieren deine Sitzung.",
+          "title": "Titel",
+          "titleExample": "z.B. Was ist dein bevorzugter ...",
+          "description": "Beschreibung",
+          "descriptionExample": "",
+          "submit": "Thema speichern",
+          "drag": "drag and drop",
+          "clone": "Thema duplizieren",
+          "edit": "bearbeiten",
+          "delete": "löschen",
+          "clonePrompt": "Möchtest du dieses Thema wirklich duplizieren?",
+          "statistic": "Statistik",
+          "settings": "Themen-einstellungen",
+          "activateTopic": "Thema aktivieren",
+          "deactivateTopic": "Thema deaktivieren"
+        }
+      },
+      "statistics": {
+        "participantActivity": "Teilnehmeraktivität"
+      },
+      "session": {
+        "overview": {
+          "header": "Deine Sitzungen",
+          "add": "Neue Sitzung",
+          "hidden": " versteckt"
+        }
+      },
+      "processTimeline": {
+        "activatePublicScreen": "Stelle diesen Inhalt auf der Publikumsansicht dar",
+        "changePublicScreen": "Stelle dieses Element auf der Publikumsansicht dar",
+        "activateParticipant": "Aktiviere dieses Element für die Teilnehmer*innen",
+        "deactivateParticipant": "Deaktiviere diese Aufgabe für die Teilnehmer*innen",
+        "changeOrder": "Verändere die Ordnung der Elemente",
+        "selectItem": "Selektiere dieses Element",
+        "otherTopic": "Thema",
+        "on": "an",
+        "off": "aus"
+      },
+      "taskTimeline": {
+        "activatePublicScreen": "Stelle diesen Inhalt auf der Publikumsansicht dar",
+        "changePublicScreen": "Stelle diese Aufgabe auf der Publikumsansicht dar",
+        "activateParticipant": "Aktiviere diese Aufgabe für die Teilnehmer*innen",
+        "deactivateParticipant": "Deaktiviere diese Aufgabe für die Teilnehmer*innen",
+        "changeOrder": "Verändere die Ordnung der Aufgaben",
+        "selectItem": "Selektiere diese Aufgabe",
+        "on": "an",
+        "off": "aus"
+      },
+      "analytics": {
+        "loading": "Wird geladen, bitte warten...",
+        "loadingNoTasks": "Keine Aufgaben ausgewählt",
+        "collapse": "Minimieren",
+        "expand": "Maximieren",
+        "tutorial": {
+          "participantSelection": {
+            "title": "Teilnehmer*innen Auswahl",
+            "info": "Hier kannst du eine Übersicht über alle Teilnehmer*innen deiner Sitzung sehen. Klicke auf einen Teilnehmer, um sie über das gesamte Tool hervorzuheben."
+          },
+          "overview": {
+            "title": "Übersicht",
+            "info": "Hier kannst du eine Übersicht über alle Aufgaben und Themen deiner Sitzung sehen. Klicke auf eine Aufgabe, um die Details zu sehen."
+          },
+          "table": {
+            "title": "Tabellen",
+            "info": "Klicke auf den Titel mit dem + um eine neue Tabelle hinzuzufügen.\n Hier siehst du eine Übersicht der Teilnehmer und die wichtigen Werte, die in einer Aufgabe gesammelt werden. Falls mehr als 5 Teilnehmer*innen vorhanden sind, wird die Tabelle aufgeteilt, um die Übersichtlichkeit zu verbessern. Die restlichen Einträge können mit dem unteren Pfeil aufgeklappt werden. \n Die Tabelle kann auch nach den Spalten sortiert werden, indem du auf die Spaltenüberschrift klickst."
+          },
+          "stackedBarChart": {
+            "title": "Umfragen und Quizzes",
+            "info": "Hier kannst du eine Übersicht über alle Aufgaben und Themen deiner Sitzung sehen. Klicke auf eine Aufgabe, um die Details zu sehen."
+          },
+          "radarChart": {
+            "title": "Typologietests",
+            "info": "Hier kannst du eine Übersicht über alle Aufgaben und Themen deiner Sitzung sehen. Klicke auf eine Aufgabe, um die Details zu sehen."
+          }
+        },
+        "participantSelection": {
+          "title": "Teilnehmer Auswahl"
+        },
+        "parallelCoordinates": {
+          "title": "Übersicht"
+        },
+        "tables": {
+          "selectTask": "Aufgabe auswählen",
+          "table": "Tabelle",
+          "title": "Tabellen"
+        },
+        "stackedBarCharts": {
+          "selectTask": "Aufgabe auswählen",
+          "survey": "Umfrage oder Quiz",
+          "title": "Umfragen und Quizzes"
+        },
+        "radarCharts": {
+          "primary": "Primärklasse",
+          "secondary": "Sekundärklasse",
+          "exception": "Ausnahmeklasse",
+          "title": "Typologietests",
+          "noTypeSelected": "Alle Typen",
+          "noClassSelected": "Alle Klassen"
+        },
+        "legend": {
+          "gearIcon": "Achsenwert einstellen",
+          "listIcon": "Liste der Ideen",
+          "participantCount": "Anzahl Teilnehmer",
+          "overUnder": "Anzahl über/unter dem Durchschnitt",
+          "lineSolid": "Teilnehmer Datenlinie",
+          "lineDashed": "Verbindung über unvollständige Einträge",
+          "lineAvg": "Durchschnittslinie"
+        },
+        "taskSelection": "Aufgabenauswahl"
+      }
+    },
+    "view": {
+      "login": {
+        "header": "Anmelden",
+        "info": "Melden Sie sich an, um auf alle vorhandenen Ressourcen zuzugreifen und neue Brainstorming-Sitzungen zu erstellen.",
+        "email": "E-Mail",
+        "emailInfo": "Gib deine E-Mail ein",
+        "password": "Passwort",
+        "passwordInfo": "Gib dein Passwort ein",
+        "submit": "Anmelden",
+        "forgot": "Passwort vergessen?",
+        "register": {
+          "header": "Neu hier?",
+          "info": "Erstelle ein Konto wenn du unser tolles Brainstorming-Werkzeug verwenden willst.",
+          "submit": "Registrieren"
+        },
+        "confirm": "Bestätigungs-E-Mail erneut senden",
+        "confirmSend": "Bestätigungs-E-mail wurde gesendet. Bitte sieh auch im Spam-Ordner nach, falls die Mail nicht auftaucht."
+      },
+      "register": {
+        "header": "Registrierung",
+        "info": "Bitte trage deine Infos ein, um ein Konto zu erstellen.",
+        "email": "E-Mail",
+        "emailInfo": "Gib deine E-Mail ein",
+        "password": "Passwort",
+        "passwordInfo": "Gib dein Passwort ein",
+        "passwordConform": "Passwort-Wiederholung",
+        "passwordConformInfo": "Wiederhole dein Passwort",
+        "submit": "Registrieren",
+        "login": {
+          "header": "Willkommen zurück!",
+          "info": "Wenn du bereits einen Account hast dann melde dich an um auf\n deine existierenden Ressourcen zugreifen zu können.",
+          "submit": "Anmelden"
+        },
+        "prototypeKey": "Prototyp-Schlüssel",
+        "prototypeKeyInfo": "Dies ist ein Prototyp. Um die Applikation zu testen wird ein Prototyp-Schlüssel benötigt."
+      },
+      "profile": {
+        "header": "Dein Profil",
+        "info": "E-Mail Adresse: ",
+        "changePassword": "Passwort ändern",
+        "changeLanguage": "Sprache ändern",
+        "delete": "Profil löschen",
+        "submit": "Abmelden"
+      },
+      "confirmEmail": {
+        "thanks": "Danke für das Bestätigen deiner E-Mail. Folge dem Link um dich anzumelden.",
+        "home": "Zur Anmeldung",
+        "failed": "Das Token für die Bestätigung ist falsch.",
+        "header": "Bestätige deine E-Mail",
+        "info": "E-Mail Adresse: ",
+        "submit": "Bestätigen"
+      },
+      "changePassword": {
+        "header": "Passwort ändern",
+        "info": "E-Mail Adresse: ",
+        "oldPassword": "Altes Passwort",
+        "oldPasswordInfo": "Gib dein Passwort ein",
+        "newPassword": "Neues Passwort",
+        "newPasswordInfo": "Gib dein neues Passwort ein",
+        "passwordConform": "Passwort-Wiederholung",
+        "passwordConformInfo": "Wiederhole dein neues Passwort",
+        "submit": "speichern"
+      },
+      "resetPassword": {
+        "header": "Passwort zurücksetzen",
+        "info": "Falls du dein Passwort vergessen hast, gib deine E-Mail an und wir schicken dir einen Link, um dein Passwort zurückzusetzen.",
+        "email": "E-Mail",
+        "emailInfo": "Gib deine E-Mail ein",
+        "submit": "Zurücksetzen",
+        "mailSend": "Zurücksetzungs-E-mail wurde gesendet. Bitte sieh auch im Spam-Ordner nach, falls die Mail nicht auftaucht."
+      },
+      "forgetPassword": {
+        "header": "Passwort zurücksetzen",
+        "info": "E-Mail Adresse: ",
+        "newPassword": "Neues Passwort",
+        "newPasswordInfo": "Gib dein neues Passwort ein",
+        "passwordConform": "Passwort-Wiederholung",
+        "passwordConformInfo": "Wiederhole dein neues Passwort",
+        "submit": "speichern"
+      },
+      "sessionDetails": {
+        "addTopic": "Thema hinzufügen"
+      },
+      "topicDetails": {
+        "addTask": "Aufgabe hinzufügen",
+        "participantCount": "Teilnehmer*innen",
+        "topic": "Thema",
+        "clone": "Duplizieren",
+        "edit": "bearbeiten",
+        "delete": "löschen",
+        "clonePrompt": "Wollen die diese Aufgabe wirklich duplizieren?",
+        "statistic": "Statistik für",
+        "settings": "Einstellungen"
+      },
+      "userList": {
+        "header": "Benutzerliste",
+        "username": "Email",
+        "creationDate": "erstellt am",
+        "confirmed": "Email bestätigt",
+        "ownSessions": "erstellte Sitzungen",
+        "sharedSessions": "von anderen eingeladene Sitzungen",
+        "confirm": "bestätigen"
+      }
+    }
+  },
+  "participant": {
+    "molecules": {
+      "moduleInfo": {
+        "next": "weiter",
+        "prev": "zurück"
+      }
+    },
+    "organism": {
+      "modelDefaultContainer": {
+        "timeLeft": "Zeit"
+      }
+    },
+    "view": {
+      "join": {
+        "header": "Bereit für\n ein Abenteuer?",
+        "info": "Gib den Code ein, den dein*e Moderator*in zur Verfügung stellt. Dann bist du bereit!",
+        "browserKeyInfo": "Deine letzten Sitzungen wurden gespeichert. Du kannst früheren Sitzungen über die Liste erneut beitreten, falls diese noch offen zur Teilnahme sind. Falls du einer neuen Sitzung beitreten willst, gib den neuen Sitzungs-Pincode ein.",
+        "pinInfo": "Sitzungspincode eingeben",
+        "submit": "Sitzung beitreten"
+      },
+      "overview": {
+        "publicScreen": "Publikumsansicht",
+        "disconnect": "Abmelden",
+        "avatar": "Dein Avatar",
+        "finishTask": "Aufgabe abhacken",
+        "finishQuestion": "Sind sie sicher, dass sie die Aufgabe abschließen wollen?",
+        "yes": "ja",
+        "no": "nein"
+      }
+    }
+  },
+  "shared": {
+    "atom": {
+      "timer": {
+        "inactive": "inaktiv"
+      }
+    },
+    "organism": {
+      "imageUploader": {
+        "header": "Bild hochladen",
+        "uploadText": "Datei hier ablegen oder zum Hochladen anklicken",
+        "uploadTip": "jpg/png/gif-Dateien",
+        "save": "Erledigt"
+      },
+      "drawingUploader": {
+        "header": "Eine Skizze erstellen",
+        "save": "Erledigt"
+      },
+      "game": {
+        "levelSettings": {
+          "levelName": "Levelname"
+        },
+        "levelBuilder": {
+          "everythingPlaced": "Alles platziert",
+          "maxCountPlaced": "Maximale Anzahl des Objekttyps platziert",
+          "itemSelection": {
+            "selectItem": "Zu platzierendes Objekt auswählen"
+          },
+          "paste": {
+            "header": "Zwischenablage-Szene einfügen",
+            "text": "Willst du wirklich die aktuellen Elemente in der Szene durch die Zwischenablage ersetzen?",
+            "yes": "ja",
+            "no": "nein"
+          },
+          "save": {
+            "header": "Änderungen speichern",
+            "text": "Möchten Sie die Änderungen in der Szene speichern?",
+            "yes": "ja",
+            "no": "nein"
+          }
+        }
+      }
+    },
+    "view": {
+      "home": {
+        "header": "Brainstorming - Zur Unendlichkeit und noch viel weiter!",
+        "info": "Ecopolis verfolgt einen neuen Ansatz für das Brainstorming mit mehreren Personen. Um eine neue Brainstorming-Session zu erstellen, verwende bitte die Moderation. Du kannst aber auch einer bestehenden Brainstorming-Session mit Hilfe eines Session-Codes beitreten.",
+        "login": "Moderation",
+        "join": "Brainstorming beitreten",
+        "imprint": "Impressum"
+      },
+      "imprint": {
+        "imprint": "Imprint",
+        "owner": "Medieninhaber und Herausgeber",
+        "rights": "Bildrechte",
+        "support": "Support",
+        "liability": "Haftung",
+        "home": "Startseite"
+      },
+      "notFound": {
+        "header": "404 - Nicht gefunden",
+        "info": "Entschuldigung, diese Seite existiert nicht, oder du bist nicht autorisiert um auf die Seite zugreifen zu können.",
+        "submit": "Zur Startseite"
+      },
+      "publicScreen": {
+        "connectionKey": "Verbindungsschlüssel",
+        "title": "Publikumsansicht",
+        "connectTo": "verbinden mit"
+      }
+    }
+  },
+  "enum": {
+    "taskType": {
+      "null": "",
+      "playing": "Spiele",
+      "information": "Information",
+      "brainstorming": "Brainstorming",
+      "selection": "Selektion",
+      "categorisation": "Kategorisierung",
+      "voting": "Bewertung"
+    },
+    "taskCategory": {
+      "playing": "Spielen",
+      "informing": "Informieren",
+      "brainstorming": "Brainstormen",
+      "structuring": "Strukturieren",
+      "evaluating": "Bewerten"
+    },
+    "ideaSortOrder": {
+      "null": "",
+      "timestamp": "Chronologisch",
+      "alphabetical": "Alphabetisch",
+      "state": "Status",
+      "participant": "Teilnehmer*in",
+      "count": "Anzahl",
+      "hierarchy": "Kategorisierung",
+      "view": "Bewertung",
+      "order": "Benutzerdefiniert",
+      "input": "Eingabequelle"
+    },
+    "ideaState": {
+      "new": "keine",
+      "handled": "behandelt",
+      "duplicate": "Duplikat",
+      "thumbs_down": "Daumen runter",
+      "thumbs_up": "Daumen hoch"
+    },
+    "sessionSortOrder": {
+      "null": "",
+      "chronological": "Chronologisch",
+      "alphabetical": "Alphabetisch",
+      "topics": "Themen",
+      "tasks": "Aufgaben",
+      "moderators": "Moderator*innen",
+      "participants": "Teilnehmer*innen"
+    },
+    "viewType": {
+      "task": "Aufgabe",
+      "selection": "Selektion",
+      "vote": "Bewertung",
+      "hierarchy": "Hierarchie"
+    },
+    "questionType": {
+      "multiplechoice": "Multiple Choice",
+      "singlechoice": "Single Choice",
+      "order": "Sortierung",
+      "rating": "Rating",
+      "slider": "Slider",
+      "number": "Zahl",
+      "text": "Text",
+      "image": "Bild",
+      "info": "Informationstext"
+    },
+    "userType": {
+      "FACILITATOR": "Co-Moderator",
+      "MODERATOR": "Moderator",
+      "OWNER": "Eigentümer",
+      "ALL": "Alle"
+    },
+    "locale": {
+      "en": "Englisch",
+      "de": "Deutsch"
+    },
+    "topicActivation": {
+      "always": "Standard",
+      "after_previous_started": "nachdem alle vorherigen Aufgaben gestartet wurden",
+      "after_previous_finished": "nachdem alle vorherigen Aufgaben abgeschlossen wurden"
+    },
+    "sessionVisibilityType": {
+      "private": "privat",
+      "public": "öffentlich",
+      "template": "Vorlage"
+    }
+  },
+  "general": {
+    "back": "Zurück",
+    "publicScreen": "Publikumsansicht",
+    "moduleActive": "Aktiv",
+    "noPublicView": "leider gibt es keine öffentliche Ansicht für dieses Modul"
+  },
+  "tutorial": {
+    "reactivate": "Tutorial erneut aktivieren",
+    "sessionOverview": {
+      "add": "Klicke diesen Knopf um deine erste Sitzung zu erstellen"
+    },
+    "sessionDetails": {
+      "addTopic": "Eine Session kann mehrere Themen enthalten. Klicke diesen Knopf um dein erstes Thema zu erstellen.",
+      "selectTopic": "Eine Sitzung kann mehrere Themen enthalten. Klicke diesen Knopf um die Details des Themas anzuzeigen.",
+      "changeOrder": "Verändere die Ordnung der Themen über drag and drop.",
+      "publicScreen": "Öffne die Publikumsansicht.",
+      "connectionCode": "Teilnehmer*innen können der Sitzung über diesen Code beitreten.",
+      "shareCode": "Teile den Code indem du eine Einladung an alle Teilnehmer*innen schickst.",
+      "coModerator": "Co-Moderator*innen hinzufügen",
+      "participants": "Teilnehmer*innen verwalten",
+      "disconnect": "Verbindung zur Sitzung trennen"
+    },
+    "topicDetails": {
+      "taskType": "Du kannst verschiedene Arten von Aufgaben erstellen. Aufgaben bauen aufeinander auf und können für weitere Aktivitäten verwendet werden. Der Startpunkt ist das Brainstorming. Durch das Erstellen eines ersten Brainstormings werden die ausgegrauten Aktivitäten freigeschaltet.",
+      "addTask": "Ein Thema kann mehrere Aufgaben enthalten. Klicke diesen Knopf um deine erste Aufgabe zu erstellen.",
+      "selectTask": "Ein Thema kann mehrere Aufgaben enthalten. Klicke diesen Knopf um die Details der Aufgabe anzuzeigen."
+    },
+    "processTimeline": {
+      "activatePublicScreen": "Aktiviere diesen Schalter um den Inhalt auf der Publikumsansicht darzustellen",
+      "changePublicScreen": "Bewege den Regler, um das Element auf der Publikumsansicht zu wechseln",
+      "activateParticipant": "Klicke auf das Handy um das Element für alle Teilnehmer*innen zu aktivieren",
+      "changeOrder": "Verändere die Ordnung der Elemente über drag and drop.",
+      "selectItem": "Klicke auf den Titel des Elements, um dessen Details anzuzeigen",
+      "showNullPublicScreen": "Setze den Regler auf diese Position, um eine Übersicht der Publikumsansicht anzuzeigen",
+      "publicScreenForOtherTopic": "Die Publikumsansicht ist einem anderen Thema zugeteilt. Die Übersicht der Publikumsansicht kann durch diesen Schalter angezeigt werden.",
+      "showResult": "Auswertung anzeigen"
+    },
+    "taskTimeline": {
+      "activatePublicScreen": "Aktiviere diesen Schalter um das Thema auf der Publikumsansicht darzustellen",
+      "changePublicScreen": "Bewege den Regler, um die Aufgabe auf der Publikumsansicht zu wechseln.",
+      "activateParticipant": "Klicke auf das Handy um die Aufgabe für alle Teilnehmer*innen zu aktivieren",
+      "changeOrder": "Verändere die Ordnung der Aufgaben über drag and drop",
+      "selectItem": "Klicke auf den Titel der Aufgabe, um deren Details anzuzeigen",
+      "showNullPublicScreen": "Setze den Regler auf diese Position, um den Verbindungsschlüssel auf der Publikumsansicht anzuzeigen",
+      "publicScreenForOtherTopic": "Die Publikumsansicht ist einem anderen Thema zugeteilt. Der Verbindungsschlüssel kann durch diesen Schalter auf der Publikumsansicht angezeigt werden."
+    },
+    "taskSettings": {
+      "input": "Aufgaben bauen aufeinander auf und können für weitere Aktivitäten verwendet werden.",
+      "inputSource": "Definiere die Quelle, die als Basis für diese Aufgabe dient.",
+      "inputMaxCount": "Wie viele Datensätze dieser Quelle möchten Sie als Basis verwenden? Falls keine Eingabe gemacht wird, werden alle Datensätze genutzt.",
+      "inputFilter": "Hier können die Datensätze der angegeben Quelle nach Status gefiltert werden.",
+      "inputOrder": "Nach welcher Sortierung sollen die Daten der Quelle für die weitere Verarbeitung sortiert werden? Die Sortierung beeinflusst auch die Auswahl der Daten, falls es eine Angabe zur Anzahl der Datensätze gibt.",
+      "inputAdd": "Die Aufgabe kann mehrere Datenquellen verwenden. Klicke den Knopf um eine weitere Quelle hinzuzufügen.",
+      "title": "Befülle die Eingabefelder um die Aufgabe zu beschreiben.",
+      "module": "Mehrere Module stehen für diese Aufgabe zur Verfügung. Wähle ein Basismodul aus (durchgezogene Umrandung) und wähle Zusatzmodule aus (gestrichelte Umrandung).",
+      "unusedModule": "Der Einfachheit halber werden standardmäßig nur die Module angezeigt, die Sie bereits verwendet haben.",
+      "baseModule": "Klicke auf das Modul, um dieses zu öffnen.",
+      "additionalModule": "Klicke auf das Zusatzmodul, um dieses zu aktivieren.",
+      "searchModule": "Suche Modul nach Namen."
+    }
+  }
+}

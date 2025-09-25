@@ -1,0 +1,70 @@
+{
+  "description": {
+    "title": "Quiz",
+    "description": "Rufe den Wissensstatus ab "
+  },
+  "moderatorConfig": {
+    "answerCount": "Antwortoptionen",
+    "moderatedQuestionFlow": "Moderierter Fragenfluss",
+    "questionType": "Fragebogentyp",
+    "time": "Zeit",
+    "showResult": "Erklärung zeigen",
+    "answerCountExample": "3",
+    "theme": "Thema",
+    "paper": "Papier",
+    "interview": "Interview",
+    "default": "Standard"
+  },
+  "moderatorContent": {
+    "questionType": "Fragetyp",
+    "question": "Frage",
+    "questionExample": "Was ist ...",
+    "detailInfos": "Detailinformation",
+    "detailInfosExample": "Darunter versteht man ...",
+    "explanation": "Erklärung nach der Beantwortung",
+    "explanationExample": "Die Antwort auf die Frage ist ...",
+    "answer": "Antwort",
+    "answerExample": "Option",
+    "minValue": "Minimum",
+    "maxValue": "Maximum",
+    "correctValue": "Richtiger Wert",
+    "submit": "speichern",
+    "addAnswer": "Antwort hinzufügen",
+    "noQuestionSelected": "Keine Frage ausgewählt.",
+    "hasAnswer": "hat ein korrekte Antwort",
+    "dependency": "Abhängigkeit",
+    "none": "keine"
+  },
+  "publicScreen": {
+    "chartDataLabelCorrect": "Richtig",
+    "chartDataLabelIncorrect": "Falsch",
+    "chartDataLabelResult": "Teilnehmer*innen"
+  },
+  "participant": {
+    "thanksModerated": "Deine Antwort wurde gespeichert.",
+    "thanksIndividual": "Deine Antwort wurde gespeichert.",
+    "previous": "zurück",
+    "next": "weiter",
+    "submit": "Speichern",
+    "waiting": "Bitte warten. Fragen und Antworten werden geladen.",
+    "imageKeywords": "Bildbeschreibung",
+    "good": "trifft voll zu",
+    "bad": "trifft nicht zu",
+    "yes": "Ja",
+    "no": "Nein"
+  },
+  "enum": {
+    "questionType": {
+      "quiz": "quiz",
+      "survey": "survey",
+      "talk": "talk"
+    }
+  },
+  "analytics": {
+    "highscore": {
+      "points": "Punkte",
+      "stars": "Sterne",
+      "sumCorrect": "Richtige Antworten"
+    }
+  }
+}
